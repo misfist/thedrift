@@ -1,0 +1,41 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ $color__primary: #0e90cc;
+ $color__grey: #777;
+ $color__grey-light: #e7e7e7;
+ $color__grey-lightest: #f4f4f4;
+ $color__white: #fff;
+ $color__black: #000;
+
+.mention {
+    // padding: 2px 0;
+    // background-color: $color__grey-light;
+
+    .rich-text {
+        background-color: $color__grey-lightest;
+        // background-color: $color__white;
+        padding: .5rem;
+        margin-bottom: 2px;
+
+            &:focus,
+            &:active,
+            &:focus {
+                background-color: $color__grey-light;
+            }
+    }
+
+    &__title,
+    &__author,
+    &__genre {
+        font-family: sans-serif;
+    }
+    &__author,
+    &__genre {
+        text-transform: uppercase;
+        color: $color__primary;
+    }
+
+}

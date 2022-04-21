@@ -1,0 +1,49 @@
+{
+    "apiVersion": 2,
+    "version": "1.0.0",
+    "textdomain": "site-functionality",
+    "name": "site-functionality/mention",
+    "title": "Mention",
+    "icon": "admin-comments",
+    "className": "mention",
+    "description": "An individual mention",
+    "parent": [ "site-functionality/mentions" ],
+    "keywords": [
+        "mention",
+        "issue"
+    ],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "color": {
+            "background": false,
+            "text": true,
+            "gradients": false,
+            "link": false
+        },
+        "customClassName": true,
+        "defaultStylePicker": false,
+        "__experimentalLayout": false
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "genre": {
+            "type": "string"
+        },
+        "content": {
+            "type": "string"
+        },
+        "author": {
+            "type": "string"
+        }
+    },
+    "usesContext": [ "mentions/recordId", "mentions/anchor" ],
+    "variations": [],
+    "styles": [],
+    "example": {},
+    "style": "file:../../build/style-index.css",
+    "editorScript": "site-functionality",
+	"editorStyle": "file:../../build/index.css"
+}

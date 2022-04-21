@@ -1,0 +1,49 @@
+{
+    "apiVersion": 2,
+    "version": "1.0.0",
+    "textdomain": "site-functionality",
+    "name": "site-functionality/mentions",
+    "title": "Mentions",
+    "category": "text",
+    "collection": "site-functionality",
+    "icon": "format-chat",
+    "className": "mentions",
+    "description": "Display Mentions",
+    "keywords": [
+        "mentions",
+        "issue"
+    ],
+    "supports": {
+        "align": false,
+        "anchor": true,
+        "color": {
+            "background": false,
+            "text": true,
+            "gradients": false,
+            "link": false
+        },
+        "customClassName": true,
+        "defaultStylePicker": false,
+        "__experimentalLayout": false
+    },
+    "attributes": {
+        "recordId": {
+            "type": "string",
+            "context": true
+        },
+        "anchor": {
+            "type": "string",
+            "context": true
+        }
+    },
+    "providesContext": {
+        "mentions/recordId": "recordId",
+        "mentions/anchor": "anchor"
+    },
+    "variations": [],
+    "styles": [],
+    "example": {},
+    "style": "file:../../build/style-index.css",
+    "editorScript": "site-functionality",
+	"editorStyle": "file:../../build/index.css"
+}

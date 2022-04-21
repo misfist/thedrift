@@ -1,0 +1,27 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.mention .rich-text {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  margin-bottom: 2px;
+}
+.mention .rich-text:focus, .mention .rich-text:active, .mention .rich-text:focus {
+  background-color: #e7e7e7;
+}
+.mention__title, .mention__author, .mention__genre {
+  font-family: sans-serif;
+}
+.mention__author, .mention__genre {
+  text-transform: uppercase;
+  color: #0e90cc;
+}
+
+/*# sourceMappingURL=index.css.map*/
