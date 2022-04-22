@@ -759,6 +759,7 @@ function my_nav_wrap() {
 	$linkedin_url  = $theme_option['linkedin_url'];
 	$pinterest_url = $theme_option['pinterest_url'];
 	$gplus_url     = $theme_option['gplus_url'];
+	$socialHTML = '';
 
 	if ( $facebook_url != '' ) {
 		$socialHTML .= '<li><a href="' . $facebook_url . '" target="_blank"><i class="fab fa-facebook-f"></i></a></li>';
