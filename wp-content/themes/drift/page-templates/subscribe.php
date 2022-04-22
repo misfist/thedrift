@@ -36,26 +36,22 @@ endif; ?>
 			</div>
 		</div>
 
-<?php
-				$pageID   = get_the_id();
-				$subsitle = get_post_meta( $pageID, 'subsitle', true );
-?>
 		<div class="ab_part_r donate-subscribe_txt">
 			<div class="contact01">
 				<div class="com_heading">
-					<h3><strong><?php the_title(); ?></strong>​
-					<?php
-					if ( $subsitle != '' ) {
-						echo "<span class='line_gray'>|</span> " . $subsitle;
-					}
-					?>
-				 </h3>
+					<h3 class="entry-title"><strong><?php the_title(); ?></strong>​
+						<?php
+						if ( $subsitle = get_post_meta( get_the_ID(), 'subsitle', true ) ) {
+							echo "<span class='line_gray'>|</span> " . $subsitle;
+						}
+						?>
+					</h3>
 				</div>
 				<?php
 				while ( have_posts() ) :
 					the_post();
 					the_content();
-			 endwhile;
+				endwhile;
 				?>
 			</div>
 		</div>
