@@ -41,15 +41,19 @@ if ($page_imageID == "") {
 		</div>
 
 <?php
-                $pageID = get_the_id();
-                $subsitle = get_post_meta($pageID, "subsitle", true);
-                ?>
+				$pageID   = get_the_id();
+				$subsitle = get_post_meta( $pageID, 'subsitle', true );
+?>
 		<div class="ab_part_r donate-subscribe_txt">
 			<div class="contact01">
 				<div class="com_heading">
-					<h3><b> Subscribe </b>​<?php if ($subsitle != "") {
-                    echo "<span class='line_gray'>|</span> ".$subsitle;
-                }?> </h3>
+					<h3><strong><?php the_title(); ?></strong>​
+					<?php
+					if ( $subsitle != '' ) {
+						echo "<span class='line_gray'>|</span> " . $subsitle;
+					}
+					?>
+				 </h3>
 				</div>
 				<?php
              while (have_posts()):the_post();
