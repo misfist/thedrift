@@ -7,22 +7,6 @@
  * @since Twenty Seventeen 1.0
  */
 
-function drift_variable_price_html( $price, $product ) {
-	// echo '<pre>';
-	// var_dump( $price, $product  );
-	// echo '</pre>';
-    return $price;
-}
-add_filter( 'woocommerce_variable_price_html', 'drift_variable_price_html', 10, 2 );
-
-// function drift_subscriptions_product_price_string( $subscription_string, $product, $include ) {
-// 	echo '<pre>';
-// 	var_dump( $subscription_string, $product, $include  );
-// 	echo '</pre>';
-// 	return $subscription_string;
-// }
-// add_filter( 'woocommerce_subscriptions_product_price_string', 'drift_subscriptions_product_price_string', 10, 3 );
-
 /**
  * Adds custom classes to the array of body classes.
  *
