@@ -66,62 +66,7 @@ if ( $page_imageID == '' ) {
 	</div>
 </div>
 </section>
-<script type="text/javascript">
-	jQuery(document).ready(function(){
 
-			jQuery("#submit--MGJjOTB").on("click", function(){
-				setTimeout(function(){
-						if(jQuery(".wpfs-form-message--correct").is(':visible') )
-						{
-							jQuery("#submit--MGJjOTB").addClass("disableButton");
-						}
-				}, 6000);
-			});
-		jQuery("#wpfs-card-holder-name--MGJjOTB").change(function(){
-			var full_name22 = jQuery(this).val();
-			jQuery("#wpfs-billing-name--MGJjOTB").val(full_name22);
-		});
-
-	jQuery('.custom_1').html('<span class="constrained">One-year print & digital</span><strong>$50</strong>');
-	jQuery('.custom_2').html('<span class="constrained">One-year digital</span><strong>$30</strong>');
-	jQuery('.custom_4').html('<span class="constrained">Institutional print & digital</span><strong>$90</strong>');
-	jQuery('.custom_5').html('<span class="constrained">International print & digital</span><strong>$90</strong>');
-	jQuery('.custom_3').html('<span class="constrained">Lifetime digital</span><strong>$300</strong>');
-	//console.log(jQuery('.wpfs-form-check').find('.wpfs-form-check-label').html());
-	});
-
-</script>
-<style type="text/css">
-/*.page-template-subscribe .kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
-	background: url(<?php echo $page_imageURL; ?>) !important;
-	}*/
-	#wpfs-billing-address-panel--MGJjOTB > div:last-child, #wpfs-billing-address-panel--MGJjOTB > div:nth-child(1)
-	{
-		display: none;
-	}
-	.kudossubscribe form .wpfs-form-actions a {
-	display: none;
-}
-label[for="wpfs-card-holder-name--MGJjOTB"]::before {
-	content: "Full name";
-	font-size: 18px !important;
-}
-/*label[for="wpfs-plan--MGJjOTB--1"]::before {
-	content: "Lifetime $300";
-	font-size: 18px !important;
-}*/
-label[for="wpfs-billing-address-line-1--MGJjOTB"]::before {
-	content: "Billing address";
-	font-size: 18px !important;
-}
-label[for="wpfs-card-holder-name--MGJjOTB"], label[for="wpfs-billing-address-line-1--MGJjOTB"]{
-	font-size: 0px !important;
-}
-label[for='wpfs-same-billing-and-shipping-address--MGJjOTB']:before {
-	background: #909090 !important;
-	box-shadow: none !important;
-}
-</style>
 <?php
 get_footer();
 ?>
