@@ -1,24 +1,20 @@
 <?php
 /* Template name: Subscribe page */
 get_header();
-
-$page_imageID = get_post_thumbnail_id( $pageID );
-if ( $page_imageID == '' ) {
-	$page_imageURL = wp_get_attachment_image_src( $page_imageID, 'full' );
-	$page_imageURL = $page_imageURL[0];
-} else {
-	$page_imageURL = get_bloginfo( 'template_url' ) . '/assets/images/subscribe-box-bg.png';
-}
 ?>
 
-<style type="text/css">
+<?php
+if( $image = get_the_post_thumbnail_url( get_the_ID(), 'full' ) ) :
+	?>
+	<style type="text/css">
+		.page-subscribe .wpfs-form-check-group {
+			background-image: url( <?php echo esc_url( $image ); ?> );
+		}
+	</style>
 
-	label[for='wpfs-same-billing-and-shipping-address--ZTI4NGY']:before {
-		background: #909090 !important;
-		box-shadow: none !important;
-	}
+	<?php
+endif; ?>
 
-</style>
 <div class="the-drift-logo-mb" style="display: none;">
 	<a href="<?php echo home_url(); ?>">
 	  <img src="<?php echo home_url(); ?>/wp-content/uploads/2020/05/Logo.png">
