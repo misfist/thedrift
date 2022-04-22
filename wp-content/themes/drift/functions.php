@@ -448,6 +448,11 @@ function twentyseventeen_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 
+	global $post;
+	if ( is_page_template( array( 'page-templates/subscribe.php', 'page-templates/subscribe-redux.php'  ) ) || ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) ) {
+		wp_enqueue_script( 'wpfs-script' );
+	}
+
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri(), array(), '20190507' );
 
