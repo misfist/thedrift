@@ -808,7 +808,7 @@ function my_nav_wrap() {
 
 /*404 Page redirect to HOMEPAGE code STARTS here */
 if ( ! function_exists( 'redirect_404_to_homepage' ) ) {
-	add_action( 'template_redirect', 'redirect_404_to_homepage' );
+	// add_action( 'template_redirect', 'redirect_404_to_homepage' ); // Don't do this
 
 	function redirect_404_to_homepage() {
 		if ( is_404() ) :
@@ -910,7 +910,7 @@ function redirect_page() {
 		exit( wp_redirect( $urlto ) );
 	}
 }
-add_action( 'template_redirect', 'redirect_page' );
+// add_action( 'template_redirect', 'redirect_page' ); // Don't hardcode redirects here
 
 /* Redirect from author page ends here*/
 
@@ -961,7 +961,7 @@ function add_form_fields_example( $term, $taxonomy ) {
 	<?php
 }
 
-add_action( 'template_redirect', 'redirect_cpt_singular_posts' );
+// add_action( 'template_redirect', 'redirect_cpt_singular_posts' ); Don't do this
 function redirect_cpt_singular_posts() {
 	if ( is_singular( 'issue' ) ) {
 		$Issues_pageURL = get_the_permalink( 14 );
