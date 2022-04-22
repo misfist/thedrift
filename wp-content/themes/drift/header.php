@@ -1,65 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
-<meta charset="<?php bloginfo('charset'); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<?php wp_head(); ?>
+</head>
 <?php
    global $theme_option;
-   $favicon = $theme_option["favicon"]["url"];
+   $favicon = $theme_option['favicon']['url'];
 ?>
-<link rel="icon" href="<?php echo $favicon; ?>" type="image/gif" sizes="64x64">
-	
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/all.min.css">
-	<link href="<?php bloginfo('template_url'); ?>/assets/css/aos.css" rel="stylesheet">
 
-	
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css?family=Jockey+One&display=swap&subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap&subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
+	<?php
+	if ( $favicon ) :
+		?>
+		<link rel="icon" href="<?php echo $favicon; ?>" type="image/gif" sizes="64x64">
 
+	<?php endif; ?>
 
+	<!-- Don't hardcode stylesheet links here!! -->
 
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
-	<link href="<?php bloginfo('template_url'); ?>/assets/css/owl.carousel.min.css" rel="stylesheet" />
-
-	<link  rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom_77.css?t=<?php echo time();?>"/>
-
-<?php wp_head(); ?>
-
-</head>
-
-<body <?php echo body_class(); ?>>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 
 <?php
-  global $theme_option;
-  $issue_color = $theme_option["issue_color"];
+	$issue_color = $theme_option['issue_color'];
 
+	$facebook_url  = $theme_option['facebook_url'];
+	$twitter_url   = $theme_option['twitter_url'];
+	$instagram_url = $theme_option['instagram_url'];
 
-
-    $facebook_url = $theme_option["facebook_url"];
-    $twitter_url = $theme_option["twitter_url"];
-    $instagram_url = $theme_option["instagram_url"];
-
-    $youtube_url = $theme_option["youtube_url"];
-    $linkedin_url = $theme_option["linkedin_url"];
-    $pinterest_url = $theme_option["pinterest_url"];
-    $gplus_url = $theme_option["gplus_url"];
-
-
-
- ?>
+	$youtube_url   = $theme_option['youtube_url'];
+	$linkedin_url  = $theme_option['linkedin_url'];
+	$pinterest_url = $theme_option['pinterest_url'];
+	$gplus_url     = $theme_option['gplus_url'];
+?>
 
 <style type="text/css">
 .form01 form .wpfs-w-20 {
