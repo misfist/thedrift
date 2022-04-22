@@ -735,6 +735,7 @@ function create_topics_hierarchical_taxonomy() {
 		)
 	);
 }
+
 function get_first_paragraph() {
 	global $post;
 
@@ -744,8 +745,6 @@ function get_first_paragraph() {
 
 	return '<p>' . $str . '</p>';
 }
-
-
 
 function my_nav_wrap() {
 	global $theme_option;
