@@ -698,7 +698,7 @@ function wptuts53021_load_admin_script( $hook ){
 
 
 // hook into the init action and call create_book_taxonomies when it fires
-add_action( 'init', 'create_topics_hierarchical_taxonomy', 0 );
+// add_action( 'init', 'create_topics_hierarchical_taxonomy', 0 ); // Moved to custom plugin `./wp-content/plugins/site-functionality`
 
 // create a custom taxonomy name it topics for your posts
 
