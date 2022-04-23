@@ -1020,7 +1020,7 @@ function set_paywall_cookie()
 add_action('fullstripe_after_subscription_charge', 'set_paywall_cookie', 10, 2);
 
 
-add_action('admin_head', 'my_custom_fonts');
+// add_action('admin_head', 'my_custom_fonts');
 
 function my_custom_fonts()
 {
