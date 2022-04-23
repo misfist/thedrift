@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-<style type="text/css">
 <?php
 if( $image = get_the_post_thumbnail_url( get_the_ID(), 'full' ) ) :
 	?>
@@ -13,14 +12,9 @@ if( $image = get_the_post_thumbnail_url( get_the_ID(), 'full' ) ) :
 		}
 	</style>
 
-	label[for='wpfs-same-billing-and-shipping-address--ZTI4NGY']:before {
-		background: #909090 !important;
-		box-shadow: none !important;
-	}
 	<?php
 endif; ?>
 
-</style>
 <div class="the-drift-logo-mb" style="display: none;">
     <a href="<?php echo home_url(); ?>">
       <img src="<?php echo home_url(); ?>/wp-content/uploads/2020/05/Logo.png">
