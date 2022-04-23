@@ -1,7 +1,6 @@
 :root{
-    --white: #fff;
-    --black: #000;
-    --color__back:#0067B8;
+    --color__white: #fff;
+    --color__black: #000;
     --color__primary:#0e90cc;
     --color__secondary: #8C00FF;
 	--color__red: #b70404;
@@ -10,6 +9,10 @@
     --color__gray-dark: #333;
     --color__gray-light: #909090;
     --color__gray-lighter: #f6f6f6;
+    --color__link: var( --color__primary );
+    --color__link-alt: var( --color__gray-dark );
+    --color__link-hover: darken( var( --color__link ), 15% );
+    --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
     --color__background: #f0f0f0;
 	--color__background-field: #909090;
     --color__border: #f6f6f6;
@@ -696,7 +699,7 @@ section.footer_outer .container-fluid {
 .page-template-coming_soon #mc_embed_signup .mc-field-group input[type="submit"] {
     background-color: transparent !important;
     border-color: var( --color__black ) !important;
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
     position: relative;
     z-index: 999;
 }
@@ -720,15 +723,16 @@ section.footer_outer .container-fluid {
     margin-bottom: 3px;
 }
 .drift_container h6 a {
-    color: #4D788C;
+    color: var( --color__link );
     text-decoration: underline !important;
 }
 .drift_container h6 a:hover {
-    color: #4D788C;
+    color: var( --color__link-hover );
 }
-.drift_container h6 b {
+.drift_container h6 b,
+.drift_container h6 strong {
     text-transform: uppercase;
-    color: #4D788C;
+    color: var( --color__primary );
     font-weight: 900;
 }
 .drift_title {
@@ -766,18 +770,19 @@ section.footer_outer .container-fluid {
     font-size: 13px;
 }
 
-.social_link li, .social_link li a{
+.social_link li, 
+.social_link li a {
     font-size: 25px;
     color: var( --color__black );
 }
 .social_link li a {
-    color: #4D788C;
+    color: var( --color__link );
 }
 .social_link li:first-child {
     padding-right: 18px;
     line-height: 32px;
 }
-.social_link li a{
+.social_link li a {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -798,7 +803,7 @@ section.footer_outer .container-fluid {
     align-items: center;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
     padding-bottom: 4px !important;
 }
 .newsletter p{
@@ -849,11 +854,7 @@ section.footer_outer .container-fluid {
 /*FORM*/
 .wpfs-form-control:not(.wpfs-form-control--error).wpfs-form-control--focus, .wpfs-form-control:not(.wpfs-form-control--error):focus {
     border-color: var(--secondary-color);
-    box-shadow: 0px 0px 0px 1px var(--black) !important;
-}
-.ab_part{
-    background: var( --color__black );
-    border: 2px solid var( --color__black );
+    box-shadow: 0px 0px 0px 1px var(--color__black) !important;
 }
 .ab_part_l {
     width: 50%;
@@ -867,7 +868,7 @@ section.footer_outer .container-fluid {
 }
 .wpfs-form-control:not(.wpfs-form-control--error).wpfs-form-control--focus, .wpfs-form-control:not(.wpfs-form-control--error):focus {
     border-color: var(--secondary-color);
-    box-shadow: 0px 0px 0px 1px var(--black) !important;
+    box-shadow: 0px 0px 0px 1px var(--color__black) !important;
 }
 
 .ab_part_linner{
@@ -1215,7 +1216,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     background: transparent !important;
     letter-spacing: 0px !important;
     color: #909090 !important;
-    border: 1px solid var(--black) !important;
+    border: 1px solid var(--color__black) !important;
     transition: all 0.3s ease-out !important;
     height: unset !important;
     font-weight: 400 !important;
@@ -1227,9 +1228,9 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     /* margin-right: 0 !important; */
 }
 .but62:hover, .but63:hover{
-    color: var(--white) !important;
-    background: var(--black) !important;
-    border: 1px solid var(--black) !important;
+    color: var( --color__white ) !important;
+    background: var( --color__black ) !important;
+    border: 1px solid var( --color__black ) !important;
     transition: all 0.3s ease-out;
 }
 
@@ -1838,7 +1839,7 @@ button.search-submit:hover {
     position: relative;
 }
 .single-post .mission_inner a:hover {
-    color: #69a7c2;
+    color: var( --color__link-hover );
 }
 .wpfs-form {
     margin-left: auto;
@@ -2265,7 +2266,7 @@ section.mission_outer {
     border: none !important;
 }
 .issue_rg ul li a:hover {
-    color: #2A8A9D !important;
+    color: var( --color__link-hover ) !important;
 }
 .issue_rg ul li a:first-child {
     font-family: var( --font__serif );
@@ -2354,16 +2355,16 @@ section.mission_outer {
     color: var( --color__background-field ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL::-webkit-input-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL::-moz-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL:-ms-input-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL:-moz-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 #ajaxsearchlite1 .probox .proinput input::-webkit-input-placeholder {
     font-family: var( --font__body );
@@ -2469,11 +2470,11 @@ label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
     font-size: 18px;
 }
 .about_r p a.main_link {
-    color: #4D788C;
+    color: var( --color__primary );
     text-decoration: underline !important;
 }
 .about_r p a.main_link:hover {
-    color: #07dbdb !important;
+    color: var( --color__link-hover ) !important;
 }
 .about_r h3 {
     font-family: var( --font__body );
@@ -2691,7 +2692,7 @@ div.asl_w .probox .promagnifier .innericon svg {
     text-transform: uppercase;
     color: var( --color__gray-dark );
     display: block;
-    font-family: 'var( --font__body )';
+    font-family: var( --font__body );
     font-size: 16px;
 }
 .desktop_new_menu .desktop-logo img {
