@@ -459,6 +459,13 @@ function twentyseventeen_scripts()
     // Theme stylesheet.
     wp_enqueue_style('twentyseventeen-style', get_stylesheet_uri(), array(), '20190507');
 
+    wp_register_script( 'drift-wpfs', get_theme_file_uri( '/assets/js/wpfs-script.js' ), array( 'jquery' ), time(), true );
+    
+    global $post;
+    if( is_page_template( 'page-templates/subscribe.php' ) || ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) ) {
+        wp_enqueue_script( 'drift-wpfs' );
+    }
+
     // Theme block stylesheet.
     wp_enqueue_style('twentyseventeen-block-style', get_theme_file_uri('/assets/css/blocks.css'), array( 'twentyseventeen-style' ), '20190105');
 
