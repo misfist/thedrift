@@ -278,16 +278,7 @@ form.search-form {
 #mc_embed_signup_scroll > div {
     width: 400px;
 }
-.wpfs-btn-primary {
-    background: #f0f0f0 !important;
-    color: #000 !important;
-    font-weight: normal !important;
-    border: 1px solid #000;
-    border-radius: 0 !important;
-    padding: 0 60px !important;
-    font-weight: 600 !important;
-    letter-spacing: 1px !important;
-}
+
 input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wpfs-form-select select {
     background: #f6f6f6 !important;
     border-radius: 0 !important;
@@ -302,10 +293,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
    /*display: none;
     */
 }
-.wpfs-form-actions button.wpfs-btn:hover {
-    background: #CBCBCB !important;
-    color: #000!important;
-}
+
 .diff_font p {
     display: inline;
     font-size: inherit;
@@ -777,10 +765,7 @@ section.footer_outer .container-fluid {
     content: 'Thanks!';
     font-size: 13px;
 }
-.wpfs-form-actions button.wpfs-btn.disableButton {
-    pointer-events: none;
-    background: #CBCBCB !important;
-}
+
 .social_link li, .social_link li a{
     font-size: 25px;
     color: var( --color__black );
@@ -1018,9 +1003,7 @@ input::-ms-input-placeholder {
     padding-left: 15px;
     margin: 0px 0;
 }
-.wpfs-btn-primary--loader:after{
-   display:none !important;
-}
+
 .ab_part_r{
     width: 50%;
 }
@@ -1211,11 +1194,19 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     background: transparent !important;
     line-height: 1em !important;
 }
-.wpfs-form-actions{
-    float: right !important;
+
+.ab_part_linner .wpfs-w-45 {
+    max-width: 100% !important;
 }
-.wpfs-form-actions button.wpfs-btn, .but63 {
-    float: right !important;
+/* SUB SCRIBE */
+
+/** WPFS Button **/
+.wpfs-form-actions{
+    /* float: right !important; */
+}
+.wpfs-form-actions button.wpfs-btn, 
+.but63 {
+    /* float: right !important; */
     padding: 15px 30px !important;
     cursor: pointer !important;
     font-size: 22px !important;
@@ -1233,7 +1224,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     border-radius: 9px !important;
 }
 .wpfs-form-actions button.wpfs-btn {
-    margin-right: 0 !important;
+    /* margin-right: 0 !important; */
 }
 .but62:hover, .but63:hover{
     color: var(--white) !important;
@@ -1241,12 +1232,49 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     border: 1px solid var(--black) !important;
     transition: all 0.3s ease-out;
 }
-.ab_part_linner .wpfs-w-45 {
-    max-width: 100% !important;
+
+.wpfs-form-actions button.wpfs-btn.disableButton, 
+.wpfs-form-actions button.wpfs-btn:disabled {
+    pointer-events: none;
+    background: var( --color__gray-lighter ) !important;
 }
-/* SUB SCRIBE */
-.ab_part_l {
+
+.wpfs-btn-primary--loader:after{
+    /* display:none !important; */
+ }
+
+ .wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary {
+    background: var( --color__background-field ) !important;
+    border-color: var( --color__background-field ) !important;
 }
+
+.wpfs-btn-outline-primary:focus, 
+.wpfs-btn-outline-primary:not(.wpfs-btn-outline-primary--disabled):not(:disabled):hover {
+    border-color: #b6b8c5 !important;
+    box-shadow: none !important;
+}
+
+.wpfs-btn-outline-primary {
+    box-shadow: none !important;
+}
+
+.wpfs-btn-primary {
+    background: #f0f0f0 !important;
+    color: var( --color__black ) !important;
+    font-weight: normal !important;
+    border: 1px solid var( --color__black );
+    border-radius: 0 !important;
+    padding: 0 60px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+}
+
+.wpfs-form-actions button.wpfs-btn:hover {
+    background: #CBCBCB !important;
+    color: var( --color__black )!important;
+}
+
+
 #wpfs-form-get-parameters--ZTI4NGY ~ .wpfs-form-check-group {
     position: relative;
     background-color: rgba(255,255,255,1);
@@ -2100,10 +2128,7 @@ section.mission_outer {
 .single-post .com_heading h3 {
     padding-bottom: 0;
 }
-.wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary {
-    background: #909090 !important;
-    border-color: #909090 !important;
-}
+
 .more_from_issue .com_heading01 h4 b > a {
     font-size: 22px;
 }
@@ -2438,13 +2463,7 @@ label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
     display: block;
     padding-left: 30px;
 }
-.wpfs-btn-outline-primary:focus, .wpfs-btn-outline-primary:not(.wpfs-btn-outline-primary--disabled):not(:disabled):hover {
-    border-color: #b6b8c5 !important;
-    box-shadow: none !important;
-}
-.wpfs-btn-outline-primary {
-    box-shadow: none !important;
-}
+
 .page-template-donate .contact01 p, .page-template-subscribe .contact01 p {
     line-height: 1.4em;
     font-size: 18px;
