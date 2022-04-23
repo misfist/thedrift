@@ -1,14 +1,29 @@
 :root{
-    --white:#fff;
-    --black:#000;
+    --white: #fff;
+    --black: #000;
     --color__back:#0067B8;
     --color__primary:#0e90cc;
-    --color__gray: #303030;
-    --font__body: Avenir-Next-Thin, sans-serif;
-    --font__serif: Adobe-Caslon, serif;
-    --font__sans: franklin-gothic, sans-serif;
+    --color__secondary: #8C00FF;
+	--color__red: #b70404;
+    --color__gray: #636363;
+	--color__gray-darkest: #090909;
+    --color__gray-dark: #333;
+    --color__gray-light: #909090;
+    --color__gray-lighter: #f6f6f6;
+    --color__background: #f0f0f0;
+	--color__background-field: #909090;
+    --color__border: #f6f6f6;
+    --font__caslon: Adobe-Caslon, serif;
+    --font__avenir: Avenir-Next-Thin, sans-serif;
+    --font__franklin-gothic: franklin-gothic, sans-serif;
     --font__proxy: proxy-nova, sans-serif;
     --font__savoy: savoy, sans-serif;
+    --font__serif: var( --font__caslon );
+    --font__sans: var( --font__avenir );
+    --font__body: var( --font__sans );
+    --font__heading: var( --font__serif );
+    --font__heading-alt: var( --font__sans );
+	--width__content-wide: 1450px;
 }
 
 *, *:focus {
