@@ -34,7 +34,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
 	<link href="<?php bloginfo('template_url'); ?>/assets/css/owl.carousel.min.css" rel="stylesheet" />
 
-	<link  rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom_77.css?t=<?php echo time();?>"/>
+	<link  rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom_78.css?t=<?php echo time();?>"/>
 
 <?php wp_head(); ?>
 
