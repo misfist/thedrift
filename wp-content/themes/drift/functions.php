@@ -745,6 +745,7 @@ function create_topics_hierarchical_taxonomy()
     'rewrite' => array( 'slug' => 'article_author' ),
   ));
 }
+
 function get_first_paragraph()
 {
     global $post;
@@ -930,7 +931,7 @@ function redirect_page()
         exit(wp_redirect($urlto));
     }
 }
-add_action('template_redirect', 'redirect_page');
+// add_action('template_redirect', 'redirect_page');
 
 /* Redirect from author page ends here*/
 
