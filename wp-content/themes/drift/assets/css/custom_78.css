@@ -1,11 +1,15 @@
 :root{
     --white:#fff;
     --black:#000;
-    --back-color:#0067B8;
-    --primary-color:#ffd98e;
-    --gray: #303030;
+    --color__back:#0067B8;
+    --color__primary:#0e90cc;
+    --color__gray: #303030;
+    --font__body: Avenir-Next-Thin, sans-serif;
+    --font__serif: Adobe-Caslon, serif;
+    --font__sans: franklin-gothic, sans-serif;
+    --font__proxy: proxy-nova, sans-serif;
+    --font__savoy: savoy, sans-serif;
 }
-
 
 *, *:focus {
     outline: none;
@@ -16,8 +20,8 @@
     src: url(../font/avenir-next-thin.ttf);
 }
 @font-face {
-    font-family: Avenir-Light;
-    src: url(../font/Avenir-Light.ttf);
+    font-family: franklin-gothic;
+    src: url(../font/franklin-gothic.ttf);
 }
 @font-face {
     font-family: Adobe-Caslon;
@@ -32,37 +36,44 @@
     src: url(../font/savoy.ttf);
 }
 @font-face {
-    font-family: franklin-gothic;
-    src: url(../font/franklin-gothic.ttf);
+    font-family: savoy-bold;
+    src: url(../font/savoy-bold.ttf);
 }
-@font-face {
+
+/** Unused Fonts **/
+/* @font-face {
     font-family: Avenir-UltraLight;
     src: url(../font/Avenir-UltraLight.ttf);
-}
+} */
+/* @font-face {
+    font-family: AvenirLTStd-Light;
+    src: url(../font/AvenirLTStd-Light.otf);
+} */
+/* @font-face {
+    font-family: AvenirLTStd-Roman;
+    src: url(../font/AvenirLTStd-Roman.otf);
+} */
+/* @font-face {
+    font-family: Avenir-Roman;
+    src: url(../font/Avenir-Roman.ttf);
+} */
+/* @font-face {
+    font-family: AvenirLTStd-Book;
+    src: url(../font/AvenirLTStd-Book.otf);
+} */
+/* @font-face {
+    font-family: Avenir-Book;
+    src: url(../font/Avenir-Book.ttf);
+} */
+/* @font-face {
+    font-family: Avenir-Light;
+    src: url(../font/Avenir-Light.ttf);
+} */
 /* @font-face {
     font-family: big-caslon;
     src: url(../font/big-caslon.ttf);
 } */
-@font-face {
-    font-family: AvenirLTStd-Light;
-    src: url(../font/AvenirLTStd-Light.otf);
-}
-@font-face {
-    font-family: AvenirLTStd-Roman;
-    src: url(../font/AvenirLTStd-Roman.otf);
-}
-@font-face {
-    font-family: Avenir-Roman;
-    src: url(../font/Avenir-Roman.ttf);
-}
-@font-face {
-    font-family: AvenirLTStd-Book;
-    src: url(../font/AvenirLTStd-Book.otf);
-}
-@font-face {
-    font-family: Avenir-Book;
-    src: url(../font/Avenir-Book.ttf);
-}
+
 /* @font-face {
     font-family: Avenir-Book;
     src: url(../font/Avenir-Book.ttf);
@@ -72,19 +83,15 @@
     src: url(../font/avenir_thin.ttf);
 } */
 
-@font-face {
-    font-family: savoy-bold;
-    src: url(../font/savoy-bold.ttf);
-}
 
 body {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     letter-spacing: 0.03em;
     line-height: 1.6em;
     color: #333;
 }
 h1,h2,h3,h4,h5,h6,p,a{
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     color: #303030;
 }
 h2 {
@@ -107,7 +114,7 @@ p{
     letter-spacing: 0px;
     line-height: 1.6em;
     margin-bottom: 25px;
-    color: var(--gray);
+    color: var(--color__gray);
 }
 
 a {
@@ -128,7 +135,7 @@ ul{
 /* James Changes */
 .event-heading {
     font-size: 29px;
-    font-family: "proxy-nova", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var( --font__proxy );
     line-height: 1;
 }
 .first-benefit_wrapper label {
@@ -330,13 +337,13 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     margin-top: 50px;
 }
 .arti_heading h4 a{
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
 }
 .arti_sub_heading strong {
     font-weight: normal;
 }
 .latestArticle_Heading h1 {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     margin-bottom: 0px;
 }
 .arti_heading h4 a:hover{
@@ -362,7 +369,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     font-weight: bold;
 }
 .arti_heading h4 a strong {
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
    /*display: inline-block;
    */
    /* === CHANGED 6.12 === */
@@ -399,7 +406,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
    /*margin-top: 13px;
    */
    /* === CHANGED === */
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
    /*text-transform: uppercase;
    */
    /* ======== ADDED 6.1 ======== */
@@ -427,7 +434,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     padding: 30px 10px;
 }
 .signup4mail_Left h3 {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     padding-left: 38px;
     padding-bottom: 8px;
     padding-top: 13px;
@@ -436,7 +443,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 .support_subheadings h3 {
     text-transform: uppercase;
     font-size: 29px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     margin-top: 23px;
     font-weight: 600;
     text-align: right;
@@ -448,7 +455,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .support_content p {
     font-size: 18px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     margin: auto;
    /* === ADDED 6.9 === */
 }
@@ -476,13 +483,13 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .home_mentions ul li {
     float: left;
-    font-family: savoy;
+    font-family: var( --font__savoy );
     font-size: 20px;
     margin-bottom: 10px;
     position: relative;
 }
 .home_mentions ul li a {
-    font-family: savoy;
+    font-family: var( --font__savoy );
     color: #333;
 }
 .issues_list_ul.row {
@@ -503,7 +510,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .home_mentions ul li.more_link a {
     color: #8C00FF;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     margin-left: 7px;
 }
 .issues_list_ul li {
@@ -524,7 +531,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     font-style: normal;
     color: #8C00FF;
     font-size: 20px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -533,7 +540,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .latestArticle_Heading p {
     font-size: 14px;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
 }
 .footerNewLogo img {
     width: 145px;
@@ -551,7 +558,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     float: left;
     display: inline-block;
     font-size: 22px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     font-weight: 500;
     margin-bottom: 0;
     width: 280px;
@@ -588,14 +595,14 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 #footerFullMenu li {
     font-size: 14px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
 }
 .copyrightSpan {
     font-size: 12px;
     color: #fff;
     float: right;
     font-weight: 500;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     padding-right: 40px;
 }
 .nextIssues {
@@ -645,7 +652,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     padding: 10px;
     font-size: 20px;
     font-size: 21px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     padding: 10px 28px;
 }
 .searchPage_Form_Button {
@@ -830,7 +837,7 @@ section.footer_outer .container-fluid {
 }
 .newsletter .news_l input[type="submit"]{
     font-size: 14px !important;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
 }
 .but61{
     height: 48px;
@@ -915,7 +922,7 @@ section.footer_outer .container-fluid {
     font-size: 18px;
     color: #303030;
     font-weight: 400;
-    font-family: proxy-nova !important;
+    font-family: var( --font__proxy ) !important;
 }
 .page-template-subscribe .constrained.new::after {
     content: "(new!)";
@@ -930,7 +937,7 @@ section.footer_outer .container-fluid {
 }
 .form01 h4 {
     font-size: 30px;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
 }
 .form01 form {
 }
@@ -964,25 +971,25 @@ section.footer_outer .container-fluid {
     margin: 0 auto 25px !important;
     background: #f6f6f6 !important;
     border: 1px solid #f6f6f6 !important;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
 }
 input.unfocus_email::placeholder {
     font-size: 0;
 }
 input::placeholder {
    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--gray);
-   font-family: proxy-nova;
+    color: var(--color__gray);
+   font-family: var( --font__proxy );
 }
 input:-ms-input-placeholder {
    /* Internet Explorer 10-11 */
-    color: var(--gray);
-   font-family: proxy-nova;
+    color: var(--color__gray);
+   font-family: var( --font__proxy );
 }
 input::-ms-input-placeholder {
    /* Microsoft Edge */
-    color: var(--gray);
-   font-family: proxy-nova;
+    color: var(--color__gray);
+   font-family: var( --font__proxy );
 }
 .radio02{
     display: flex;
@@ -1010,7 +1017,7 @@ input::-ms-input-placeholder {
 }
 .com_heading h3 {
     font-size: 36px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
    /*text-transform: capitalize;
    */
    /*=== CHANGED 6.19 === */
@@ -1024,7 +1031,7 @@ input::-ms-input-placeholder {
 .com_heading h3 b {
     font-size: 40px;
     font-weight: bold;
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
 }
 .single-mention .com_heading h3 b{
     font-size: 50px;
@@ -1038,7 +1045,7 @@ input::-ms-input-placeholder {
 .com_heading span {
     font-size: 30px;
     top: 5px;
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
 }
 .single-mention .com_heading span {
    /*=== ADDED 6.18 === */
@@ -1119,8 +1126,8 @@ input::-ms-input-placeholder {
     width: 450px;
     font-size: 18px;
     background: transparent;
-    font-family: Avenir-Next-Thin;
-    border-bottom: 1px solid var(--gray);
+    font-family: var( --font__body );
+    border-bottom: 1px solid var(--color__gray);
    ;
 }
 .f_three{
@@ -1140,13 +1147,13 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     font-size: 32px;
 }
 .but62{
-    border: 1px solid var(--gray);
+    border: 1px solid var(--color__gray);
     text-transform: capitalize;
     padding: 6px 45px;
     border-radius: 13px;
     cursor: pointer;
     font-size: 20px;
-    color: var(--gray);
+    color: var(--color__gray);
 }
 #mc_embed_signup form{
     padding: 5px 0 5px 0px !important;
@@ -1165,7 +1172,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     padding-right: 20px !important;
     border: 1px solid !important;
     border-radius: 9px !important;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
 }
 #mc-embedded-subscribe ~ .mce_inline_error {
     position: absolute;
@@ -1183,13 +1190,13 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     left: 0 !important;
 }
 .news_l .but62, {
-    border: 1px solid var(--gray) !important;
+    border: 1px solid var(--color__gray) !important;
     text-transform: capitalize;
     padding: 6px 45px !important;
     border-radius: 13px !important;
     cursor: pointer !important;
     font-size: 20px !important;
-    color: var(--gray) !important;
+    color: var(--color__gray) !important;
     height: auto !important;
     width: auto !important;
     background: transparent !important;
@@ -1212,7 +1219,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     transition: all 0.3s ease-out !important;
     height: unset !important;
     font-weight: 400 !important;
-    font-family: Avenir-Next-Thin !important;
+    font-family: var( --font__body ) !important;
     box-shadow: none !important;
     border-radius: 9px !important;
 }
@@ -1282,7 +1289,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 }
 .ab_part_img_abu div label {
     font-size: 19px !important;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
     color: #fff;
 }
 .ab_part_img_inner > div input[type="radio"] {
@@ -1570,7 +1577,7 @@ button.search-submit:hover {
     .nextIssues::after {
         content: "More Issues";
         font-size: 32px;
-        font-family: Avenir-Next-Thin;
+        font-family: var( --font__body );
         position: relative;
         top: 6px;
         left: -20px;
@@ -1591,7 +1598,7 @@ button.search-submit:hover {
    }
     .more_link a {
         color: #8C00FF;
-        font-family: Avenir-Next-Thin;
+        font-family: var( --font__body );
         margin-left: 7px;
         font-size: 30px;
         margin: auto;
@@ -1772,7 +1779,7 @@ button.search-submit:hover {
     color: #69A7C2 !important;
     margin-top: 20px !important;
     display: block !important;
-    font-family: proxy-nova !important;
+    font-family: var( --font__proxy ) !important;
 }
 .footer_outer:after {
     background-image: url(/wp-content/uploads/2020/04/the_drift_arrow.png);
@@ -1833,7 +1840,7 @@ button.search-submit:hover {
     font-size: 15px !important;
     text-transform: uppercase;
     font-style: italic;
-    font-family: Avenir-Next-Thin !important;
+    font-family: var( --font__body ) !important;
 }
 .more_from_issue {
     padding-top: 75px;
@@ -1899,7 +1906,7 @@ section.mission_outer {
     display: block;
     margin-top: 0px;
     font-weight: normal;
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -1917,10 +1924,10 @@ section.mission_outer {
 }
 */
 .more_from_issue .com_heading01 h4 b a {
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
 }
 .issue_container .com_heading01 h4 b a {
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
     font-weight: 600;
 }
 .issue_container .com_heading01 h4 b a:hover {
@@ -2107,7 +2114,7 @@ section.mission_outer {
     margin-bottom: 5px;
 }
 .search-term-list .list-feature-info h2 a:first-child {
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
     font-weight: 600;
 }
 .search-term-list .list-feature-info h3 {
@@ -2120,7 +2127,7 @@ section.mission_outer {
     text-transform: capitalize;
 }
 .search-term-list .list-feature-info h3 a {
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     text-transform: uppercase;
     font-weight: normal;
     font-size: 18px;
@@ -2159,7 +2166,7 @@ section.mission_outer {
 }
 .search_container h1.page-title {
     font-size: 36px;
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
     font-weight: 600;
     padding-bottom: 30px;
     margin-bottom: 0;
@@ -2168,7 +2175,7 @@ section.mission_outer {
 }
 .tax-authors .search_container h1.page-title span.author_desc {
     font-size: 20px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     display: inline;
     position: relative;
     margin-left: 10px;
@@ -2186,7 +2193,7 @@ section.mission_outer {
     color: inherit;
 }
 .about_edtitor b {
-    font-family: 'franklin-gothic' !important;
+    font-family: var( --font__sans ) !important;
 }
 .share_text_container p strong {
     font-family: inherit !important;
@@ -2207,7 +2214,7 @@ section.mission_outer {
 .issue_rg ul li a {
     display: inline-block !important;
     border: none !important;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: 20px !important;
@@ -2227,7 +2234,7 @@ section.mission_outer {
     color: #2A8A9D !important;
 }
 .issue_rg ul li a:first-child {
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
 }
 .single-issue .com_heading01 {
     margin-bottom: 20px;
@@ -2254,7 +2261,7 @@ section.mission_outer {
     font-weight: bold;
     position: relative;
     left: 5px;
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
 }
 .bredcrum01 {
     margin-top: -15px;
@@ -2325,19 +2332,19 @@ section.mission_outer {
     color: #4D788C !important;
 }
 #ajaxsearchlite1 .probox .proinput input::-webkit-input-placeholder {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     color: #909090;
 }
 #ajaxsearchlite1 .probox .proinput input::-moz-placeholder {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     color: #909090;
 }
 #ajaxsearchlite1 .probox .proinput input:-ms-input-placeholder {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     color: #909090;
 }
 #ajaxsearchlite1 .probox .proinput input:-moz-placeholder {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     color: #909090;
 }
 .f_logo > p {
@@ -2441,7 +2448,7 @@ label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
     color: #07dbdb !important;
 }
 .about_r h3 {
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     font-size: 28px;
 }
 .about_r h3 b {
@@ -2449,14 +2456,14 @@ label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
     font-weight: bold;
 }
 .article_editor a {
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     text-transform: uppercase;
     font-weight: normal;
 }
 .single-mention .contact01 p {
     line-height: 1.4em;
     font-size: 16px;
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     font-weight: normal;
 }
 div.asl_r.vertical {
@@ -2485,7 +2492,7 @@ div.asl_m .probox .proclose svg {
     font-size: 14px !important;
     text-shadow: none !important;
     color: #303030 !important;
-    font-family: Avenir-Next-Thin !important;
+    font-family: var( --font__body ) !important;
 }
 div.asl_m .probox .proloading {
     display: none !important;
@@ -2510,7 +2517,7 @@ div.asl_w .probox .promagnifier .innericon svg {
     color: #303030 !important;
 }
 .arti_sub_heading a {
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     font-weight: normal;
     font-size: 18px;
     text-transform: uppercase;
@@ -2556,7 +2563,7 @@ div.asl_w .probox .promagnifier .innericon svg {
     display: none;
 }
 .single-post .mission b, .single-post .mission strong {
-    font-family: savoy-bold;
+    font-family: var( --font__savoy );
     font-weight: bold;
 }
 .wp-pagenavi {
@@ -2576,12 +2583,12 @@ div.asl_w .probox .promagnifier .innericon svg {
     margin: 5px 5px 0px 0px;
 }
 .single-post .article_editor p {
-    font-family: franklin-gothic;
+    font-family: var( --font__sans );
     text-transform: uppercase;
     padding-top: 50px;
 }
 .single-post .article_editor p b {
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     text-transform: uppercase;
 }
 .search-term-list .list-feature-info {
@@ -2600,7 +2607,7 @@ div.asl_w .probox .promagnifier .innericon svg {
     font-size: 14px;
     padding-bottom: 60px;
     font-weight: 600;
-    font-family: proxy-nova;
+    font-family: var( --font__proxy );
     color: #ccc;
 }
 .article_editor {
@@ -2656,7 +2663,7 @@ div.asl_w .probox .promagnifier .innericon svg {
     text-transform: uppercase;
     color: #303030;
     display: block;
-    font-family: 'Avenir-Next-Thin';
+    font-family: 'var( --font__body )';
     font-size: 16px;
 }
 .desktop_new_menu .desktop-logo img {
@@ -2692,7 +2699,7 @@ h1.issue_heading {
    /*font-size: 14px;
     color: #ccc;
    */
-   /*font-family: 'proxy-nova';
+   /*font-family: proxy-nova;
    /* ========= CHANGED 6.2 ======== */
     text-transform: uppercase;
     font-size: 27px;
@@ -2721,7 +2728,7 @@ h1.issue_heading span {
    /* ============== ADDED 6/3 ========= */
 }
 .issue_date {
-    font-family: 'proxy-nova';
+    font-family: proxy-nova;
     font-size: 14px;
     font-weight: 600;
     color: #ccc;
@@ -2813,7 +2820,7 @@ h1.issue_heading span {
 @media (max-width: 1024px) {
     .support_heading h3 {
        /* ======== ADDED 6.9 ======== */
-        font-family: Avenir-Next-Thin;
+        font-family: var( --font__body );
         font-size: 40px;
         padding-left: 0;
         text-align: left;
@@ -3184,7 +3191,7 @@ h1.issue_heading span {
        /*text-transform: uppercase;
        */
        /* === CHANGED 6.9 === */
-        font-family: Avenir-Next-Thin;
+        font-family: var( --font__body );
    }
     .td-overlay-box li.current-menu-item a {
        /*color: #07dbdb;
@@ -3881,7 +3888,7 @@ h1.issue_heading span {
     transition: background-color 5000s ease-in-out 0s;
 }
 .page-template-mentions .men_content p, .page-template-mentions .ab_part_mobile p{
-   font-family:'franklin-gothic';
+   font-family:var( --font__sans );
     font-size: 18px
 }
 .page-template-mentions .ab_part_mobile, .page-template-mentions .about_l span.subtitle-mention{
@@ -4216,7 +4223,7 @@ h1.issue_heading span {
 }
 /* 515 Media changes */
 .page-template-issues .com_heading01 h4 + .authors a {
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     font-size: 16px;
     text-transform: uppercase;
     font-weight: normal;
@@ -4231,7 +4238,7 @@ h1.issue_heading span {
    content:none;
 }
 .single-issue .com_heading01 h4 + .authors a {
-    font-family: 'franklin-gothic';
+    font-family: var( --font__sans );
     font-size: 16px;
     text-transform: uppercase;
     font-weight: normal;
@@ -4271,13 +4278,13 @@ h1.issue_heading span {
     height: 50vh !important;
 }
 .postid-2151 .boxzilla-content .serif-hed {
-    font-family: Adobe-Caslon;
+    font-family: var( --font__serif );
     font-size: 26px;
     line-height: 26px;
 }
 .postid-2151 .boxzilla-content .sans-serif-hed {
     font-size: 22px;
-    font-family: Avenir-Next-Thin;
+    font-family: var( --font__body );
     font-weight: 500;
     line-height: 26px;
 }
@@ -4299,13 +4306,13 @@ h1.issue_heading span {
 }
 @media(min-width: 768px){
     .postid-2151 .boxzilla-content .serif-hed {
-        font-family: Adobe-Caslon;
+        font-family: var( --font__serif );
         font-size: 32px;
         line-height: 32px;
    }
     .postid-2151 .boxzilla-content .sans-serif-hed {
         font-size: 28px;
-        font-family: Avenir-Next-Thin;
+        font-family: var( --font__body );
         font-weight: 500;
         line-height: 32px;
    }
