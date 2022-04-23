@@ -12,6 +12,10 @@
 }
 
 @font-face {
+    font-family: Avenir-Next-Thin;
+    src: url(../font/avenir-next-thin.ttf);
+}
+@font-face {
     font-family: Avenir-Light;
     src: url(../font/Avenir-Light.ttf);
 }
@@ -35,10 +39,10 @@
     font-family: Avenir-UltraLight;
     src: url(../font/Avenir-UltraLight.ttf);
 }
-@font-face {
+/* @font-face {
     font-family: big-caslon;
     src: url(../font/big-caslon.ttf);
-}
+} */
 @font-face {
     font-family: AvenirLTStd-Light;
     src: url(../font/AvenirLTStd-Light.otf);
@@ -59,20 +63,17 @@
     font-family: Avenir-Book;
     src: url(../font/Avenir-Book.ttf);
 }
-@font-face {
+/* @font-face {
     font-family: Avenir-Book;
     src: url(../font/Avenir-Book.ttf);
-}
-@font-face {
+} */
+/* @font-face {
     font-family: Avenir-Thin;
     src: url(../font/avenir_thin.ttf);
-}
+} */
+
 @font-face {
-    font-family: Avenir-Next-Thin;
-    src: url(../font/avenir-next-thin.ttf);
-}
-@font-face {
-    font-family: savoy-bold, savoy;
+    font-family: savoy-bold;
     src: url(../font/savoy-bold.ttf);
 }
 
