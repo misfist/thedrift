@@ -10,6 +10,10 @@
     --color__gray-dark: #333;
     --color__gray-light: #909090;
     --color__gray-lighter: #f6f6f6;
+    --color__link: var( --color__primary );
+    --color__link-alt: var( --color__gray-dark );
+    --color__link-hover: darken( var( --color__link ), 15% );
+    --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
     --color__background: #f0f0f0;
 	--color__background-field: #909090;
     --color__border: #f6f6f6;
@@ -696,7 +700,7 @@ section.footer_outer .container-fluid {
 .page-template-coming_soon #mc_embed_signup .mc-field-group input[type="submit"] {
     background-color: transparent !important;
     border-color: var( --color__black ) !important;
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
     position: relative;
     z-index: 999;
 }
@@ -720,15 +724,16 @@ section.footer_outer .container-fluid {
     margin-bottom: 3px;
 }
 .drift_container h6 a {
-    color: #4D788C;
+    color: var( --color__link );
     text-decoration: underline !important;
 }
 .drift_container h6 a:hover {
-    color: #4D788C;
+    color: var( --color__link-hover );
 }
-.drift_container h6 b {
+.drift_container h6 b,
+.drift_container h6 strong {
     text-transform: uppercase;
-    color: #4D788C;
+    color: var( --color__primary );
     font-weight: 900;
 }
 .drift_title {
@@ -766,7 +771,8 @@ section.footer_outer .container-fluid {
     font-size: 13px;
 }
 
-.social_link li, .social_link li a{
+.social_link li, 
+.social_link li a {
     font-size: 25px;
     color: var( --color__black );
 }
