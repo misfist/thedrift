@@ -459,6 +459,12 @@ function twentyseventeen_scripts()
     // Theme stylesheet.
     wp_enqueue_style('twentyseventeen-style', get_stylesheet_uri(), array(), '20190507');
 
+    wp_enqueue_style( 'drift-min', get_theme_file_uri( '/assets/css/all.min.css' ), array(), time() );
+    wp_enqueue_style( 'aos', get_theme_file_uri( '/assets/css/aos.css' ), array(), time() );
+    wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), time() );
+    wp_enqueue_style( 'owl', get_theme_file_uri( '/assets/css/owl.carousel.min.css' ), array(), time() );
+    wp_enqueue_style( 'drift', get_theme_file_uri( '/assets/css/custom_78.css' ), array( 'bootstrap' ), time() );
+
     wp_register_script( 'drift-wpfs', get_theme_file_uri( '/assets/js/wpfs-script.js' ), array( 'jquery' ), time(), true );
     
     global $post;
