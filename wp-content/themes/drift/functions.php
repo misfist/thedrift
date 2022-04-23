@@ -280,36 +280,6 @@ function twentyseventeen_content_width()
 add_action('template_redirect', 'twentyseventeen_content_width', 0);
 
 /**
- * Register custom fonts.
- */
-function twentyseventeen_fonts_url()
-{
-    $fonts_url = '';
-
-    /*
-     * translators: If there are characters in your language that are not supported
-     * by Libre Franklin, translate this to 'off'. Do not translate into your own language.
-     */
-    $libre_franklin = _x('on', 'Libre Franklin font: on or off', 'twentyseventeen');
-
-    if ('off' !== $libre_franklin) {
-        $font_families = array();
-
-        $font_families[] = 'Libre Franklin:300,300i,400,400i,600,600i,800,800i';
-
-        $query_args = array(
-            'family'  => urlencode(implode('|', $font_families)),
-            'subset'  => urlencode('latin,latin-ext'),
-            'display' => urlencode('fallback'),
-        );
-
-        $fonts_url = add_query_arg($query_args, 'https://fonts.googleapis.com/css');
-    }
-
-    return esc_url_raw($fonts_url);
-}
-
-/**
  * Add preconnect for Google Fonts.
  *
  * @since Twenty Seventeen 1.0
@@ -447,6 +417,36 @@ function twentyseventeen_colors_css_wrap()
 	<?php
 }
 add_action('wp_head', 'twentyseventeen_colors_css_wrap');
+
+/**
+ * Register custom fonts.
+ */
+function twentyseventeen_fonts_url() {
+	$fonts_url = '';
+
+	/*
+	 * translators: If there are characters in your language that are not supported
+	 * by Libre Franklin, translate this to 'off'. Do not translate into your own language.
+	 */
+	$libre_franklin = _x( 'off', 'Libre Franklin font: on or off', 'twentyseventeen' );
+
+	if ( 'off' !== $libre_franklin ) {
+		$font_families = array();
+
+		$font_families[] = 'Libre+Franklin:wght@100;300;700';
+		$font_families[] = 'Lusitana:wght@400;700';
+		$font_families[] = 'Montserrat:wght@100;300';
+
+		$query_args = array(
+			'family'  => implode( '&family=', $font_families ),
+			'display' => 'swap',
+		);
+
+		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css2' );
+	}
+
+	return esc_url_raw( $fonts_url );
+}
 
 /**
  * Enqueues scripts and styles.
