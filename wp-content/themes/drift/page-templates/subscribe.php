@@ -56,37 +56,6 @@ endif; ?>
 </div>
 </section>
 
-<style type="text/css">
-/*.page-template-subscribe .kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
-    background: url(<?php echo $page_imageURL; ?>) !important;
-    }*/
-	#wpfs-billing-address-panel--MGJjOTB > div:last-child, #wpfs-billing-address-panel--MGJjOTB > div:nth-child(1)
-	{
-		display: none;
-	}
-	.kudossubscribe form .wpfs-form-actions a {
-    display: none;
-}
-label[for="wpfs-card-holder-name--MGJjOTB"]::before {
-    content: "Full name";
-    font-size: 18px !important;
-}
-/*label[for="wpfs-plan--MGJjOTB--1"]::before {
-    content: "Lifetime $300";
-    font-size: 18px !important;
-}*/
-label[for="wpfs-billing-address-line-1--MGJjOTB"]::before {
-    content: "Billing address";
-    font-size: 18px !important;
-}
-label[for="wpfs-card-holder-name--MGJjOTB"], label[for="wpfs-billing-address-line-1--MGJjOTB"]{
-    font-size: 0px !important;
-}
-label[for='wpfs-same-billing-and-shipping-address--MGJjOTB']:before {
-    background: #909090 !important;
-    box-shadow: none !important;
-}
-</style>
 <?php
 get_footer();
 ?>
