@@ -16,9 +16,9 @@ if( $image = get_the_post_thumbnail_url( get_the_ID(), 'full' ) ) :
 endif; ?>
 
 <div class="the-drift-logo-mb" style="display: none;">
-    <a href="<?php echo home_url(); ?>">
-      <img src="<?php echo home_url(); ?>/wp-content/uploads/2020/05/Logo.png">
-    </a>
+	<a href="<?php echo home_url(); ?>">
+	  <img src="<?php echo home_url(); ?>/wp-content/uploads/2020/05/Logo.png">
+	</a>
 </div>
 <section>
 	<div class="container-fluid">
