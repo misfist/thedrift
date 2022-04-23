@@ -460,9 +460,9 @@ if ( $pageID != 6 && $pageID != 8 ) {
 					<source
 					media="(min-width: 1024px)"
 					srcset="
-						<?php echo get_theme_file_uri() . '/assets/images/drift_logo_large_1x.png'; ?> 1x, 
-						<?php echo get_theme_file_uri() . '/assets/images/drift_logo_large_2x.png'; ?> 2x, 
-						<?php echo get_theme_file_uri() . '/assets/images/drift_logo_large_3x.png'; ?> 3x"
+						<?php echo get_stylesheet_directory_uri() . '/assets/images/drift_logo_large_1x.png'; ?> 1x, 
+						<?php echo get_stylesheet_directory_uri() . '/assets/images/drift_logo_large_2x.png'; ?> 2x, 
+						<?php echo get_stylesheet_directory_uri() . '/assets/images/drift_logo_large_3x.png'; ?> 3x"
 					type="image/png" >
 					<img
 					src="<?php _( $logo ); ?>"
@@ -492,9 +492,9 @@ if ( $pageID != 6 && $pageID != 8 ) {
 						<source
 						media="(max-width: 1023px)"
 						srcset="
-							<?php echo get_theme_file_uri() . '/assets/images/drift_logo_mobile_1x.png'; ?> 1x, 
-							<?php echo get_theme_file_uri() . '/assets/images/drift_logo_mobile_2x.png'; ?> 2x, 
-							<?php echo get_theme_file_uri() . '/assets/images/drift_logo_mobile_3x.png'; ?> 3x"
+							<?php echo get_stylesheet_directory_uri() . '/assets/images/drift_logo_mobile_1x.png'; ?> 1x, 
+							<?php echo get_stylesheet_directory_uri() . '/assets/images/drift_logo_mobile_2x.png'; ?> 2x, 
+							<?php echo get_stylesheet_directory_uri() . '/assets/images/drift_logo_mobile_3x.png'; ?> 3x"
 						type="image/png" >
 						<img
 						src="<?php _( $logo ); ?>"
