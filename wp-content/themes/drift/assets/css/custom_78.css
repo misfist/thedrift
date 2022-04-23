@@ -88,11 +88,11 @@ body {
     font-family: var( --font__body );
     letter-spacing: 0.03em;
     line-height: 1.6em;
-    color: #333;
+    color: var( --color__gray-dark );
 }
 h1,h2,h3,h4,h5,h6,p,a{
     font-family: var( --font__body );
-    color: #303030;
+    color: var( --color__gray-dark );
 }
 h2 {
     font-size: 45px;
@@ -109,23 +109,23 @@ h3 {
     padding: 10px 0 25px;
     text-align: left;
 }
-p{
+p {
     font-size: 19px;
     letter-spacing: 0px;
     line-height: 1.6em;
     margin-bottom: 25px;
-    color: var(--color__gray);
+    color: var( --color__gray-dark );
 }
 
 a {
     text-decoration: none!important;
 }
-img{
+img {
     width: auto;
     max-width: 100%;
     height: auto;
 }
-ul{
+ul {
     text-decoration: none;
    list-style: none;
     margin: 0px;
@@ -170,7 +170,7 @@ ul{
     text-align: center !important;
     font-size: 20px !important;
     border: 0 !important;
-    border-bottom: 1px solid #000 !important;
+    border-bottom: 1px solid var( --color__black ) !important;
     padding: 0;
     line-height: 2.3rem !important;
 }
@@ -184,7 +184,7 @@ ul{
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 9px;
-    border: 1px solid #000;
+    border: 1px solid var( --color__black );
 }
 .first-benefit .gform_confirmation_message {
     background-color: #aff7dfe8;
@@ -192,11 +192,11 @@ ul{
 }
 /* {
    font-size: 20px !important;
-    border: 0px solid #000 !important;
+    border: 0px solid var( --color__black ) !important;
     border-bottom-color: rgb(0, 0, 0);
     border-bottom-style: solid;
     border-bottom-width: 0px;
-    border-bottom: 1px solid #000 !important;
+    border-bottom: 1px solid var( --color__black ) !important;
 }
 */
 form.search-form {
@@ -232,7 +232,7 @@ form.search-form {
     display: block;
     font-size: 16px;
     padding: 25px 15px;
-    color: #333;
+    color: var( --color__gray-dark );
     position: relative;
     text-transform: uppercase;
 }
@@ -347,10 +347,10 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     margin-bottom: 0px;
 }
 .arti_heading h4 a:hover{
-    color: #303030;
+    color: var( --color__gray-dark );
 }
 .arti_heading a:hover {
-    color: #303030;
+    color: var( --color__gray-dark );
 }
 .mt_wrap {
     margin-top: 30px;
@@ -490,7 +490,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .home_mentions ul li a {
     font-family: var( --font__savoy );
-    color: #333;
+    color: var( --color__gray-dark );
 }
 .issues_list_ul.row {
     width: 100%;
@@ -509,7 +509,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     font-weight: 700;
 }
 .home_mentions ul li.more_link a {
-    color: #8C00FF;
+    color: var( --color__secondary );
     font-family: var( --font__body );
     margin-left: 7px;
 }
@@ -529,7 +529,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 .home_mentions ul li::after {
     content: "|";
     font-style: normal;
-    color: #8C00FF;
+    color: var( --color__secondary );
     font-size: 20px;
     font-family: var( --font__body );
     margin-left: 8px;
@@ -579,11 +579,11 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     width: 380px !important;
 }
 .footerFullMenu {
-    background: #000;
+    background: var( --color__black );
     overflow: hidden;
 }
 #footerFullMenu li a {
-    color: #fff;
+    color: var( --color__white );
     text-transform: uppercase;
 }
 #footerFullMenu {
@@ -599,7 +599,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .copyrightSpan {
     font-size: 12px;
-    color: #fff;
+    color: var( --color__white );
     float: right;
     font-weight: 500;
     font-family: var( --font__body );
@@ -634,7 +634,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 .searchPage_Form_Box {
     width: 100%;
     height: 55px;
-    border: 1px solid #848484;
+    border: 1px solid var( --color__border );
     border-radius: 2px;
     padding-left: 30px;
     float: left;
@@ -664,12 +664,12 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
 }
 .searchPage_Form_Box:focus {
     outline: none;
-    border-color: #000;
+    border-color: var( --color__black );
 }
 .searchPage_Form_Button:focus {
     outline: none;
 }
-@media(min-width: 768px){
+@media(min-width: 768px) {
     .navbar-header{
        display: none;
    }
@@ -701,14 +701,14 @@ section.footer_outer .container-fluid {
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input[type="submit"] {
     background-color: transparent !important;
-    border-color: #000 !important;
+    border-color: var( --color__black ) !important;
     color: #4D788C !important;
     position: relative;
     z-index: 999;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input[type="submit"]:hover {
     background-color: #cbcbcb !important;
-    color: #000 !important;
+    color: var( --color__black ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input {
     background-color: transparent !important;
@@ -717,7 +717,7 @@ section.footer_outer .container-fluid {
 .drift_container h6{
     font-size: 25px;
     font-weight: 300;
-    color: #000;
+    color: var( --color__black );
     text-align: center;
     margin-bottom: 0;
 }
@@ -750,7 +750,7 @@ section.footer_outer .container-fluid {
     width: 100%;
 }
 .page-template-coming_soon #mc_embed_signup #mce-error-response {
-    color: #b70404;
+    color: var( --color__red );
     text-align: center;
     font-size: 13px;
     padding-top: 0;
@@ -811,45 +811,45 @@ section.footer_outer .container-fluid {
     padding-bottom: 4px !important;
 }
 .newsletter p{
-    color: #000;
+    color: var( --color__black );
     font-size: 25px;
     margin: 0 0 13px;
     margin-bottom: 0;
     text-align: center;
 }
-.news_l label{
+.news_l label {
    display: none !important;
 }
-.news_l input{
+.news_l input {
     width: 400px !important;
     font-size: 20px !important;
-    border: 0px solid #000 !important;
-    border-bottom: 1px solid #000 !important;
+    border: 0px solid var( --color__black ) !important;
+    border-bottom: 1px solid var( --color__black ) !important;
 }
 .footer_inner .news_l input{
     width: 550px !important;
 }
-.newsletter .news_l input[type="email"]{
+.newsletter .news_l input[type="email"] {
     font-size: 18px !important;
     border-radius: 0px !important;
     margin-right: 0 !important;
     padding: 10px 20px !important;
 }
-.newsletter .news_l input[type="submit"]{
+.newsletter .news_l input[type="submit"] {
     font-size: 14px !important;
     font-family: var( --font__proxy );
 }
-.but61{
+.but61 {
     height: 48px;
     display: inline-block;
     padding: 0 15px;
     line-height: 42px;
     text-transform: capitalize;
     font-size: 18px;
-    background: #636363;
-    color: #fff !important;
+    background: var( --color__gray );
+    color: var( --color__white ) !important;
     cursor: pointer;
-    border: 2px solid #636363;
+    border: 2px solid var( --color__gray );
 }
 .but61:hover{
     background: #000;
@@ -861,6 +861,8 @@ section.footer_outer .container-fluid {
     box-shadow: 0px 0px 0px 1px var(--black) !important;
 }
 .ab_part{
+    background: var( --color__black );
+    border: 2px solid var( --color__black );
 }
 .ab_part_l {
     width: 50%;
@@ -876,6 +878,7 @@ section.footer_outer .container-fluid {
     border-color: var(--secondary-color);
     box-shadow: 0px 0px 0px 1px var(--black) !important;
 }
+
 .ab_part_linner{
     width: calc(100% + 30px);
     margin-left: -15px;
@@ -1078,7 +1081,7 @@ input::-ms-input-placeholder {
 .ab_part_img_inner.ba_part02 div input{
     width: 50px;
     height: 20px;
-    background: #fff;
+    background: var( --color__white );
 }
 .ab_part_img_inner.ba_part02 div label span{
     width: 100px;
@@ -1127,7 +1130,7 @@ input::-ms-input-placeholder {
     font-size: 18px;
     background: transparent;
     font-family: var( --font__body );
-    border-bottom: 1px solid var(--color__gray);
+    border-bottom: 1px solid var( --color__gray-dark );
    ;
 }
 .f_three{
@@ -1147,13 +1150,13 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     font-size: 32px;
 }
 .but62{
-    border: 1px solid var(--color__gray);
+    border: 1px solid var( --color__gray-dark );
     text-transform: capitalize;
     padding: 6px 45px;
     border-radius: 13px;
     cursor: pointer;
     font-size: 20px;
-    color: var(--color__gray);
+    color: var( --color__gray-dark );
 }
 #mc_embed_signup form{
     padding: 5px 0 5px 0px !important;
@@ -1167,7 +1170,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     padding: 0;
     margin: 0 !important;
     background: transparent !important;
-    color: #636363 !important;
+    color: var( --color__gray ) !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
     border: 1px solid !important;
@@ -1179,7 +1182,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     top: 80%;
     left: 0;
     background-color: transparent !important;
-    color: #b70404 !important;
+    color: var( --color__red ) !important;
     font-weight: bold !important;
     font-size: 13px !important;
     text-align: center;
@@ -1189,14 +1192,14 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     padding: 0 !important;
     left: 0 !important;
 }
-.news_l .but62, {
-    border: 1px solid var(--color__gray) !important;
+.news_l .but62 {
+    border: 1px solid var( --color__gray-dark ) !important;
     text-transform: capitalize;
     padding: 6px 45px !important;
     border-radius: 13px !important;
     cursor: pointer !important;
     font-size: 20px !important;
-    color: var(--color__gray) !important;
+    color: var( --color__gray-dark ) !important;
     height: auto !important;
     width: auto !important;
     background: transparent !important;
@@ -1452,8 +1455,8 @@ button.search-submit {
     text-decoration: none;
 }
 button.search-submit:hover {
-    background-color: #CBCBCB !important;
-    color: #000 !important;
+    background-color: var( --color__gray-light ) !important;
+    color: var( --color__black ) !important;
     border: 1px solid black;
 }
 .openMobMenuIcon {
@@ -1471,6 +1474,7 @@ button.search-submit:hover {
 #myMobileNav {
     overflow-y: hidden;
 }
+
 @media (min-width: 515px) {
     input[id*='search-form'] {
         width: 50%;
@@ -1597,7 +1601,7 @@ button.search-submit:hover {
         margin-bottom: 40px;
    }
     .more_link a {
-        color: #8C00FF;
+        color: var( --color__secondary );
         font-family: var( --font__body );
         margin-left: 7px;
         font-size: 30px;
@@ -1836,7 +1840,7 @@ button.search-submit:hover {
     font-weight: bold;
 }
 .share_text_container p {
-    color: #303030;
+    color: var( --color__gray-dark );
     font-size: 15px !important;
     text-transform: uppercase;
     font-style: italic;
@@ -1931,17 +1935,17 @@ section.mission_outer {
     font-weight: 600;
 }
 .issue_container .com_heading01 h4 b a:hover {
-    color: #303030;
+    color: var( --color__gray-dark );
 }
 .issue_container .com_heading01 p a {
     font-weight: 600;
     font-size: 15px;
 }
 .issue_container .com_heading01 p a:hover {
-    color: #303030 !important;
+    color: var( --color__gray-dark ) !important;
 }
 .issue_container .com_heading01 a:hover {
-    color: #303030;
+    color: var( --color__gray-dark );
 }
 .search-results .wrap {
     max-width: 1200px;
@@ -2252,7 +2256,7 @@ section.mission_outer {
     position: fixed;
     width: 100%;
     z-index: 99999;
-    background: #fff;
+    background: var( --color__white );
     top: 0;
 }
 .mission_inner > :last-child::after {
@@ -2356,7 +2360,7 @@ section.mission_outer {
 }
 #mc_embed_signup .mc-field-group input[type="submit"] {
     margin-left: 30px !important;
-    background-color: #fff !important;
+    background-color: var( --color__white ) !important;
     font-size: 17px !important;
     color: #909090 !important;
     max-height: 34px;
@@ -2383,7 +2387,7 @@ section.mission_outer {
     height: 365px;
 }
 .menu_outer .nav>li.only-for-space a {
-    color: #fff;
+    color: var( --color__white );
     font-size: 0;
 }
 .left-branch-img .branch_img_01 {
@@ -2470,7 +2474,7 @@ div.asl_r.vertical {
     display: none !important;
 }
 div.asl_w {
-    border: 1px solid #303030 !important;
+    border: 1px solid var( --color__gray-dark ) !important;
     border-radius: 0 !important;
     box-shadow: none !important;
 }
@@ -2486,12 +2490,12 @@ div[id*='ajaxsearchlite'].wpdreams_asl_container {
 }
 div.asl_m .probox .proclose svg {
     background-color: transparent !important;
-    fill: #303030 !important;
+    fill: var( --color__gray-dark ) !important;
 }
 #ajaxsearchlite1 .probox .proinput input, div.asl_w .probox .proinput input {
     font-size: 14px !important;
     text-shadow: none !important;
-    color: #303030 !important;
+    color: var( --color__gray-dark ) !important;
     font-family: var( --font__body ) !important;
 }
 div.asl_m .probox .proloading {
@@ -2514,7 +2518,7 @@ div.asl_w .probox .promagnifier .innericon svg {
     margin-bottom: 0;
 }
 .single-post .mission_inner a:hover, .single-post blockquote.link_quote p a:hover {
-    color: #303030 !important;
+    color: var( --color__gray-dark ) !important;
 }
 .arti_sub_heading a {
     font-family: var( --font__sans );
@@ -2523,18 +2527,18 @@ div.asl_w .probox .promagnifier .innericon svg {
     text-transform: uppercase;
 }
 .arti_sub_heading a:hover {
-    color: #303030;
+    color: var( --color__gray-dark );
 }
 .footerNew_middle_inner {
     width: 100%;
     margin: 0 auto;
 }
 .signup4mail_Right #mc_embed_signup .mc-field-group input[type="submit"]:hover, .footerNew_middle #mc_embed_signup .mc-field-group input[type="submit"]:hover {
-    background-color: #CBCBCB !important;
-    color: #000 !important;
+    background-color: var( --color__gray-light ) !important;
+    color: var( --color__black ) !important;
 }
 [id*="mention_"] a:hover b {
-    color: #303030 
+    color: var( --color__gray-dark ) 
    /*!important*/
    ;
 }
@@ -2661,7 +2665,7 @@ div.asl_w .probox .promagnifier .innericon svg {
 }
 .desktop_new_menu ul li a {
     text-transform: uppercase;
-    color: #303030;
+    color: var( --color__gray-dark );
     display: block;
     font-family: 'var( --font__body )';
     font-size: 16px;
@@ -2704,7 +2708,7 @@ h1.issue_heading {
     text-transform: uppercase;
     font-size: 27px;
    /* ============= ADDED 5/28 ========= */
-    color: #000;
+    color: var( --color__black );
    /* ============= ADDED 5/28 ========= */
     font-weight: 600;
 }
@@ -2716,7 +2720,7 @@ h1.issue_heading b {
    /* === CHANGED 6.2 === */
     text-transform: none;
     font-size: 50px;
-    padding-right 10px;
+    padding-right: 10px;
    /* ============== ADDED 6/3 ========= */
 }
 h1.issue_heading span {
@@ -2761,16 +2765,16 @@ h1.issue_heading span {
 .single-post .contact01 .com_heading {
     margin-top: -40px;
 }
+
+
+
+/** Media Queries ***/
 @media (max-width: 1280px) {
     .single-post blockquote {
         right: -175px !important;
         width: 150px !important;
         max-width: 100%;
    }
-   /* .footerNewLogo img{
-        width: 85%;
-   }
-    */
 }
 @media (max-width: 1199px) {
     .desktop_new_menu ul {
@@ -3084,7 +3088,7 @@ h1.issue_heading span {
    }
     .td-site-mobile-header {
         display: block !important;
-        background-color: #fff;
+        background-color: var( --color__white );
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
@@ -3113,7 +3117,7 @@ h1.issue_heading span {
         width: auto;
    }
     .td-mobile-menus span {
-        color: #303030;
+        color: var( --color__gray-dark );
         font-size: 36px;
         display: inline-block;
         text-align: left;
@@ -3143,7 +3147,7 @@ h1.issue_heading span {
         z-index: 999999;
         top: 90px;
         left: 0;
-        background-color: #fff;
+        background-color: var( --color__white );
         overflow-x: hidden;
         transition: 0.5s;
    }
@@ -3180,7 +3184,7 @@ h1.issue_heading span {
        */
         font-size: 20px;
        /* === CHANGED 6.9 === */
-        color: #303030;
+        color: var( --color__gray-dark );
         transition: 0.3s;
         display: inline-block;
         letter-spacing: normal;
@@ -3206,7 +3210,7 @@ h1.issue_heading span {
         right: 15px;
        /* ========= ADDED 5.28 =========== */
         font-size: 46px;
-        color: #303030;
+        color: var( --color__gray-dark );
         text-decoration: none;
    }
     .td-site-mobile-header div[id*='ajaxsearchlite'].wpdreams_asl_container {
@@ -3256,7 +3260,7 @@ h1.issue_heading span {
     #mc_embed_signup .mc-field-group input[type="submit"] {
         margin-left: 20px !important;
    }
-    .page-template-coming_soon .td-site-mobile-header, 
+    .page-template-coming_soon .td-site-mobile-header
    /*removed .page-template-subscribe .td-site-mobile-header */
     {
        /* removed .page-template-donate .td-site-mobile-header*/
@@ -4299,7 +4303,7 @@ h1.issue_heading span {
 }
 /* formatting for Olúfẹ́mi postid-2274 */
 .moreissue_right.postid-2274 .mr-subtitle, .page-template-latest_articles .postid-2274 a.subtitle, body.home .postid-2274 .arti_heading h4 a {
-    font-family: Savoy, serif;
+    font-family: var( --font__savoy );
 }
 .poem-pad {
     padding-left: 30px;
