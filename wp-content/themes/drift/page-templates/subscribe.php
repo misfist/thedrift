@@ -27,10 +27,12 @@ endif; ?>
 		<div class="ab_part_l d-flex">
 			<div class="ab_part_linner kudossubscribe">
 
-				<?php
-                echo do_shortcode('[fullstripe_form name="subscribe" type="inline_subscription"]');
-                ?>
-
+			<?php
+			if ( $form = get_post_meta( get_the_ID(), 'form_name', true ) ) {
+				echo do_shortcode( '[fullstripe_form name="' . $form . '" type="inline_subscription"]' );
+			}
+			?>
+				
 			</div>
 		</div>
 
