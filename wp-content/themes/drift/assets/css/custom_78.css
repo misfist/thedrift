@@ -777,13 +777,13 @@ section.footer_outer .container-fluid {
     color: var( --color__black );
 }
 .social_link li a {
-    color: #4D788C;
+    color: var( --color__link );
 }
 .social_link li:first-child {
     padding-right: 18px;
     line-height: 32px;
 }
-.social_link li a{
+.social_link li a {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -804,7 +804,7 @@ section.footer_outer .container-fluid {
     align-items: center;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
     padding-bottom: 4px !important;
 }
 .newsletter p{
@@ -1844,7 +1844,7 @@ button.search-submit:hover {
     position: relative;
 }
 .single-post .mission_inner a:hover {
-    color: #69a7c2;
+    color: var( --color__link-hover );
 }
 .wpfs-form {
     margin-left: auto;
@@ -2271,7 +2271,7 @@ section.mission_outer {
     border: none !important;
 }
 .issue_rg ul li a:hover {
-    color: #2A8A9D !important;
+    color: var( --color__link-hover ) !important;
 }
 .issue_rg ul li a:first-child {
     font-family: var( --font__serif );
@@ -2360,16 +2360,16 @@ section.mission_outer {
     color: var( --color__background-field ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL::-webkit-input-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL::-moz-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL:-ms-input-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL:-moz-placeholder {
-    color: #4D788C !important;
+    color: var( --color__primary ) !important;
 }
 #ajaxsearchlite1 .probox .proinput input::-webkit-input-placeholder {
     font-family: var( --font__body );
@@ -2475,11 +2475,11 @@ label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
     font-size: 18px;
 }
 .about_r p a.main_link {
-    color: #4D788C;
+    color: var( --color__primary );
     text-decoration: underline !important;
 }
 .about_r p a.main_link:hover {
-    color: #07dbdb !important;
+    color: var( --color__link-hover ) !important;
 }
 .about_r h3 {
     font-family: var( --font__body );
