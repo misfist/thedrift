@@ -2697,12 +2697,12 @@ div.asl_w .probox .promagnifier .innericon svg {
 .page-template-donate .desktop_new_menu {
     /*display: none;*/							/* === CHANGED 6.9 === */
 }
-.page-template-subscribe #tf-hide-mob {
+/* .page-template-subscribe #tf-hide-mob {
     display: block !important;
 }
 .page-template-donate #tf-hide-mob {
     display: block !important;
-}
+} */
 
 h1.issue_heading {
     margin-bottom: 0;
