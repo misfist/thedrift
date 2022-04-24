@@ -455,6 +455,7 @@ function twentyseventeen_scripts() {
 	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), time() );
 	wp_enqueue_style( 'owl', get_theme_file_uri( '/assets/css/owl.carousel.min.css' ), array(), time() );
 	wp_enqueue_style( 'drift', get_theme_file_uri( '/assets/css/custom_78.css' ), array( 'bootstrap' ), time() );
+	wp_enqueue_style( 'drift-header', get_theme_file_uri( '/assets/css/_header.css' ), array( 'drift' ), time() );
 
 	wp_register_script( 'drift-wpfs', get_theme_file_uri( '/assets/js/wpfs-script.js' ), array( 'jquery' ), time(), true );
 
