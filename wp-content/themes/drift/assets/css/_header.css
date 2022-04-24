@@ -11,7 +11,7 @@
     box-shadow: 0px 0px 0px 1px var( --color__black ) !important;
 }	
 .mce_inline_error {
-	font-family: proxy-nova;
+	font-family: var( --font__proxy );
 }
 button#submit--OGNhNmM {
     font-size: 0 !important;
@@ -140,7 +140,7 @@ label[for="wpfs-shipping-address-line-2--ZTI4NGY"]::before{content: "Shipping ad
 	text-align: left;
 	color: var( --color__gray-dark );
 	font-size: 23px;
-	font-family: proxy-nova;
+	font-family: var( --font__proxy );
 	margin-bottom: 11px;
 	position: relative;
 }
