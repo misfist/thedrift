@@ -15,6 +15,7 @@
     --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
     --color__background: #f0f0f0;
 	--color__background-field: #909090;
+    --color__background-button: #f0f0f0;
     --color__border: #f6f6f6;
     --font__caslon: Adobe-Caslon, serif;
     --font__avenir: Avenir-Next-Thin, sans-serif;
@@ -1215,7 +1216,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     display: inline-block !important;
     background: transparent !important;
     letter-spacing: 0px !important;
-    color: #909090 !important;
+    color: var( --color__gray-light ) !important;
     border: 1px solid var(--color__black) !important;
     transition: all 0.3s ease-out !important;
     height: unset !important;
@@ -1227,7 +1228,8 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 .wpfs-form-actions button.wpfs-btn {
     /* margin-right: 0 !important; */
 }
-.but62:hover, .but63:hover{
+.but62:hover, 
+.but63:hover{
     color: var( --color__white ) !important;
     background: var( --color__black ) !important;
     border: 1px solid var( --color__black ) !important;
@@ -1260,7 +1262,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 }
 
 .wpfs-btn-primary {
-    background: #f0f0f0 !important;
+    background-color: var( --color__background-field ) !important;
     color: var( --color__black ) !important;
     font-weight: normal !important;
     border: 1px solid var( --color__black );
@@ -1271,10 +1273,23 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 }
 
 .wpfs-form-actions button.wpfs-btn:hover {
-    background: #CBCBCB !important;
+    background-color: var( --color__gray-light ) !important;
     color: var( --color__black )!important;
 }
 
+button.wpfs-btn-primary[type="submit"] {
+    background-color: var( --color__background-button ) !important;
+    color: var( --color__black ) !important;
+    border: 1px solid var( --color__black );
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+button.wpfs-btn-primary:hover,
+button.wpfs-btn-primary:focus {
+    background-color: var( --color__gray ) !important;
+    border-color: var( ---color__black );
+}
 
 #wpfs-form-get-parameters--ZTI4NGY ~ .wpfs-form-check-group {
     position: relative;
