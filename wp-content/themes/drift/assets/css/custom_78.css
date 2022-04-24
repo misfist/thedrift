@@ -927,15 +927,21 @@ section.footer_outer .container-fluid {
     position: absolute;
     font-weight: 600;
 }
-.form01{
+
+/** Donation Form **/
+.page-template-donate .ui-selectmenu-button,
+.page-donate .ui-selectmenu-button,
+.page-donate .wpfs-form-select,
+.page-template-donate .wpfs-form-select {
+    display: none !important;
+}
+.form01 {
     text-align: center;
     margin: 70px 0 0;
 }
 .form01 h4 {
     font-size: 30px;
     font-family: var( --font__proxy );
-}
-.form01 form {
 }
 /*.form01 form #wpfs-form-get-parameters--ZjFiZTB ~ .wpfs-form-group{
     display: none;
@@ -949,7 +955,8 @@ section.footer_outer .container-fluid {
    display:none !important;
 }
 */
-.wpfs-form-label[for="wpfs-custom-amount--ZjFiZTB-button"], .form01 form .wpfs-form-label[for="wpfs-custom-amount--ZjFiZTB-button"] {
+.wpfs-form-label[for="wpfs-custom-amount--ZjFiZTB-button"], 
+.form01 form .wpfs-form-label[for="wpfs-custom-amount--ZjFiZTB-button"] {
     display: none;
 }
 .form01 form .wpfs-w-20 {
@@ -958,7 +965,8 @@ section.footer_outer .container-fluid {
 .form01 form .wpfs-w-20 input{
     margin: auto;
 }
-.ab_part_linner .wpfs-form-check > input, .form01 input{
+.ab_part_linner .wpfs-form-check > input, 
+.form01 input{
     font-size: 18px !important;
     padding: 0 10px !important;
     display: block !important;
@@ -1049,7 +1057,12 @@ input::-ms-input-placeholder {
    /*=== ADDED 6.18 ===*/
     font-size: 35px;
 }
-.page-template-subscribe .contact01, .page-template-donate .contact01, .page-template-about-page .contact01, .page-template-mentions .contact01, .single-mention .contact01, .single-post .contact01 {
+.page-template-subscribe .contact01, 
+.page-template-donate .contact01, 
+.page-template-about-page .contact01, 
+.page-template-mentions .contact01, 
+.single-mention .contact01, 
+.single-post .contact01 {
     margin: 20px 0 0 20px;
     max-width: 490px;
     flex-wrap: wrap;
@@ -2480,7 +2493,8 @@ label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
     padding-left: 30px;
 }
 
-.page-template-donate .contact01 p, .page-template-subscribe .contact01 p {
+.page-template-donate .contact01 p, 
+.page-template-subscribe .contact01 p {
     line-height: 1.4em;
     font-size: 18px;
 }
