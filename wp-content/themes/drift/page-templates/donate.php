@@ -58,31 +58,12 @@ get_header();
 				
 
 				<div class="form01">
-					<!-- <h4>Customer Information</h4> -->
-					<!-- <img src="<?php //bloginfo('template_url'); ?>/assets/images/support.png"> -->
 					<?php
-				    // echo do_shortcode('[fullstripe_form name="donate" type="inline_payment"]');
-				    echo do_shortcode('[fullstripe_form name="donation" type="inline_payment"]');
-				    ?>
-<!-- 					<form class="com_inf">
-						<h4> Customer Information </h4>
-						<input type="" name="" placeholder="First Name">
-						<input type="" name="" placeholder="Last Name">
-						<input type="" name="" placeholder="Email Address">
-						<input type="" name="" placeholder="Mailing Address">
-						<input type="" name="" placeholder="Mailing Address line 2">
-						<input type="" name="" placeholder="City">
-						<input type="" name="" placeholder="State">
-						<input type="" name="" placeholder="Zip Code">
-						<input type="" name="" placeholder="City">
-
-						<h4> Billing Information </h4>
-						<input type="" name="" placeholder="Credit card">
-						<input type="" name="" placeholder="CVV">
-						<input type="" name="" placeholder="Expiration(00/00)">
-						<a class="but63">Donate now!</a>
-					</form>
- -->				</div> 
+					if ( $form = get_post_meta( get_the_ID(), 'form_name', true ) ) {
+						echo do_shortcode( '[fullstripe_form name="' . $form . '" type="inline_subscription"]' );
+					}
+					?>
+				</div> 
 			</div>
 		</div>
 
