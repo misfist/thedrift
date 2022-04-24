@@ -1425,6 +1425,7 @@ button.wpfs-btn-primary:focus {
 }
 .page-template-subscribe .kudossubscribe .wpfs-form-check-input + .wpfs-form-check-label::before{
     height: 20px !important;
+    width: 20px !important;
 }
 .page-template-subscribe .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label{
     display: inline-block;
