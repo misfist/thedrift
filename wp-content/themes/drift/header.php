@@ -25,9 +25,11 @@
 
 	<body <?php body_class(); ?>>
 
+	<?php wp_body_open(); ?>
+
 <?php
-  global $theme_option;
-  $issue_color = $theme_option['issue_color'];
+	global $theme_option;
+	$issue_color = $theme_option['issue_color'];
 
 	$facebook_url  = $theme_option['facebook_url'];
 	$twitter_url   = $theme_option['twitter_url'];
@@ -37,8 +39,8 @@
 	$linkedin_url  = $theme_option['linkedin_url'];
 	$pinterest_url = $theme_option['pinterest_url'];
 	$gplus_url     = $theme_option['gplus_url'];
-  $logo            = $theme_option['logo_image'];
-  $logo            = $logo['url'];
+	$logo          = $theme_option['logo_image'];
+	$logo          = $logo['url'];
 ?>
 
 <style type="text/css">
