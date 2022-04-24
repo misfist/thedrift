@@ -1,17 +1,6 @@
-<?php 
+<?php
 /* Template name: Donate page */
 get_header();
-$pageID = get_the_id();
-$page_imageID = get_post_thumbnail_id($pageID);
-if($page_imageID != "")
-{
-  $page_imageURL = wp_get_attachment_image_src($page_imageID, "full");	
-  $page_imageURL = $page_imageURL[0];
-}
-else
-{
-	$page_imageURL = get_bloginfo('template_url')."/assets/images/support.png";
-}
 ?>
 
 <div class="the-drift-logo-mb" style="display: none;">
@@ -27,8 +16,14 @@ else
 		<div class="ab_part_l d-flex">
 			<div class="ab_part_linner">
 				<div class="ab_part_img donate_img">
+					<?php
+					if ( $image = get_the_post_thumbnail_url( get_the_ID(), 'full' ) ) :
+						?>
+						<img src="<?php echo esc_url( $image );?>">
 
-					<img src="<?php echo $page_imageURL;?>">
+					<?php
+					endif;
+					?>
 					<div class="ab_part_img_abu">
 						<div class="ab_part_img_inner d-flex">
 						<div>
@@ -94,19 +89,16 @@ else
 
 		<div class="ab_part_r donate-subscribe_txt">
 			<div class="contact01">
-				<?php 
-				$pageID = get_the_id();
-				$subsitle = get_post_meta($pageID, "subsitle", true);
-				?>
-			<div class="com_heading">
-				<h3><b><?php echo get_the_title(); ?></b>​
-			<?php if($subsitle != "")
-			{
-				echo "<span class='line_gray'>&nbsp;|&nbsp;</span>".$subsitle;
-			}?>
-				
-			</h3>
-			</div>
+
+				<div class="com_heading">
+					<h3 class="entry-title"><strong><?php the_title(); ?></strong>
+					<?php
+					if ( $subsitle = get_post_meta( get_the_ID(), 'subsitle', true ) ) {
+						echo "<span class='line_gray'>|</span> " . $subsitle;
+					}
+					?>
+					</h3>
+				</div>
 
 			<?php 
 			 while(have_posts()):the_post();
