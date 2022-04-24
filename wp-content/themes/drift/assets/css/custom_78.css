@@ -1404,13 +1404,14 @@ button.wpfs-btn-primary:focus {
 }
 /* radio button css*/
 .page-template-subscribe .kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
-    background: url("https://www.thedriftmag.com/wp-content/uploads/2021/09/cherimoya-subscribe.jpg");
+    background-image: url(../images/subscribe-box-bg.png);
     width: 100%;
     height: auto;
     position: relative;
     margin-bottom: 30px;
     background-repeat: no-repeat !important;
-    background-size: 100% !important;
+    background-size: cover;
+    /* background-size: 100% !important; */
     background-position: center top !important;
     padding: 15px 0px;
 }
