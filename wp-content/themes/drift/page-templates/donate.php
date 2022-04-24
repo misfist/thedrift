@@ -26,7 +26,7 @@ get_header();
 					?>
 					<div class="ab_part_img_abu">
 						<div class="ab_part_img_inner d-flex">
-						<div>
+						<!-- <div>
 							<input type="radio" name="same" id="ten" class="custom_radio_button" value="10" data-selectID="ui-id-1" checked>
 							<label for="ten"> $10</label>
 						</div>
@@ -50,7 +50,7 @@ get_header();
 							<input type="radio" name="same" id="six"  class="custom_radio_button" value="Other" data-selectID="ui-id-6">
 							<label for="six"> Other amount</label>							
 							<input type="text" id="other_amount" value="" onkeypress="javascript:return isNumber(event)" >
-						</div>
+						</div> -->
 						</div>
 					</div>
 				</div>
@@ -60,7 +60,7 @@ get_header();
 				<div class="form01">
 					<?php
 					if ( $form = get_post_meta( get_the_ID(), 'form_name', true ) ) {
-						echo do_shortcode( '[fullstripe_form name="' . $form . '" type="inline_subscription"]' );
+						echo do_shortcode( '[fullstripe_form name="' . $form . '" type="inline_payment"]' );
 					}
 					?>
 				</div> 
@@ -92,65 +92,6 @@ get_header();
 	</div>
 </div>
 </section> 
-<script type="text/javascript"> 
- function isNumber(evt) {
-        var iKeyCode = (evt.which) ? evt.which : evt.keyCode
-        if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
-            return false;
-        return true;
-    }  
- 
-	jQuery(document).ready(function(){ 
 
-jQuery("#submit--OWI3MGQ").on("click", function(){
-	setTimeout(function(){
-	        if(jQuery(".wpfs-form-message--correct").is(':visible') )
-	        {
-	        	jQuery("#submit--OWI3MGQ").addClass("disableButton");	        	
-	        } 
-	}, 6000);
-});
-
-
-
-
-
-		var tenDollar = jQuery("#ten").val();
-		jQuery('input[name="wpfs-custom-amount-unique"]').val(tenDollar);
-
-	jQuery("#other_amount").on("mousedown", function(){
-			jQuery('label[for="six"]').trigger("click");			
-	});
-
-		jQuery("#wpfs-card-holder-name--OWI3MGQ").change(function(){
-			var fullName = jQuery(this).val();
-			jQuery("#wpfs-billing-name--OWI3MGQ").val(fullName);
-		});
-
-		jQuery('.custom_radio_button').click(function(){
-			if (jQuery(this).val() == 'Other') 
-			{
-				jQuery("#other_amount").val('');
-				jQuery('#wpfs-custom-amount-unique--OWI3MGQ').val('');
-			}
-			else
-			{
-				jQuery('#wpfs-custom-amount-unique--OWI3MGQ').val(jQuery(this).val()); 
-			}
-		});
-		jQuery("#other_amount").change(function(){
-			var radioValue = jQuery(".custom_radio_button:checked"). val();
-			if(radioValue == 'Other')
-			{
-				var other_amount = jQuery(this).val();
-				jQuery("#wpfs-custom-amount-unique--OWI3MGQ").val(other_amount);
-			}
-			
-			// jQuery("#wpfs-custom-amount-unique--ZjFiZTB").val(other_amount);
-			// jQuery("#wpfs-custom-amount-unique--ZjFiZTB").removeAttr("disabled");
-		});
-	});
-</script>
 <?php 
 get_footer();
-?>
