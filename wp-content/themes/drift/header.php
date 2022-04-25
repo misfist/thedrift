@@ -44,7 +44,7 @@
          }
       </style>
 
-      <div class="site_container">
+   <div class="site_container">
       <div class="sectionID" data-value="<?php echo $getID; ?>"></div>
       <section class="hed-wrap">
          <div class="Container" id="tf-hide-mob" style="display: none;">
@@ -52,35 +52,41 @@
                <?php
                   if ( $page_id != 6 && $page_id != 8 ) :
                   	?>
-               <div class="menu_box_one">
-                  <div class="drift_searchForm"><?php echo get_search_form(); ?></div>
-                  <?php
-                     wp_nav_menu(
-                     	array(
-                     		'menu'       => 'Top Left',
-                     		'menu_class' => 'menu-top-left',
-                     		'menu_class' => 'nav d-flex',
-                     	)
-                     )
-                     ?>
-               </div>
+                  <div class="menu_box_one">
+                     <div class="drift_searchForm"><?php echo get_search_form(); ?></div>
+                     <?php
+                        wp_nav_menu(
+                           array(
+                              'menu'       => 'Top Left',
+                              'menu_class' => 'menu-top-left',
+                              'menu_class' => 'nav d-flex',
+                           )
+                        )
+                        ?>
+                  </div>
                <?php endif; ?>
+
                <div class="menu_box_two">
                   <a class="navbar-brand" href="<?php echo site_url(); ?>">
-                  <img src="<?php echo $logo; ?>">
+                     <img src="<?php echo $logo; ?>">
                   </a>         
                   <?php
                      if ( $page_id != 6 && $page_id != 8 ) :
                      	?>
                   <div class="navbar-header">
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar9">
-                     <span class="sr-only"><?php esc_html__( 'Toggle navigation', 'drift' ); ?></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
+                        <span class="sr-only"><?php esc_html__( 'Toggle navigation', 'drift' ); ?></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                      </button>
                   </div>
+
+                  <?php endif; ?>
                </div>
+               <?php
+                     if ( $page_id != 6 && $page_id != 8 ) :
+                     	?>
                <div class="menu_box_three">					
                   <?php
                      wp_nav_menu(
@@ -93,7 +99,8 @@
                      )
                      ?>
                </div>
-               <?php endif; ?>	   
+               <?php endif; ?>
+               	   
             </div>
             <div class="only_mobile_show">
                <ul id="menu-top-left" class="nav d-flex">
