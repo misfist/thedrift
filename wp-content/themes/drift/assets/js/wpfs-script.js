@@ -10,15 +10,14 @@
     }
 
     const formType = form.data( 'wpfs-form-type' );
-    const subscriptionNodes = $( '.wpfs-form-check-group .wpfs-form-check' );
+    const fieldNodes = $( '.wpfs-form-check-group .wpfs-form-check' );
 
-    console.log( formType );
-
-    if( subscriptionNodes ) {
+    if( fieldNodes ) {
+        console.log( formType );
         if( 'inline_subscription' === formType ) {
             formatSubscriptions();
         }
-        // subscriptionNodes.each( function( index, value ) {
+        // fieldNodes.each( function( index, value ) {
         //     let $input = $( this ).find( 'input' );
         //     let $label = $( this ).find( '.wpfs-form-check-label' );
         //     let $amount =  $input.data( 'wpfs-plan-amount' );
@@ -39,7 +38,7 @@
     }
 
     function formatSubscriptions() {
-        subscriptionNodes.each( function( index, value ) {
+        fieldNodes.each( function( index, value ) {
             let $input = $( this ).find( 'input' );
             let $label = $( this ).find( '.wpfs-form-check-label' );
             let $amount =  $input.data( 'wpfs-plan-amount' );
