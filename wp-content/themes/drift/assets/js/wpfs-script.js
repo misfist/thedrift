@@ -35,6 +35,11 @@
         //     let $price = '<strong>' + amount + '</strong>';
         //     $label.html( $description + $price );
         // } );
+
+        if( 'inline_payment' === formType ) {
+            formatPayments();
+            moveCustomAmountField();
+        }
     }
 
     function formatSubscriptions() {
@@ -58,6 +63,24 @@
         } );
     }
 
-    function formPayments() {}
+    function formatPayments() {
+        fieldNodes.each( function( index, value ) {
+            let $input = $( this ).find( 'input' );
+            let $label = $( this ).find( '.wpfs-form-check-label' );
+            let $description =  $input.data( 'wpfs-amount-description' );
+
+            $label.html( $description );
+        } );
+    }
+
+    function moveCustomAmountField() {
+        const parent = document.querySelector(`.wpfs-form-check-group`);
+        const field = document.querySelector(`[data-wpfs-amount-row='custom-amount']`);
+
+        if( parent && field ) {
+            parent.insertAdjacentHTML( 'beforeend', field.outerHTML );
+            field.remove();
+        }
+    }
 
 })( jQuery );
