@@ -460,7 +460,7 @@ function twentyseventeen_scripts() {
 	wp_register_script( 'drift-wpfs', get_theme_file_uri( '/assets/js/wpfs-script.js' ), array( 'jquery' ), time(), true );
 
 	global $post;
-	if ( is_page_template( 'page-templates/subscribe.php' ) || ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) ) {
+	if ( is_page_template( array( 'page-templates/subscribe.php','page-templates/donate.php' )  ) || ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) ) {
 		wp_enqueue_script( 'drift-wpfs' );
 	}
 
