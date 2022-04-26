@@ -2,8 +2,9 @@
     --color__white: #fff;
     --color__black: #000;
     --color__primary:#0e90cc;
-    --color__secondary: #8C00FF;
+    --color__secondary: #8c00ff;
 	--color__red: #b70404;
+    --color__green: #81c469;
     --color__gray: #636363;
 	--color__gray-darkest: #090909;
     --color__gray-dark: #333;
@@ -28,6 +29,12 @@
     --font__heading: var( --font__serif );
     --font__heading-alt: var( --font__sans );
 	--width__content-wide: 1450px;
+
+    --primary-color: var( --color__gray );
+    --secondary-color: var( --color__primary );
+    --error-color: var( --color__red );
+    --success-color: var( --color__green );
+    --form-base-color: var( --color__black );
 }
 
 *, *:focus {
@@ -4447,3 +4454,29 @@ h1.issue_heading span {
         padding-left: 160px;
    }
 }
+
+[class*='wpfs-'] {
+    --font-family: var( --font__body ) !important;
+    --primary-color: var( --primary-color ) !important;
+    --secondary-color: var( --secondary-color ) !important;
+    --error-color: var( --error-color ) !important;
+    --success-color: var( --success-color ) !important;
+    --default-border-radius: 9px !important;
+    --form-bg-color: var( --color__gray-lighter ) !important;
+    --form-base-color: var( --color__black );
+  }
+
+  .wpfs-btn {
+    --primary-bg-color: var( --color__background-button ) !important;
+    --primary-font-color: var( --color__black ) !important;
+    --primary-hover-focus-bg-color: var( --color__gray-darkest ) !important;
+    --primary-active-bg-color: var( --color__gray-dark ) !important;
+    --danger-bg-color: var( --error-color ) !important;
+    --danger-hover-focus-bg-color:  var( --error-color ) !important;
+    --danger-active-bg-color:  var( --error-color ) !important;
+    --outline-primary-hover-focus-border-color: var( --secondary-color ) !important;
+  }
+
+  .wpfs-form .wpfs-form-label {
+      color: var( --color__black ) !important;
+  }
