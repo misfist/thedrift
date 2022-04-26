@@ -14,10 +14,13 @@
     --color__link-alt: var( --color__gray-dark );
     --color__link-hover: darken( var( --color__link ), 15% );
     --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
+    --color__placeholder: var( --color__gray );
     --color__background: #f0f0f0;
 	--color__background-field: #909090;
     --color__background-button: #f0f0f0;
+    /* --color__background-button: #f0f0f0; */
     --color__border: #f6f6f6;
+    --color__border-alt: #909090;
     --font__caslon: Adobe-Caslon, serif;
     --font__avenir: Avenir-Next-Thin, sans-serif;
     --font__franklin-gothic: franklin-gothic, sans-serif;
@@ -288,11 +291,6 @@ form.search-form {
 }
 #mc_embed_signup_scroll > div {
     width: 400px;
-}
-
-input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wpfs-form-select select {
-    background: #f6f6f6 !important;
-    border-radius: 0 !important;
 }
 .sub_don.showInMobile {
     display: none;
@@ -1301,8 +1299,8 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
  }
 
  .wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary {
-    background: var( --color__background-field ) !important;
-    border-color: var( --color__background-field ) !important;
+    background: var( --color__border ) !important;
+    border-color: var( --color__border ) !important;
 }
 
 .wpfs-btn-outline-primary:focus, 
@@ -1316,7 +1314,7 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 }
 
 .wpfs-btn-primary {
-    background-color: var( --color__background-field ) !important;
+    background-color: var( --color__background-button ) !important;
     color: var( --color__black ) !important;
     font-weight: normal !important;
     border: 1px solid var( --color__black );
@@ -2280,13 +2278,13 @@ section.mission_outer {
     object-fit: cover;
 }
 .search-term-list .term-list {
-    border-top: 1px solid var( --color__background-field );
+    border-top: 1px solid var( --color__border-alt );
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 0;
 }
 .search-term-list .list-feature-info span {
-    color: var( --color__background-field );
+    color: var( --color__placeholder );
    /* font-size: 19px;
     ========== CHANGED 5.28 ========= */
     font-size: 21px;
@@ -2319,7 +2317,7 @@ section.mission_outer {
     left: -10px;
     top: 1px;
     font-size: 17px;
-    color: var( --color__background-field );
+    color: var( --color__placeholder );
 }
 .search-term-list .list-feature-info a:hover {
     color: inherit;
@@ -2440,16 +2438,16 @@ section.mission_outer {
     text-align: center !important;
 }
 #mc_embed_signup .mc-field-group input#mce-EMAIL::-webkit-input-placeholder {
-    color: var( --color__background-field ) !important;
+    color: var( --color__placeholder ) !important;
 }
 #mc_embed_signup .mc-field-group input#mce-EMAIL::-moz-placeholder {
-    color: var( --color__background-field ) !important;
+    color: var( --color__placeholder ) !important;
 }
 #mc_embed_signup .mc-field-group input#mce-EMAIL:-ms-input-placeholder {
-    color: var( --color__background-field ) !important;
+    color: var( --color__placeholder ) !important;
 }
 #mc_embed_signup .mc-field-group input#mce-EMAIL:-moz-placeholder {
-    color: var( --color__background-field ) !important;
+    color: var( --color__placeholder ) !important;
 }
 .page-template-coming_soon #mc_embed_signup .mc-field-group input#mce-EMAIL::-webkit-input-placeholder {
     color: var( --color__primary ) !important;
@@ -2465,19 +2463,19 @@ section.mission_outer {
 }
 #ajaxsearchlite1 .probox .proinput input::-webkit-input-placeholder {
     font-family: var( --font__body );
-    color: var( --color__background-field );
+    color: var( --color__placeholder );
 }
 #ajaxsearchlite1 .probox .proinput input::-moz-placeholder {
     font-family: var( --font__body );
-    color: var( --color__background-field );
+    color: var( --color__placeholder );
 }
 #ajaxsearchlite1 .probox .proinput input:-ms-input-placeholder {
     font-family: var( --font__body );
-    color: var( --color__background-field );
+    color: var( --color__placeholder );
 }
 #ajaxsearchlite1 .probox .proinput input:-moz-placeholder {
     font-family: var( --font__body );
-    color: var( --color__background-field );
+    color: var( --color__placeholder );
 }
 .f_logo > p {
     visibility: hidden;
@@ -2490,7 +2488,7 @@ section.mission_outer {
     margin-left: 30px !important;
     background-color: var( --color__white ) !important;
     font-size: 17px !important;
-    color: var( --color__background-field ) !important;
+    color: var( --color__border-alt ) !important;
     max-height: 34px;
     line-height: 17px;
 }
@@ -4456,12 +4454,12 @@ h1.issue_heading span {
 }
 
 [class*='wpfs-'] {
-    --font-family: var( --font__body ) !important;
+    --font-family: var( --font__franklin-gothic ) !important;
     --primary-color: var( --primary-color ) !important;
     --secondary-color: var( --secondary-color ) !important;
     --error-color: var( --error-color ) !important;
     --success-color: var( --success-color ) !important;
-    --default-border-radius: 9px !important;
+    --default-border-radius: 9px;
     --form-bg-color: var( --color__gray-lighter ) !important;
     --form-base-color: var( --color__black );
   }
@@ -4480,3 +4478,13 @@ h1.issue_heading span {
   .wpfs-form .wpfs-form-label {
       color: var( --color__black ) !important;
   }
+
+  input[type="email"].wpfs-form-control, 
+  input[type="text"].wpfs-form-control, 
+    .wpfs-form-select select {
+    background-color: var( --color__border ) !important;
+    border-color: var( --color__border ) !important;
+    border-radius: 0 !important;
+}
+
+/* .page-template-subscribe input.wpfs-form-control */
