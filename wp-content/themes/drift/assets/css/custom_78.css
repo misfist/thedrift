@@ -388,7 +388,7 @@ form.search-form {
     position: absolute;
     font-size: 52px;
     top: 20px;
-    color: #9800ff;
+    color: var( --color__secondary );
     font-weight: bold;
 }
 .support_heading::before {
@@ -399,11 +399,11 @@ form.search-form {
    */
    /* === CHANGED 6.9 === */
     top: 20px;
-    color: #9800ff;
+    color: var( --color__secondary );
     font-weight: bold;
 }
 .support_us_pipe{
-   color: #9800ff;
+   color: var( --color__secondary );
 }
 .support_heading h3 {
    /*margin-top: 13px;
@@ -419,7 +419,7 @@ form.search-form {
     */
     padding-left: 38px;
    /* === CHANGED 6.9 === */
-   /*color: #9800ff;
+   /*color: var( --color__secondary );
    */
    /* ======== ADDED 6.1 ========= */
 }
