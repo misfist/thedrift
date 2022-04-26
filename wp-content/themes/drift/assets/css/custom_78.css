@@ -18,6 +18,8 @@
     --color__background: #f0f0f0;
 	--color__background-field: #909090;
     --color__background-button: #f0f0f0;
+    --color__background-button-hover: var( --color__background-field );
+    --color__button-hover: var( --color__white );
     /* --color__background-button: #f0f0f0; */
     --color__border: #f6f6f6;
     --color__border-alt: #909090;
@@ -4481,10 +4483,18 @@ h1.issue_heading span {
 
   input[type="email"].wpfs-form-control, 
   input[type="text"].wpfs-form-control, 
-    .wpfs-form-select select {
+.wpfs-form-select select {
     background-color: var( --color__border ) !important;
     border-color: var( --color__border ) !important;
     border-radius: 0 !important;
 }
 
-/* .page-template-subscribe input.wpfs-form-control */
+.wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary {
+    color: var( --color__button-hover ) !important;
+    background-color:  var( --color__background-button-hover ) !important;
+    border-color: var( --color__background-button-hoverd ) !important;
+}
+
+.wpfs-form-check-input + .wpfs-form-check-label[for^="wpfs-same-billing-and-shipping-address"]::before {
+    background-color: var( --color__background-button-hover ) !important;
+}
