@@ -980,6 +980,10 @@ section.footer_outer .container-fluid {
     color: var( --color__white );
     font-weight: bold;
 }
+.page-donate .ab_part label.wpfs-form-check-label[for^="wpfs-same-billing-and-shipping-address"] {
+    color: var( --color__black );
+}
+
 
 /*.form01 form #wpfs-form-get-parameters--ZjFiZTB ~ .wpfs-form-group{
     display: none;
