@@ -921,7 +921,7 @@ section.footer_outer .container-fluid {
     text-align: left;
     padding: 7px 20px;
 }
-.ab_part label.wpfs-form-check-label strong, .ab_part label.wpfs-form-check-label, .ab_part_img_abu div label{
+.ab_part label.wpfs-form-check-label strong, .ab_part label.wpfs-form-check-label, .ab_part_img_abu div label {
     font-size: 18px;
     color: #303030;
     font-weight: 400;
@@ -942,6 +942,37 @@ section.footer_outer .container-fluid {
 .page-template-donate .wpfs-form-select {
     display: none !important;
 }
+
+.page-donate .wpfs-form-check-group .fieldset-wrapper {
+    padding-left: 1rem;
+    width: 60%;
+    padding-top: 25%;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr );
+    
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 1fr 1fr; */
+    row-gap: 1rem;
+}
+
+.page-donate .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+    display: inline-block;
+    padding-left: 30px !important;
+    font-size: 20px;
+}
+
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-group {
+    grid-column: 2 / span 1;
+}
+
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check {
+    margin: 0;
+}
+
+.page-donate .ab_part_linner .wpfs-form-check > input {
+    margin-bottom: 0 !important;
+}
+
 .form01 {
     text-align: center;
     margin: 70px 0 0;
@@ -1067,6 +1098,12 @@ input::-ms-input-placeholder {
    */
    /*=== CHANGED 6.19 === */
 }
+
+.page-donate .com_heading .line_gray,
+.page-subscribe .com_heading .line_gray {
+    display: inline-block;
+}
+
 .postid-2274 .com_heading h3 {
     font-family: Savoy, serif;
 }
@@ -1122,7 +1159,7 @@ input::-ms-input-placeholder {
     width: 100%;
 }
 .ab_part_img_inner.ba_part02 {
-    margin-left: 85px 
+    margin-left: 85px ;
 }
 .ab_part_img_inner.ba_part02 div{
     width: 100%;
@@ -1482,7 +1519,8 @@ button.wpfs-btn-primary:focus {
 .page-template-donate .kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
     background-image: url(../images/donate-box-bg.png);
 }
-.page-template-subscribe .kudossubscribe .wpfs-form-check-input[type="radio"] + .wpfs-form-check-label::after {
+.page-template-subscribe .wpfs-form-check-group .wpfs-form-check-input[type="radio"] + .wpfs-form-check-label::after,
+.page-donate .wpfs-form-check-group .wpfs-form-check-input[type="radio"] + .wpfs-form-check-label::after {
     background: var( --color__black ) !important;
     top: 5px !important;
     left: 4px !important;
@@ -1494,8 +1532,7 @@ button.wpfs-btn-primary:focus {
     height: 20px !important;
     width: 20px !important;
 }
-.page-template-subscribe .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label,
-.page-template-donate .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+.page-template-subscribe .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
     display: inline-block;
     padding-left: 50px;
    font-size: 20px;
