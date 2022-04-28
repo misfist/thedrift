@@ -39,8 +39,8 @@ endif; ?>
 		<div class="ab_part_r donate-subscribe_txt">
 			<div class="contact01">
 				<div class="com_heading">
-					<h3 class="entry-title"><strong><?php the_title(); ?></strong>​
-						<?php
+					<h3 class="entry-title"><strong><?php the_title(); ?></strong>
+					<?php
 						if ( $subsitle = get_post_meta( get_the_ID(), 'subsitle', true ) ) {
 							echo "<span class='line_gray'>|</span> " . $subsitle;
 						}
