@@ -20,6 +20,7 @@
         if( 'inline_payment' === formType ) {
             formatPayments();
             moveCustomAmountField();
+            addWrapper();
         }
     }
 
@@ -52,6 +53,13 @@
 
             $label.html( $description );
         } );
+    }
+
+    function addWrapper() {
+        let fieldSet = $( '.wpfs-form-check-group' );
+        if( fieldSet ) {
+            fieldSet.wrapInner( '<div class="fieldset-wrapper"></div>' );
+        }
     }
 
     function moveCustomAmountField() {
