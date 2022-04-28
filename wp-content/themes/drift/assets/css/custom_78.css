@@ -936,12 +936,12 @@ section.footer_outer .container-fluid {
 }
 
 /** Donation Form **/
-.page-template-donate .ui-selectmenu-button,
+/* .page-template-donate .ui-selectmenu-button,
 .page-donate .ui-selectmenu-button,
 .page-donate .wpfs-form-select,
 .page-template-donate .wpfs-form-select {
     display: none !important;
-}
+} */
 
 .page-donate .wpfs-form-check-group .fieldset-wrapper {
     padding-left: 1rem;
