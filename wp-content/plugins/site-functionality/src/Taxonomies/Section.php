@@ -20,7 +20,7 @@ class Section extends Taxonomy {
 	 * Taxonomy data
 	 */
 	public const  TAXONOMY = array(
-		'id'           => 'sections',
+		'id'           => 'section',
 		'title'        => 'Sections',
 		'singular'     => 'Section',
 		'menu'         => 'Sections',
@@ -30,6 +30,7 @@ class Section extends Taxonomy {
 		'hierarchical' => true,
 		'post_types'   => array(
 			'post',
+			'mention'
 		),
 	);
 
