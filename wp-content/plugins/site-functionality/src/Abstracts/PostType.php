@@ -93,8 +93,6 @@ abstract class PostType extends Base {
 		$args    = array(
 			'label'               => $this::POST_TYPE['title'],
 			'labels'              => $labels,
-			'supports'            => $this::POST_TYPE['supports'],
-			'taxonomies'          => $this::POST_TYPE['taxonomies'],
 			'hierarchical'        => false,
 			'public'              => true,
 			'show_ui'             => true,
@@ -112,6 +110,15 @@ abstract class PostType extends Base {
 			'show_in_rest'        => true,
 			'rest_base'           => $this::POST_TYPE['rest_base'],
 		);
+
+		if( isset( $this::POST_TYPE['taxonomies'] ) ) {
+			$args['taxonomies'] = $this::POST_TYPE['taxonomies'];
+		}
+
+		if( isset( $this::POST_TYPE['supports'] ) ) {
+			$args['supports'] = $this::POST_TYPE['supports'];
+		}
+
 		\register_post_type(
 			$this::POST_TYPE['id'],
 			\apply_filters( \get_class( $this ) . '\Args', $args )

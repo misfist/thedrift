@@ -31,6 +31,10 @@ class Mention extends PostType {
 		'archive'     => 'mentions',
 		'rest_base'   => 'mentions',
 		'supports'    => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields' ),
+		'taxonomies' => array(
+			'issue',
+			'section'
+		)
 	);
 
 	/**

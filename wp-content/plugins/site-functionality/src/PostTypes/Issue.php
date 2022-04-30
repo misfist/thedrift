@@ -31,6 +31,9 @@ class Issue extends PostType {
 		'archive'     => 'issues',
 		'rest_base'   => 'issues',
 		'supports'    => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields' ),
+		'taxonomies' => array(
+			'issue'
+		)
 	);
 
 	/**
