@@ -70,8 +70,8 @@ module.exports = {
 				},
 				{
 					from: '**/*.{woff,woff2,eot,ttf,otf}',
-					to: 'font/[path][name][ext]',
-					context: path.resolve( process.cwd(), 'src/font' ),
+					to: 'fonts/[path][name][ext]',
+					context: path.resolve( process.cwd(), 'src/fonts' ),
 				},
 			],
 		} ),
