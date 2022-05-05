@@ -33,7 +33,8 @@ class Mention extends PostType {
 		'supports'    => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields' ),
 		'taxonomies' => array(
 			'issue',
-			'section'
+			'section',
+			'category'
 		)
 	);
 
