@@ -19,6 +19,7 @@ require plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 use SiteFunctionality\Admin\Admin;
 use SiteFunctionality\Api\RestApi;
 use SiteFunctionality\CustomFields\CustomFields;
+use SiteFunctionality\Integration\Integration;
 use SiteFunctionality\PostTypes\PostTypes;
 use SiteFunctionality\Taxonomies\Taxonomies;
 use SiteFunctionality\Util\Util;
@@ -54,6 +55,7 @@ function site_functionality_init() {
 	$restAPI = new RestApi( VERSION, PLUGIN );
 	$taxonomies   = new Taxonomies( VERSION, PLUGIN );
 	$postTypes    = new PostTypes( VERSION, PLUGIN );
+	$integration = new Integration( VERSION, PLUGIN );
 	$customFields = new CustomFields( VERSION, PLUGIN );
 	$util = new Util( VERSION, PLUGIN );
 

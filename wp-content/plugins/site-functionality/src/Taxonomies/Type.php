@@ -14,24 +14,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class Issue extends Taxonomy {
+class Type extends Taxonomy {
 
 	/**
 	 * Taxonomy data
 	 */
 	public const  TAXONOMY = array(
-		'id'           => 'issue',
-		'title'        => 'Issues',
-		'singular'     => 'Issue',
-		'menu'         => 'Issue',
-		'archive'      => 'issue-tags',
+		'id'           => 'type',
+		'title'        => 'Types',
+		'singular'     => 'Type',
+		'menu'         => 'Types',
+		'archive'      => false,
 		'with_front'   => true,
-		'rest'         => 'issues',
+		'rest'         => 'types',
 		'hierarchical' => true,
 		'post_types'   => array(
 			'post',
-			'mention',
-			'issue'
 		),
 	);
 
