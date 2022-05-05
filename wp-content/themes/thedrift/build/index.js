@@ -5,25 +5,9 @@
 /*!*****************************!*\
   !*** ./src/scss/index.scss ***!
   \*****************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ (function() {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/scss/tailwind.scss":
-/*!********************************!*\
-  !*** ./src/scss/tailwind.scss ***!
-  \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: $map: md is not a map.\n    ╷\n130 │   @each $breakpoint in map-keys($breakpoints) {\n    │                        ^^^^^^^^^^^^^^^^^^^^^^\n    ╵\n  node_modules/bootstrap/scss/mixins/_grid.scss 130:24  make-cssgrid()\n  src/scss/templates/_post.scss 3:9                     @import\n  src/scss/templates/index.scss 12:9                    @import\n  src/scss/index.scss 34:9                              root stylesheet\n    at tryRunOrWebpackError (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/HookWebpackError.js:88:9)\n    at __webpack_require_module__ (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5051:12)\n    at __webpack_require__ (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5008:18)\n    at /Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5079:20\n    at symbolIterator (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at /Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:4986:43\n    at symbolIterator (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/neo-async/async.js:2297:7)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: $map: md is not a map.\n    ╷\n130 │   @each $breakpoint in map-keys($breakpoints) {\n    │                        ^^^^^^^^^^^^^^^^^^^^^^\n    ╵\n  node_modules/bootstrap/scss/mixins/_grid.scss 130:24  make-cssgrid()\n  src/scss/templates/_post.scss 3:9                     @import\n  src/scss/templates/index.scss 12:9                    @import\n  src/scss/index.scss 34:9                              root stylesheet\n    at Object.<anonymous> (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/css-loader/dist/cjs.js!/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/postcss-loader/dist/cjs.js!/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/sass-loader/dist/cjs.js!/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/src/scss/index.scss:1:7)\n    at /Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/javascript/JavascriptModulesPlugin.js:441:11\n    at Hook.eval [as call] (eval at create (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at /Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5053:39\n    at tryRunOrWebpackError (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/HookWebpackError.js:83:7)\n    at __webpack_require_module__ (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5051:12)\n    at __webpack_require__ (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5008:18)\n    at /Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/webpack/lib/Compilation.js:5079:20\n    at symbolIterator (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/neo-async/async.js:3527:9)\n\nGenerated code for /Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/css-loader/dist/cjs.js!/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/postcss-loader/dist/cjs.js!/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/node_modules/sass-loader/dist/cjs.js!/Users/pea/Development/Sites/www/thedrift/thedrift/wp-content/themes/thedrift/src/scss/index.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: $map: md is not a map.\\n    ╷\\n130 │   @each $breakpoint in map-keys($breakpoints) {\\n    │                        ^^^^^^^^^^^^^^^^^^^^^^\\n    ╵\\n  node_modules/bootstrap/scss/mixins/_grid.scss 130:24  make-cssgrid()\\n  src/scss/templates/_post.scss 3:9                     @import\\n  src/scss/templates/index.scss 12:9                    @import\\n  src/scss/index.scss 34:9                              root stylesheet\");");
 
 /***/ }),
 
@@ -915,27 +899,13 @@ function wdsOffCanvas() {
 /******/ 	}();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-!function() {
-"use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _scss_tailwind_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/tailwind.scss */ "./src/scss/tailwind.scss");
-/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/index.scss */ "./src/scss/index.scss");
-/* harmony import */ var _js_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/index */ "./src/js/index.js");
-/* eslint eslint-comments/disable-enable-pair: error */
-/* eslint-disable no-undef, no-unused-vars */
-
-
-
-
-
-/* eslint-enable no-undef, no-unused-vars */
-
-}();
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	__webpack_require__("./src/js/index.js");
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/scss/index.scss");
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

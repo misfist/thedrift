@@ -1,6 +1,6 @@
-/*!********************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/index.scss ***!
-  \********************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/editor.scss ***!
+  \*********************************************************************************************************************************************************/
 @charset "UTF-8";
 @font-face {
   font-family: Avenir;
@@ -3993,22 +3993,6 @@ textarea.form-control-lg {
   border-color: #6c757d;
 }
 
-.has-drop-cap:not(:focus)::first-letter, .single-post .entry-content p > b:not(:focus)::first-letter,
-.single-post .entry-content p > strong:not(:focus)::first-letter {
-  font-size: 4.25rem;
-  font-family: Savoy, "Adobe Caslon", Lusitana, serif;
-  font-weight: bold;
-}
-
-.single-post .entry-content p > b,
-.single-post .entry-content p > strong {
-  float: left;
-  line-height: 0.68;
-  margin: 0.05em 0.1em 0 0;
-  text-transform: uppercase;
-  font-style: normal;
-}
-
 @screen tablet-landscape {}
 .navigation-menu .sub-menu {
   left: -999em;
@@ -4376,4 +4360,4 @@ textarea.form-control-lg {
   color: #212529;
 }
 
-/*# sourceMappingURL=index.css.map*/
+/*# sourceMappingURL=editor.css.map*/
