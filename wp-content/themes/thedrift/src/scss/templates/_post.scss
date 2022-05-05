@@ -1,5 +1,10 @@
-.entry-content {
-    p:first-child::first-letter {
-        initial-letter: 2;
+.single-post {
+    .entry-top {
+        @include make-cssgrid(2, md);
+    }
+
+    .entry-content {
+        @include make-container;
+        max-width: map-get( $container-max-widths, content );
     }
 }

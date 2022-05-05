@@ -3,62 +3,40 @@
 //----------------------------------------
 
 .wp-block-table {
-	@apply container mb-24 p-0 border-0 border-collapse w-full;
 
 	border-spacing: 0;
 
-	@screen desktop {
-		@apply border border-solid border-black;
-	}
+	@screen desktop {}
 
 	thead {
-		@apply hidden;
 
-		@screen desktop {
-			@apply table-row-group;
-		}
+		@screen desktop {}
 	}
 
 	th,
 	td {
-		@apply p-8 text-center;
-
-		@screen desktop {
-			@apply table-cell;
-		}
+		@screen desktop {}
 	}
 
 	td {
-		@apply block text-center border border-solid border-black;
 
-		@screen desktop {
-			@apply table-cell;
-		}
+		@screen desktop {}
 
 		&::before {
-			@apply block uppercase;
 
 			content: attr( data-label );
 
-			@screen desktop {
-				@apply hidden;
-			}
+			@screen desktop {}
 		}
 	}
 
 	th {
-		@apply tracking-widest uppercase border border-solid border-black;
 
-		@screen tablet-portrait {
-			@apply table-cell;
-		}
+		@screen tablet-portrait {}
 	}
 
 	tr {
-		@apply block mb-16;
 
-		@screen desktop {
-			@apply table-row mb-0;
-		}
+		@screen desktop {}
 	}
 }

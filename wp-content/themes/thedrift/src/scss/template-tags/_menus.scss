@@ -2,33 +2,24 @@
 // Menus and Sub-Menus
 //--------------------------------------------------------------
 .navigation-menu {
-	@apply hidden;
 
-	@screen tablet-landscape {
-		@apply block;
-	}
+	@screen tablet-landscape {}
 
 	.menu {
-		@apply flex;
 
 		> li {
 
-			&:not( :last-child ) {
-				@apply mr-16;
-			}
+			&:not( :last-child ) {}
 		}
 	}
 
 	.sub-menu {
-		@apply bg-white py-8 absolute shadow-md;
 
 		left: -999em;
 		top: theme( 'spacing.24' );
 		z-index: 99999;
 
-		li {
-			@apply px-24 py-8;
-		}
+		li {}
 
 		.menu-item-has-children {
 
@@ -47,14 +38,11 @@
 // Menu Items With Children
 //-----------------------------------------
 .menu-item-has-children {
-	@apply relative;
 
 	&:hover,
 	&.focus {
 
-		> .sub-menu {
-			@apply left-0;
-		}
+		> .sub-menu {}
 	}
 }
 
@@ -66,12 +54,9 @@
 	ul {
 
 		li {
-			@apply w-full;
 		}
 
 		a {
-			@apply block w-full;
-
 			min-width: theme( 'width.192' );
 		}
 	}
@@ -81,7 +66,6 @@
 // The Down Caret
 //-----------------------------------------
 .caret-down {
-	@apply block float-right h-full ml-8;
 
 	background: url( ../images/icons/caret-down.svg ) 50% 50% no-repeat;
 	background-size: 100%;
@@ -94,10 +78,7 @@
 .footer-navigation {
 
 	.menu {
-		@apply block;
 
-		@screen tablet-landscape {
-			@apply flex;
-		}
+		@screen tablet-landscape {}
 	}
 }

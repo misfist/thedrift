@@ -4,7 +4,6 @@
 *,
 ::after,
 ::before {
-	@apply box-border break-words;
 
 	word-wrap: break-word;
 }
@@ -12,13 +11,15 @@
 //-----------------------------------------
 // Admin Overrides
 //-----------------------------------------
-.block-editor-writing-flow {
-	@apply text-base leading-normal;
-}
+.block-editor-writing-flow {}
 
 //-----------------------------------------
 // Theme Elements
 //-----------------------------------------
-.site-main {
-	@apply my-48;
+.site-main {}
+
+.container {
+	@include make-container();
 }
+
+

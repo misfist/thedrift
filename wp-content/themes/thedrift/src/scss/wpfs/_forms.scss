@@ -1,0 +1,92 @@
+.wpfs-form {
+    max-width: 100% !important;
+    margin-bottom: $grid-gutter-width;
+
+    .wpfs-form-check-input[type="radio"]:checked + .wpfs-form-check-label,
+    .wpfs-form-check-group .wpfs-form-check-label {
+        &:before {
+            border-color: $body-color;
+
+            &:hover {
+                background-color: $input-bg;
+                border-color: $input-bg;
+            }
+        }
+        &:after {
+            background-color: $body-color;
+        }
+    }
+
+    .wpfs-form-check-input[type="checkbox"]:checked + .wpfs-form-check-label {
+        &:before {
+            color: $body-bg;
+            background-color: $gray-600;
+        }
+    }
+    
+    .wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary,
+    .wpfs-button-group--without-space .wpfs-button-group-row > .wpfs-button-group-item:not(:last-child) .wpfs-btn {
+        border: 1px solid $gray-600;
+        background-color: $gray-600;
+    }
+    
+    .wpfs-btn-primary,
+    button.wpfs-btn-primary,
+    .wpfs-btn-primary:not(.wpfs-btn-primary--disabled):not(:disabled):not(:active) {
+        @extend .btn;
+
+        @include button-outline-variant(
+            $body-color,
+            $color-hover: $input-bg,
+            $active-background: $body-bg,
+            $active-border: $body-color,
+            $active-color: $body-color
+        );
+
+        &:hover,
+        &:focus {
+            color: $body-color;
+            background-color: $input-bg;
+        }
+    }
+    
+    fieldset {
+        &.wpfs-form-check-group {
+            background-color: $input-bg;
+            padding: $grid-gutter-width;
+            margin-bottom: $grid-gutter-width;
+            display: block;
+    
+            legend {
+                @include visually-hidden;
+            }
+    
+            .wpfs-form-check {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .wpfs-input-group-prepend, 
+    .wpfs-input-group-append {
+        background-color: $input-bg;
+        color: $body-color;
+
+        .wpfs-input-group-link {
+            color: $body-color;
+        }
+    }
+
+    // .wpfs-coupon-to-redeem-row {
+    //     border-width: 1px;
+
+    //     &:hover,
+    //     &:focus,
+    //     &:active {
+    //         border-width: 1px;
+    //     }
+    // }
+
+}

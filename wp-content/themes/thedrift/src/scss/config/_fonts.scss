@@ -1,0 +1,64 @@
+$path: '../fonts';
+@font-face {
+    font-family: Avenir;
+    src: local("Avenir-Next-Thin"),
+        url(#{$path}/AvenirNext-ThinRegular.woff2)  format("woff2"),
+        url(#{$path}/AvenirNext-ThinRegular.woff)  format("woff"),
+        url(#{$path}/AvenirNext-ThinRegular.svg)  format("svg");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: local("Franklin Gothic"),
+        local("FranklinGothic"),
+        url(#{$path}/FranklinGothic-Book.woff2)  format("woff2"),
+        url(#{$path}/FranklinGothic-Book.woff)  format("woff"),
+        url(#{$path}/FranklinGothic-Book.svg)  format("svg");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Caslon';
+    src: local("Adobe Caslon"),
+        local("ACaslonPro"),
+        url(#{$path}/adobe/ACaslonPro-Regular.otf)  format("otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Caslon';
+    src: local("Adobe Caslon"),
+        local("ACaslonPro"),
+        url(#{$path}/adobe/ACaslonPro-Bold.otf)  format("otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Adobe Caslon';
+    src: local("Adobe Caslon"),
+        local("ACaslonPro"),
+        url(#{$path}/adobe/ACaslonPro-Italic.otf)  format("otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local("Proxima Nova"),
+        url(#{$path}/proxy/Proxy-Nova.ttf)  format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Savoy';
+    src: local("Savoy"),
+        url(#{$path}/Savoy.ttf)  format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Savoy';
+    src: local("Savoy"),
+        url(#{$path}/Savoy-Bold.ttf)  format("ttf");
+    font-weight: bold;
+}

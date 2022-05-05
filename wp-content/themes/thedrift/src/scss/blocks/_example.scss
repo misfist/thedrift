@@ -14,14 +14,11 @@
 // │                                    │
 // └────────────────────────────────────┘
 .wd-example {
-	@apply container mb-48;
 
 	&-title {
-		@apply font-serif text-3xl;
 	}
 
 	&-body {
-		@apply text-base;
 	}
 }
 
@@ -37,13 +34,10 @@
 // │                                    │
 // └────────────────────────────────────┘
 .wd-another-example {
-	@apply py-48;
 
 	&-title {
-		@apply font-serif text-3xl;
 	}
 
 	&-body {
-		@apply text-base;
 	}
 }
