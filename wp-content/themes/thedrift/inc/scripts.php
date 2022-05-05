@@ -12,19 +12,27 @@
  */
 function drift_scripts() {
 	$asset_file_path = dirname( __DIR__ ) . '/build/index.asset.php';
+	$dependencies    = array();
 
 	if ( is_readable( $asset_file_path ) ) {
 		$asset_file = include $asset_file_path;
 	} else {
-		$asset_file = [
+		$asset_file = array(
 			'version'      => '1.0.0',
-			'dependencies' => [ 'wp-polyfill' ],
-		];
-	}
+			'dependencies' => array( 'wp-polyfill' ),
+		);
+	}	
+	
+	wp_register_script( 'drift-wpfs', get_stylesheet_directory_uri() . '/build/wpfs.js', array( 'jquery' ), $asset_file['version'], true );
 
 	// Register styles & scripts.
-	wp_enqueue_style( 'wd_s', get_stylesheet_directory_uri() . '/build/index.css', [], $asset_file['version'] );
-	wp_enqueue_script( 'wds-scripts', get_stylesheet_directory_uri() . '/build/index.js', $asset_file['dependencies'], $asset_file['version'], true );
+	wp_enqueue_style( 'drift-css', get_stylesheet_directory_uri() . '/build/index.css', $dependencies, $asset_file['version'] );
+	wp_enqueue_script( 'drift-scripts', get_stylesheet_directory_uri() . '/build/index.js', $asset_file['dependencies'], $asset_file['version'], true );
+
+	global $post;
+	if( is_a( $post, '\WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) {
+		wp_enqueue_script( 'drift-wpfs' );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -43,10 +51,10 @@ function drift_preload_scripts() {
 	if ( is_readable( $asset_file_path ) ) {
 		$asset_file = include $asset_file_path;
 	} else {
-		$asset_file = [
+		$asset_file = array(
 			'version'      => '1.0.0',
-			'dependencies' => [ 'wp-polyfill' ],
-		];
+			'dependencies' => array( 'wp-polyfill' ),
+		);
 	}
 
 	?>

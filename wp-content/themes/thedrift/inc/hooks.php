@@ -42,7 +42,26 @@ function drift_body_classes( $classes ) {
 
 	// Give all pages a unique class.
 	if ( is_page() ) {
-		$classes[] = 'page-' . basename( get_permalink() );
+		global $post;
+		$classes[] = 'page-' . $post->post_name;
+	}
+
+	if ( is_front_page() ) {
+		$classes[] = 'front-page';
+	}
+
+	if ( is_single() ) {
+		global $post;
+		$args = array(
+			'taxonomy' => 'type',
+			'object_ids' => $post->ID,
+			'fields' => 'slugs'
+		);
+		$terms = get_terms( $args );
+
+		if( !empty( $terms ) ) {
+			$classes[] = 'type-' . $terms[0];
+		}
 	}
 
 	// Adds a class of hfeed to non-singular pages.
@@ -57,11 +76,6 @@ function drift_body_classes( $classes ) {
 
 	// Adds "no-js" class. If JS is enabled, this will be replaced (by javascript) to "js".
 	$classes[] = 'no-js';
-
-	// Add a cleaner class for the scaffolding page template.
-	if ( is_page_template( 'template-scaffolding.php' ) ) {
-		$classes[] = 'template-scaffolding';
-	}
 
 	// Add a `has-sidebar` class if we're using the sidebar template.
 	if ( is_page_template( 'template-sidebar-right.php' ) ) {
@@ -227,7 +241,8 @@ add_action( 'wp_footer', 'drift_display_customizer_footer_scripts', 999 );
  */
 function drift_add_og_tags() {
 	// Bail if Yoast is installed, since it will handle things.
-	if ( class_exists( 'WPSEO_Options' ) ) {
+	// Or if SEO Framework is active
+	if ( class_exists( 'WPSEO_Options' ) || defined( 'THE_SEO_FRAMEWORK_PRESENT' ) ) {
 		return '';
 	}
 

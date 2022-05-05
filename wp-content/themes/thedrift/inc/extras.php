@@ -29,6 +29,26 @@ function drift_categorized_blog() {
 }
 
 /**
+ * Modify Title
+ * 
+ * @link https://developer.wordpress.org/reference/hooks/the_title/
+ *
+ * @param string $title
+ * @param integer $id
+ * @return string $title
+ */
+function drift_the_title( $title, $post_id ) {
+	if( is_admin() ) {
+		return $title;
+	}
+	if( ( $subtitle = get_post_meta( $post_id, 'post_subsitle', true ) ) || ( $subtitle = get_post_meta( $post_id, 'subtitle', true ) ) || ( $subtitle = get_post_meta( $post_id, 'current_issue_subtitle', true ) ) ) {
+		$title = sprintf( '<span class="post-title">%s</span> <span class="separator">|</span> <span class="post-subtitle">%s</span>', $title, $subtitle );
+	}
+	return $title;
+}
+add_filter( 'the_title', 'drift_the_title', 10, 2 );
+
+/**
  * Get an attachment ID from it's URL.
  *
  * @author WebDevStudios

@@ -26,7 +26,7 @@ function drift_post_date( $args = [] ) {
 	$args = wp_parse_args( $args, $defaults );
 	?>
 	<span class="posted-on">
-		<?php echo esc_html( $args['date_text'] . ' ' ); ?>
+		<span class="screen-reader-text"><?php echo esc_html( $args['date_text'] . ' ' ); ?></span>
 		<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><time class="entry-date published" datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>"><?php echo esc_html( get_the_time( $args['date_format'] ) ); ?></time></a>
 	</span>
 	<?php
@@ -40,25 +40,28 @@ function drift_post_date( $args = [] ) {
  *
  * @param array $args Configuration args.
  */
-function drift_post_author( $args = [] ) {
+function drift_post_author( $post_id = null ) {
+	global $post;
+	$post_id  = $post_id ? (int) $post_id : get_the_ID();
 
-	// Set defaults.
-	$defaults = [
-		'author_text' => esc_html__( 'by', 'the-drift' ),
-	];
-
-	// Parse args.
-	$args = wp_parse_args( $args, $defaults );
-
-	?>
-	<span class="post-author">
-		<?php echo esc_html( $args['author_text'] . ' ' ); ?>
-		<span class="author vcard">
-			<a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo esc_html( get_the_author() ); ?></a>
-		</span>
-	</span>
-
+	$authors = drift_get_authors( $post_id );
+	
+	if( ! empty( $authors ) ) : ?>
+		<div class="post-author">
+			<?php
+			$total = count( $authors );
+			$count = 1;
+			foreach ( $authors as $author ) :
+				?>
+					<span class="author vcard">
+						<a class="url fn n" href="<?php echo esc_url( get_term_link( $author->term_id, 'authors' ) ); ?>"><?php echo esc_html( $author->name ); ?></a><?php echo $count < $total ? '<span>,</span> ' : ''; ?>
+					</span>
+				<?php
+				$count++;
+			endforeach; ?>
+		</div>
 	<?php
+	endif;
 }
 
 /**
