@@ -14,6 +14,11 @@ const StylelintPlugin = require( 'stylelint-webpack-plugin' );
  */
 module.exports = {
 	...defaultConfig,
+		entry: {
+			index: [ './src/js/index.js', './src/scss/index.scss' ],
+			wpfs: [ './src/js/plugins/wpfs.js' ],
+			editor: [ './src/scss/editor.scss' ]
+		},
 	module: {
 		rules: [
 			{
