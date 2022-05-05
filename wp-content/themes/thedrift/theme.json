@@ -80,7 +80,7 @@
             "letterSpacing": false,
             "textDecoration": false,
             "textTransform": false,
-            "dropCap": false,
+            "dropCap": true,
             "fontFamilies": [
                 {
                     "fontFamily": "ACaslonPro\", serif",
@@ -99,23 +99,7 @@
                 }
             ],
             "fontSizes": [],
-            "fontWeights": [
-                {
-                    "name": "Light",
-                    "slug": "light",
-                    "weight": 300
-                },
-                {
-                    "name": "Normal",
-                    "slug": "normal",
-                    "weight": 500
-                },
-                {
-                    "name": "Black",
-                    "slug": "black",
-                    "weight": 900
-                }
-            ]
+            "fontWeights": []
         },
         "custom": {
             "lineHeight": {
@@ -164,18 +148,7 @@
                     "textDecoration": false
                 },
                 "color": {
-                    "palette": [
-                        {
-                            "name": "Black",
-                            "slug": "black",
-                            "color": "var(--wp--preset--color--black)"
-                        },
-                        {
-                            "name": "Primary",
-                            "slug": "primary",
-                            "color": "var(--wp--preset--color--primary)"
-                        }
-                    ]
+                    "palette": []
                 }
             },
             "core/button": {
