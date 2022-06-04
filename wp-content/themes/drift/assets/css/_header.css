@@ -57,12 +57,12 @@ label[for^='wpfs-same-billing-and-shipping-address']:before {
 	background: var( --color__primary ) !important;
 }
 
-label[for^="wpfs-billing-name"],
+/* label[for^="wpfs-billing-name"],
 input[name="wpfs-billing-name"],
 label[for^="wpfs-shipping-name"],
 input[name="wpfs-shipping-name"] {
 	display: none !important;
-}
+} */
 
 /* #wpfs-billing-address-panel--ZjFiZTB > div:nth-child(1), 
 #wpfs-billing-address-panel--ZTI4NGY > div:nth-child(1),
