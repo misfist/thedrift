@@ -461,7 +461,7 @@ function twentyseventeen_scripts() {
 
 	global $post;
 	if ( is_page_template( array( 'page-templates/subscribe.php','page-templates/donate.php' )  ) || ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) ) {
-		wp_enqueue_script( 'drift-wpfs' );
+		// wp_enqueue_script( 'drift-wpfs' );
 	}
 
 	// Theme block stylesheet.
@@ -968,7 +968,7 @@ function add_form_fields_example( $term, $taxonomy ) {
 	<?php
 }
 
-add_action( 'template_redirect', 'redirect_cpt_singular_posts' );
+// add_action( 'template_redirect', 'redirect_cpt_singular_posts' );
 function redirect_cpt_singular_posts() {
 	if ( is_singular( 'issue' ) ) {
 		$Issues_pageURL = get_the_permalink( 14 );
