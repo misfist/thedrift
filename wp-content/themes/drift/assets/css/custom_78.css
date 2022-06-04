@@ -4560,3 +4560,16 @@ h1.issue_heading span {
 .wpfs-form-error-message {
     color: var( --color__red ) !important;
 }
+
+.wpfs-form-message {
+    background-color: var( --color__background-field );
+    color: var( --color__white );
+}
+
+.wpfs-form-message.wpfs-form-message--correct {
+    background-color: var( --color__green );
+}
+
+.wpfs-form-message.wpfs-form-message--incorrect {
+    background-color: var( --color__red );
+}
