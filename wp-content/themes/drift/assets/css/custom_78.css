@@ -4556,3 +4556,7 @@ h1.issue_heading span {
 .wpfs-form-check-input + .wpfs-form-check-label[for^="wpfs-same-billing-and-shipping-address"]::before {
     background-color: var( --color__background-button-hover ) !important;
 }
+
+.wpfs-form-error-message {
+    color: var( --color__red ) !important;
+}
