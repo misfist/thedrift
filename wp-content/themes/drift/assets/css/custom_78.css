@@ -943,7 +943,7 @@ section.footer_outer .container-fluid {
     display: none !important;
 } */
 
-.page-donate .wpfs-form-check-group .fieldset-wrapper {
+.page-donate  fieldset.wpfs-form-check-group .fieldset-wrapper {
     padding-left: 1rem;
     width: 70%;
     padding-top: 25%;
@@ -954,7 +954,7 @@ section.footer_outer .container-fluid {
 }
 
 @media screen and ( max-width: 568px) {
-    .page-donate .wpfs-form-check-group .fieldset-wrapper {
+    .page-donate  fieldset.wpfs-form-check-group .fieldset-wrapper {
         width: 90%;
         padding-top: 15%;
     }
