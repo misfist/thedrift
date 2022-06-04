@@ -244,11 +244,7 @@ if ($logo_url == "") {
 <script>
 
 
-    AOS.init({
-    	once: true,
-        delay: 0,
-        duration: 1000
-    });
+
 
 jQuery(document).ready(function(){
 /*
