@@ -461,7 +461,7 @@ function twentyseventeen_scripts() {
 
 	global $post;
 	if ( is_page_template( array( 'page-templates/subscribe.php','page-templates/donate.php' )  ) || ( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'fullstripe_form' ) ) ) {
-		// wp_enqueue_script( 'drift-wpfs' );
+		wp_enqueue_script( 'drift-wpfs' );
 	}
 
 	// Theme block stylesheet.
