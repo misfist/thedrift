@@ -862,10 +862,10 @@ $wp_query->is_feed = false;
 /**
  * Redirect to the homepage all users trying to access feeds STARTS HERE .
  */
-function disable_feeds() {
-	wp_redirect( home_url() );
-	die;
-}
+// function disable_feeds() {
+// 	wp_redirect( home_url() );
+// 	die;
+// }
 
 // Disable global RSS, RDF & Atom feeds.
 // add_action( 'do_feed',      'disable_feeds', -1 );
@@ -943,7 +943,7 @@ function remove_json_api() {
 	// Remove oEmbed-specific JavaScript from the front-end and back-end.
 	remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 }
-	add_action( 'after_setup_theme', 'remove_json_api' );
+	// add_action( 'after_setup_theme', 'remove_json_api' );
 
 /* Remove WP-JSON api ENDS HERE . */
 
