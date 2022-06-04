@@ -1577,13 +1577,16 @@ button.wpfs-btn-primary:focus {
     outline: none;
     box-shadow: none;
 }
-.page-template-subscribe .kudossubscribe .wpfs-form-check .wpfs-form-check-label{
+.page-template-subscribe .kudossubscribe .wpfs-form-check .wpfs-form-check-label {
     padding-left: 30px;
 }
-.page-template-subscribe .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label span.constrained,
-.page-template-donate .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label span.constrained {
+.page-template-subscribe .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label span.constrained {
     width: 125px;
     display: inline-block;
+}
+.page-template-donate .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label span.constrained,
+.page-template-donate .kudossubscribe .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label span.constrained:before {
+    display: none;
 }
 /* media css*/
 /* James Zone */
