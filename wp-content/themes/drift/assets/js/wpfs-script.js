@@ -10,7 +10,7 @@
     }
 
     const formType = form.data( 'wpfs-form-type' );
-    const fieldNodes = $( '.wpfs-form-check-group .wpfs-form-check' );
+    const fieldNodes = $( 'fieldset.wpfs-form-check-group .wpfs-form-check' );
 
     if( fieldNodes ) {
         if( 'inline_subscription' === formType ) {
@@ -49,9 +49,28 @@
         fieldNodes.each( function( index, value ) {
             let $input = $( this ).find( 'input' );
             let $label = $( this ).find( '.wpfs-form-check-label' );
-            let $description =  $input.data( 'wpfs-amount-description' );
+            let $amount =  $input.val();
+            let $currency = $input.data( 'wpfs-currency' );
+            let $productName = ( $input.data( 'wpfs-product-name' ) ) ? $input.data( 'wpfs-product-name' ) : '';
+            // let $description =  $input.data( 'wpfs-amount-description' );
 
-            $label.html( $description );
+            let amount = $amount;
+
+            if( 'other' != $amount ) {
+                amount = new Intl.NumberFormat( 'en-US', { 
+                    style: 'currency', 
+                    currency: $currency,
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 2
+                } ).format( $amount );       
+            } 
+
+            let $description = ( $productName ) ? '<span class="constrained">' + $productName + '</span>' : '';
+            
+            let $price = '<strong>' + amount + '</strong>';
+            $label.html( $description + $price );
+
+            // $label.html( $description );
         } );
     }
 
