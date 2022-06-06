@@ -10,7 +10,7 @@ namespace SiteFunctionality\Taxonomies;
 use SiteFunctionality\Abstracts\Base;
 use SiteFunctionality\Taxonomies\Author;
 use SiteFunctionality\Taxonomies\Section;
-use SiteFunctionality\Taxonomies\issue;
+use SiteFunctionality\Taxonomies\Issue;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
