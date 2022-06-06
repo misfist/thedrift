@@ -53,11 +53,6 @@ function twentyseventeen_body_classes( $classes ) {
 		}
 	}
 
-	global $post;
-	if ( isset( $post ) ) {
-		$classes[] = $post->post_type . '-' . $post->post_name;
-	}
-
 	// Add class if the site title and tagline is hidden.
 	if ( 'blank' === get_header_textcolor() ) {
 		$classes[] = 'title-tagline-hidden';
