@@ -150,8 +150,8 @@ jQuery("#wpfs-address-switcher--ZTI4NGY").removeClass("wpfs-form-check-group");
 
 	});
 
-	jQuery('.ab_part_linner button[type="submit"]').html("Subscribe now");
-	jQuery('.ab_part_linner .form01 button[type="submit"]').html("Donate now!");
+	// jQuery('.ab_part_linner button[type="submit"]').html("Subscribe now");
+	// jQuery('.ab_part_linner .form01 button[type="submit"]').html("Donate now!");
 });
 
 
