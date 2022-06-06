@@ -72,3 +72,4 @@ Thumbs.db
 node_modules/
 /vendor/
 wp-content/plugins/site-functionality/vendor
+wp-content/plugins/site-functionality/vendor/*
