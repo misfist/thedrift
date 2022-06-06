@@ -708,39 +708,39 @@ function wptuts53021_load_admin_script( $hook ){
 
 // create a custom taxonomy name it topics for your posts
 
-function create_topics_hierarchical_taxonomy() {
-	// Add new taxonomy, make it hierarchical like categories
-	// first do the translations part for GUI
+// function create_topics_hierarchical_taxonomy() {
+// 	// Add new taxonomy, make it hierarchical like categories
+// 	// first do the translations part for GUI
 
-	$labels = array(
-		'name'              => _x( 'Authors', 'taxonomy general name' ),
-		'singular_name'     => _x( 'Author', 'taxonomy singular name' ),
-		'search_items'      => __( 'Search Authors' ),
-		'all_items'         => __( 'All Authors' ),
-		'parent_item'       => __( 'Parent Author' ),
-		'parent_item_colon' => __( 'Parent Author:' ),
-		'edit_item'         => __( 'Edit Author' ),
-		'update_item'       => __( 'Update Author' ),
-		'add_new_item'      => __( 'Add New Author' ),
-		'new_item_name'     => __( 'New Author Name' ),
-		'menu_name'         => __( 'Authors' ),
-	);
+// 	$labels = array(
+// 		'name'              => _x( 'Authors', 'taxonomy general name' ),
+// 		'singular_name'     => _x( 'Author', 'taxonomy singular name' ),
+// 		'search_items'      => __( 'Search Authors' ),
+// 		'all_items'         => __( 'All Authors' ),
+// 		'parent_item'       => __( 'Parent Author' ),
+// 		'parent_item_colon' => __( 'Parent Author:' ),
+// 		'edit_item'         => __( 'Edit Author' ),
+// 		'update_item'       => __( 'Update Author' ),
+// 		'add_new_item'      => __( 'Add New Author' ),
+// 		'new_item_name'     => __( 'New Author Name' ),
+// 		'menu_name'         => __( 'Authors' ),
+// 	);
 
-	// Now register the taxonomy
+// 	// Now register the taxonomy
 
-	register_taxonomy(
-		'authors',
-		array( 'post' ),
-		array(
-			'hierarchical'      => true,
-			'labels'            => $labels,
-			'show_ui'           => true,
-			'show_admin_column' => true,
-			'query_var'         => true,
-			'rewrite'           => array( 'slug' => 'article_author' ),
-		)
-	);
-}
+// 	register_taxonomy(
+// 		'authors',
+// 		array( 'post' ),
+// 		array(
+// 			'hierarchical'      => true,
+// 			'labels'            => $labels,
+// 			'show_ui'           => true,
+// 			'show_admin_column' => true,
+// 			'query_var'         => true,
+// 			'rewrite'           => array( 'slug' => 'article_author' ),
+// 		)
+// 	);
+// }
 // add_action('init', 'create_topics_hierarchical_taxonomy', 0);
 
 function get_first_paragraph() {
