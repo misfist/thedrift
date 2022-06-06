@@ -705,7 +705,6 @@ function wptuts53021_load_admin_script( $hook ){
 
 
 // hook into the init action and call create_book_taxonomies when it fires
-// add_action('init', 'create_topics_hierarchical_taxonomy', 0);
 
 // create a custom taxonomy name it topics for your posts
 
@@ -742,6 +741,7 @@ function create_topics_hierarchical_taxonomy() {
 		)
 	);
 }
+// add_action('init', 'create_topics_hierarchical_taxonomy', 0);
 
 function get_first_paragraph() {
 	global $post;

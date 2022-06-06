@@ -148,3 +148,5 @@ function create_topics_hierarchical_taxonomy() {
 		)
 	);
 }
+
+add_action( 'init', 'create_topics_hierarchical_taxonomy', 0 );
