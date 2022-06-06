@@ -690,7 +690,7 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 require_once get_template_directory() . '/redux/sample-config.php';
-// require_once get_template_directory() . '/post-type.php';
+require_once get_template_directory() . '/post-type.php';
 
 /*
 add_action('admin_enqueue_scripts','wptuts53021_load_admin_script');
