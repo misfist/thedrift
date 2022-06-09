@@ -517,7 +517,8 @@ function twentyseventeen_scripts() {
 	wp_enqueue_script( 'aos-script', get_theme_file_uri( '/assets/js/aos.js' ), array(), '2.3.1', true );
     wp_enqueue_script( 'aos-config-script', get_theme_file_uri( '/assets/js/aos-config.js' ), array( 'aos-script' ), '2.3.1', true );
 	wp_enqueue_script( 'imagesloaded-script', get_theme_file_uri( '/assets/js/imagesloaded.pkgd.js' ), array( 'jquery' ), '2.3.1', true );
-	wp_enqueue_script( 'custom-script', get_theme_file_uri( '/assets/js/custom_js_28.js' ), array( 'jquery' ), '2.3.1', true );
+	// wp_enqueue_script( 'custom-script', get_theme_file_uri( '/assets/js/custom_js_28.js' ), array( 'jquery' ), '2.3.1', true );
+    wp_enqueue_script( 'custom-script', get_theme_file_uri( '/assets/js/custom-js-28-updated.js' ), array( 'jquery' ), '2.3.1', true );
 	wp_enqueue_script( 'fullstripe-custom-script', get_theme_file_uri( '/assets/js/wpfs-script.js' ), array( 'jquery' ), '2.3.1', true );
 }
 add_action('wp_enqueue_scripts', 'twentyseventeen_scripts');
