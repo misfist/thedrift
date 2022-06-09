@@ -446,10 +446,10 @@ function twentyseventeen_fonts_url() {
 /**
  * Enqueues scripts and styles.
  */
-function twentyseventeen_scripts()
-{
+function twentyseventeen_scripts() {
+
     // Add custom fonts, used in the main stylesheet.
-    wp_enqueue_style('twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null);
+    wp_enqueue_style( 'drift-fonts', twentyseventeen_fonts_url(), array(), time() );
 
     // Theme stylesheet.
     wp_enqueue_style('twentyseventeen-style', get_stylesheet_uri(), array(), '20190507');
