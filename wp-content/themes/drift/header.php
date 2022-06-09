@@ -10,25 +10,6 @@
 ?>
 <link rel="icon" href="<?php echo $favicon; ?>" type="image/gif" sizes="64x64">
 	
-
-	
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css?family=Jockey+One&display=swap&subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap&subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Palanquin&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
-
-
-
 <?php wp_head(); ?>
 
 </head>
