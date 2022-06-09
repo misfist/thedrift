@@ -14,6 +14,21 @@
 
     if( fieldNodes ) {
         if( 'inline_subscription' === formType ) {
+    const shippingAddressLabelEl = $("label[for^='wpfs-shipping-address-line-1']");
+    const billingAddressLabelEl = $("label[for^='wpfs-billing-address-line-1']");
+    const cardHolderLabelEl = $("label[for^='wpfs-card-holder-name']");
+
+    if (cardHolderLabelEl) {
+        cardHolderLabelEl.text( cardHolderLabelEl.text().replace( 'Card holder’s name' , 'Full name' ) );
+    }
+
+    if (shippingAddressLabelEl) {
+        shippingAddressLabelEl.text( shippingAddressLabelEl.text().replace( 'Shipping address street' , 'Shipping address' ) );
+    }
+
+    if (billingAddressLabelEl) {
+        billingAddressLabelEl.text( billingAddressLabelEl.text().replace( 'Billing address street' , 'Billing address' ) );
+    }
             formatSubscriptions();
         }
 
