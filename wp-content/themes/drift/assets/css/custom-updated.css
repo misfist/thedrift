@@ -260,6 +260,9 @@ form.search-form {
     --gray: #303030;
     --color__field-border: #909090;
     --color__field-background: #f6f6f6;
+    --color__highlight: #0e90cc;
+    --color__gray-field: #f6f6f6;
+    --link-hover-font-color: var(  --color__highlight );
 }
 
 body {
@@ -4566,5 +4569,10 @@ div[data-wpfs-amount-row="custom-amount"] {
 
 .page-template-donate input.wpfs-form-control,
 .page-donate input.wpfs-form-control {
-    border-color: #f6f6f6 !important;
+    border-color: var( --color__gray-field ) !important;
+}
+
+form .wpfs-btn-link,
+form .wpfs-btn-link:visited {
+    color: var( --color__highlight );
 }
