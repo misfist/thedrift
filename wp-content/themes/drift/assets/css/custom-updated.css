@@ -4321,3 +4321,208 @@ body.home .postid-2274 .arti_heading h4 a {
         padding-left: 160px;
     }
 }
+
+
+/* New form styling */
+
+.wpfs-same-billing-and-shipping-address + .wpfs-form-check-label::before {}
+
+label[for^="wpfs-same-billing-and-shipping-address"]:before,
+.wpfs-form-check-input + label[for^="wpfs-same-billing-and-shipping-address"]::before {
+    border: 1px solid var( --color__field-border ) !important;
+}
+
+.wpfs-form-check-input[type="checkbox"]:checked + label[for^="wpfs-same-billing-and-shipping-address"]::before {
+    background-color: var( --color__field-border ) !important;
+}
+
+/** Product Selection **/
+form.wpfs-form fieldset.wpfs-form-check-group {
+    background-color: var( --color__field-background );
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    /* background-size: 100% !important;
+    background-position: center top !important; */
+    /* padding: 15px 0px; */
+}
+
+.page-template-subscribe form.wpfs-form fieldset.wpfs-form-check-group,
+.page-subscribe form.wpfs-form fieldset.wpfs-form-check-group {
+    background-image: url("https://www.thedriftmag.com/wp-content/uploads/2021/09/cherimoya-subscribe.jpg");
+}
+
+.page-template-donate form.wpfs-form fieldset.wpfs-form-check-group,
+.page-donate form.wpfs-form fieldset.wpfs-form-check-group {
+    background-image: url(../images/donate-box-bg.png);
+}
+
+.page-template-donate form.wpfs-form fieldset.wpfs-form-check-group label,
+.page-template-donate form.wpfs-form fieldset.wpfs-form-check-group label strong {
+    color: var( --white );
+}
+
+/* Radio Buttons */
+.wpfs-form-check-input[type="radio"] + .wpfs-form-check-label::after {
+    background: #000 !important;
+    top: 5px !important;
+    left: 4px !important;
+    width: 12px !important;
+    height: 12px !important;
+    border: 0px;
+}
+
+.page-template-donate .wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+    padding-left: 1rem;
+}
+
+.wpfs-form-check-input+.wpfs-form-check-label::before {
+    height: 20px !important;
+}
+
+.wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+    display: inline-block;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.page-template-subscribe .ab_part_l .wpfs-form-check-group .wpfs-form-check {
+    width: 100% !important;
+    max-width: 300px;
+    padding: 0 15px;
+}
+
+.wpfs-form-check .wpfs-form-check-label strong {
+    margin-left: 20px;
+    font-size: 20px !important;
+}
+
+.wpfs-form-check .wpfs-form-check-label:focus {
+    outline: none;
+}
+
+form.wpfs-form {
+    padding-top: 6px !important;
+    z-index: 0;
+}
+
+.wpfs-form-check .wpfs-form-check-label:focus:after {
+    outline: none;
+}
+
+.wpfs-form-check>input:focus {
+    outline: none;
+}
+
+.wpfs-form-check-input[type="radio"]:focus + .wpfs-form-check-label:before,
+.wpfs-form-check-input[type="radio"]:checked:focus + .wpfs-form-check-label:before {
+    outline: none;
+    box-shadow: none;
+}
+
+.wpfs-form-check .wpfs-form-check-label {
+    padding-left: 30px;
+}
+
+.wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label span.constrained {
+    width: 125px;
+    display: inline-block;
+}
+
+.wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+    display: inline-block;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+div[data-wpfs-amount-row="custom-amount"] {
+    display: initial !important;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper,
+.page-donate .wpfs-form-check-group .fieldset-wrapper {
+    width: 100%;
+    max-width: 75%;
+    margin: 1rem 0;
+}
+
+.page-template-donate .wpfs-form-check-group .wpfs-form-check input, 
+.page-donate .wpfs-form-check-group .wpfs-form-check input {
+    margin-bottom: 0 !important;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper,
+.page-donate .wpfs-form-check-group .fieldset-wrapper {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check,
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check {
+    width: 35%;
+    margin: .5rem 0;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:nth-child(odd),
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:nth-child(odd) {
+    width: 65%;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:last-of-type,
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:last-of-type,
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:nth-child(7),
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:nth-child(7) {
+    width: 65%;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"],
+.page-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] {
+    width: 65%;
+    margin-left: 35%;
+    /* max-width: 20%; */
+}
+
+@media screen and ( min-width: 580px ) and ( max-width: 767px ) {
+    .page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:last-of-type,
+    .page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:last-of-type,
+    .page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:nth-child(7),
+    .page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-form-check:nth-child(7) {
+        width: 25%;
+    }
+
+    .page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"],
+    .page-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] {
+        width: 20%;
+        max-width: 20%;
+        margin: .5rem 0;
+    }
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"]  .wpfs-input-group,
+.page-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] .wpfs-input-group {
+    display: block;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"]  .wpfs-input-group input,
+.page-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] .wpfs-input-group input {
+    width: 100%;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] input {
+    border: 1px solid var( --color__field-border );
+    height: 29px;
+    border-radius: 0 !important;
+    padding: 0 .25rem;
+}
+
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-input-group-prepend {
+    display: none !important;
+}
