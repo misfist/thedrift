@@ -1373,11 +1373,12 @@ ul.social_icons li  i.fab{
 .page-template-page-templatessubscribe-php #wpfs-form-get-parameters--ZTI4NGY ~ .wpfs-form-check-group{display: none;}
 
 .ab_part_l .wpfs-form-check-group::after{
-    display: block;
+    /* Let's not make the form inaccessible */
+    /* display: block;
     content: "";
     top: 0;left: 0;width: 100%;height: 100%;
     position: absolute;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.7); */
 }
 
 
