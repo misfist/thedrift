@@ -9,6 +9,9 @@
    $favicon = $theme_option["favicon"]["url"];
 ?>
 <link rel="icon" href="<?php echo $favicon; ?>" type="image/gif" sizes="64x64">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	
 <?php wp_head(); ?>
 
