@@ -4525,13 +4525,20 @@ div[data-wpfs-amount-row="custom-amount"] {
     width: 100%;
 }
 
-.page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] input {
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] input,
+.page-donate .wpfs-form-check-group .fieldset-wrapper div[data-wpfs-amount-row="custom-amount"] input {
     border: 1px solid var( --color__field-border );
     height: 29px;
     border-radius: 0 !important;
     padding: 0 .25rem;
 }
 
-.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-input-group-prepend {
+.page-template-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-input-group-prepend,
+.page-donate .wpfs-form-check-group .fieldset-wrapper .wpfs-input-group-prepend {
     display: none !important;
+}
+
+.page-template-donate input.wpfs-form-control,
+.page-donate input.wpfs-form-control {
+    border-color: #f6f6f6 !important;
 }
