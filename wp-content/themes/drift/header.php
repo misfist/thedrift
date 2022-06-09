@@ -10,8 +10,6 @@
 ?>
 <link rel="icon" href="<?php echo $favicon; ?>" type="image/gif" sizes="64x64">
 	
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/all.min.css">
-	<link href="<?php bloginfo('template_url'); ?>/assets/css/aos.css" rel="stylesheet">
 
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,11 +28,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Enriqueta&display=swap" rel="stylesheet">
 
 
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.min.css">
-	<link href="<?php bloginfo('template_url'); ?>/assets/css/owl.carousel.min.css" rel="stylesheet" />
-
-	<link  rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/custom_77.css?t=<?php echo time();?>"/>
 
 <?php wp_head(); ?>
 

@@ -453,6 +453,13 @@ function twentyseventeen_scripts()
     // Theme block stylesheet.
     wp_enqueue_style('twentyseventeen-block-style', get_theme_file_uri('/assets/css/blocks.css'), array( 'twentyseventeen-style' ), '20190105');
 
+    wp_enqueue_style( 'drift-all-style', get_theme_file_uri( '/assets/css/all.min.css' ), array(), time() );
+    wp_enqueue_style( 'aos-style', get_theme_file_uri( '/assets/css/aos.css' ), array(), time() );
+    wp_enqueue_style( 'bootstrap-style', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), time() );
+    wp_enqueue_style( 'owl-style', get_theme_file_uri( '/assets/css/owl.carousel.min.css' ), array(), time() );
+    wp_enqueue_style( 'drift-style', get_theme_file_uri( '/assets/css/custom_77.css' ), array(), time() );
+
+
     // Load the dark colorscheme.
     if ('dark' === get_theme_mod('colorscheme', 'light') || is_customize_preview()) {
         wp_enqueue_style('twentyseventeen-colors-dark', get_theme_file_uri('/assets/css/colors-dark.css'), array( 'twentyseventeen-style' ), '20190408');
