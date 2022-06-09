@@ -1094,7 +1094,7 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .wpfs-btn-primary--loader:after{
-    /** Let's not hide the loader - Pea **/
+    /** Let's not hide the loader - **/
     /* display:none !important;  */
 }
 
@@ -1334,7 +1334,8 @@ ul.social_icons li  i.fab{
     border-radius: 9px !important;
 }
 .wpfs-form-actions button.wpfs-btn {
-    margin-right: 0 !important;
+    /** Let's not reset the margin - Pea **/
+    /* margin-right: 0 !important; */
 }
 
 
