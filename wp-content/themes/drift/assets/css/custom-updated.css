@@ -258,6 +258,8 @@ form.search-form {
     --back-color:#0067B8;
     --primary-color:#ffd98e;
     --gray: #303030;
+    --color__field-border: #909090;
+    --color__field-background: #f6f6f6;
 }
 
 body {
