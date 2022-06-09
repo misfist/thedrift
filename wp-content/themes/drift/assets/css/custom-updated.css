@@ -1092,7 +1092,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
     padding-left: 15px;
     margin: 0px 0;
 }
-.wpfs-btn-primary--loader:after{display:none !important; }
+
+.wpfs-btn-primary--loader:after{
+    /** Let's not hide the loader - Pea **/
+    /* display:none !important;  */
+}
 
 .ab_part_r{
     width: 50%;
