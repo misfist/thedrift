@@ -156,7 +156,7 @@ while ($issue_loop->have_posts()):$issue_loop->the_post();
 
 	$current_issue_subtitle = get_post_meta( $pageID, 'current_issue_subtitle', true );
 	?>
-   <h1 id="<?php echo $post->post_name; ?>" class="issue_heading"><b><?php echo get_the_title(); ?></b> <br/> 
+   <h1 id="<?php echo $post->post_name; ?>" class="issue_heading"><?php echo get_the_title(); ?> <br/> 
 										   <?php
 											if ( $current_issue_subtitle != '' ) {
 												?>
