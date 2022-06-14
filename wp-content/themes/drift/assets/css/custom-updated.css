@@ -2853,12 +2853,20 @@ h1.issue_heading {
 
 }
 
-h1.issue_heading b { 		/* ============= ADDED 5/28 ========= */
-    /*font-family: adobe-caslon-w01-smbd, serif;*/
-    font-family: adobe-caslon, serif;  /* === CHANGED 6.2 === */
+/* h1.issue_heading b {
+    font-family: adobe-caslon, serif;
     text-transform: none;
     font-size: 50px;
-	padding-right 10px; 	/* ============== ADDED 6/3 ========= */
+	padding-right: 10px;
+} */
+
+h1.issue_heading b,
+h1.issue_heading strong {
+    /* Let's apply to strong tag also */
+    font-family: adobe-caslon, serif;
+    text-transform: none;
+    font-size: 50px;
+	padding-right: 10px;
 }
 
 h1.issue_heading span { 	/* ============= ADDED 5/28 ========= */
