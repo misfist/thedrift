@@ -263,6 +263,7 @@ form.search-form {
     --color__highlight: #0e90cc;
     --color__gray-field: #f6f6f6;
     --link-hover-font-color: var(  --color__highlight );
+    --font__avenir: Avenir-Next-Thin, 'Montserrat', sans-serif;
 }
 
 body {
@@ -577,7 +578,7 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     counter-set: section 1;
 	/*margin-top: -40px*/						/* === ADDED 6.16 ===*/
 }
-.issues_list_ul li::before {
+/* .issues_list_ul li::before {
     counter-increment: section 1;
     content: counter(section)'.';
     position: absolute;
@@ -585,7 +586,18 @@ input[type="email"].wpfs-form-control, input[type="text"].wpfs-form-control, .wp
     font-size: 33px;
     bottom: 0;
     font-weight: 700;
-}
+} */
+
+.issues_list_ul li::marker {
+    /* Use data-count attribute for numbering */
+    content: attr( data-count );
+    position: absolute;
+    left: -25px;
+    font-size: 33px;
+    bottom: 0;
+    font-weight: 700;
+} 
+
 .home_mentions ul li.more_link a {
     color: #8C00FF;
     font-family: Avenir-Next-Thin;
