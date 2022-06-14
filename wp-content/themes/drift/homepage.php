@@ -526,56 +526,8 @@ else
 	</div>     
 </div>
 <hr class="mob-hide-line" />
-<?php 
-  $issue_args = array("post_type" => "issue", "posts_per_page" => "4", "orderby" =>"date", "order" =>"DESC" );
-  $issue_loop = new wp_query($issue_args);
-?>
 
-<div class="latestArticle_Heading td-issues-head">
-	<h1>Issues</h1>
-</div>
-<div class="home_issues">
-	<div class="row custom_wrap home_mentions_wrap">		
-		   		<ol class="issues_list_ul row">
-		   			<?php 
-		   			  while($issue_loop->have_posts()):$issue_loop->the_post();
-		   			  	$issuePostID =  get_the_id();
-		   			  	$issuePostPermalink = get_the_permalink($issuePostID);
-						
-						/* ********TESTING hyperlink ******/
-						$issue_title = get_the_title(); 
-						$issue_hyper_link = esc_url(site_url("/issues/#$issue_title")); 
-						/* *** END TESTING hyperlink ****/
-						
-
-		   			  	$issuePostImageID = get_post_thumbnail_id($issuePostID);
-		   			  	if($issuePostImageID != "")
-		   			  	{
-		   			  	  $issuePostImageURL = wp_get_attachment_image_src($issuePostImageID, "medium");
-		   			  	  $issuePostImageURL = $issuePostImageURL[0];
-		   			  	}
-		   			  	else
-		   			  	{
-		   			  		$issuePostImageURL = get_bloginfo("template_url")."/assets/images/dummy.jpg";
-		   			  	}
-		   			?>
-		   			   <li class="col-md-3 issues_image">
-						<!--ORIGINAL hyperlink
-		   			  <a href="<?php echo $issuePostPermalink; ?>"><img src="<?php echo $issuePostImageURL; ?>"></a>-->
-						   <!--TESTING hyperlink -->
-						<a href="<?php echo $issue_hyper_link; ?>"><img src="<?php echo $issuePostImageURL; ?>"></a> 
-		   			   	</li>
-		   		   <?php endwhile; ?>
-		   		</ol>		   			
-	</div>
-
-	<div class="nextIssues">
-			<a href="<?php echo get_the_permalink(14); ?>" class="issuesMoreIcon">
-   				     <img src="<?php echo get_bloginfo('template_url'); ?>/assets/images/angle-right.png">
-			</a>
-	</div>
-
-</div>
+<?php get_template_part( 'template-parts/components/issues', 'carousel' ); ?>
 
 <?php 
 	get_footer();
