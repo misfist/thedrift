@@ -154,10 +154,13 @@ while ($issue_loop->have_posts()):$issue_loop->the_post();
         $articleDate = $date;
     }
 
-    $current_issue_subtitle = get_post_meta($pageID, "current_issue_subtitle", true);
-?>
-			<a id="<?php echo get_the_title(); ?>"></a> <!-- TESTING HYPERLINK from HomePage Issues -->
-   <h1 class="issue_heading"><b><?php echo get_the_title(); ?></b> <br/> <?php if ($current_issue_subtitle != "") {?><span>|</span> <?php echo $articleDate; } ?>
+	$current_issue_subtitle = get_post_meta( $pageID, 'current_issue_subtitle', true );
+	?>
+   <h1 id="<?php echo $post->post_name; ?>" class="issue_heading"><b><?php echo get_the_title(); ?></b> <br/> 
+										   <?php
+											if ( $current_issue_subtitle != '' ) {
+												?>
+ <span>|</span> <?php echo $articleDate; } ?>
    </h1>
   	
 <?php
