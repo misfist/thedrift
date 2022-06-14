@@ -259,4 +259,3 @@ endwhile;
 
 <?php
 get_footer();
-?>
