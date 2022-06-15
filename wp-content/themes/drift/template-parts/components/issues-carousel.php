@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * Homepage Issues Carousel
  */
 $args  = array(
 	'post_type'      => 'issue',
@@ -8,6 +8,7 @@ $args  = array(
 	'orderby'        => 'date',
 	'order'          => 'DESC',
 	'ignore_sticky'  => true,
+	'offset'         => 1,
 );
 $query = new wp_query( $args );
 ?>
