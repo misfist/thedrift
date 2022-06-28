@@ -1,0 +1,10 @@
+.single-post {
+    .entry-top {
+        @include make-cssgrid(2, md);
+    }
+
+    .entry-content {
+        @include make-container;
+        max-width: map-get( $container-max-widths, content );
+    }
+}

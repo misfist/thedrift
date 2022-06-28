@@ -1,0 +1,84 @@
+//--------------------------------------------------------------
+// Menus and Sub-Menus
+//--------------------------------------------------------------
+.navigation-menu {
+
+	@screen tablet-landscape {}
+
+	.menu {
+
+		> li {
+
+			&:not( :last-child ) {}
+		}
+	}
+
+	.sub-menu {
+
+		left: -999em;
+		top: theme( 'spacing.24' );
+		z-index: 99999;
+
+		li {}
+
+		.menu-item-has-children {
+
+			&:hover,
+			&.focus {
+
+				> .sub-menu {
+					left: 100%;
+				}
+			}
+		}
+	}
+}
+
+//-----------------------------------------
+// Menu Items With Children
+//-----------------------------------------
+.menu-item-has-children {
+
+	&:hover,
+	&.focus {
+
+		> .sub-menu {}
+	}
+}
+
+//-----------------------------------------
+// Dropdown Styles
+//-----------------------------------------
+.dropdown {
+
+	ul {
+
+		li {
+		}
+
+		a {
+			min-width: theme( 'width.192' );
+		}
+	}
+}
+
+//-----------------------------------------
+// The Down Caret
+//-----------------------------------------
+.caret-down {
+
+	background: url( ../images/icons/caret-down.svg ) 50% 50% no-repeat;
+	background-size: 100%;
+	width: theme( 'spacing.8' );
+}
+
+//-----------------------------------------
+// Footer
+//-----------------------------------------
+.footer-navigation {
+
+	.menu {
+
+		@screen tablet-landscape {}
+	}
+}

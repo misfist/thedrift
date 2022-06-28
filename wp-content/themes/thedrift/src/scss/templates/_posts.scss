@@ -1,0 +1,50 @@
+//--------------------------------------------------------------
+// Post Elements
+//--------------------------------------------------------------
+.entry-meta {}
+
+.post {
+	.entry-content {
+		font-family: $font-family-savoy;
+		font-size: $font-size-body;
+	}
+}
+
+.post-title {}
+
+.post-subtitle {
+	font-family: $font-family-sans-serif;
+}
+
+.entry-footer {}
+
+.cat-links,
+.tag-links {}
+
+.post-edit-link {}
+
+.post-container {
+
+	&:not( :last-child ) {}
+}
+
+.post-navigation {
+
+	.nav-links {
+
+		@screen tablet-landscape {
+
+			text-align: unset;
+		}
+	}
+}
+
+.post-navigation .nav-next {
+
+	@screen tablet-landscape {}
+}
+
+.updated {
+
+	&:not( .published ) {}
+}

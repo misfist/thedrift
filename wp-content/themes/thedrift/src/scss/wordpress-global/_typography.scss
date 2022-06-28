@@ -1,0 +1,25 @@
+//--------------------------------------------------------------
+// Typography
+//--------------------------------------------------------------
+
+.has-drop-cap {
+    &:not(:focus)::first-letter {
+        font-size: map-get( $display-font-sizes, 2 );
+        font-family: $font-family-savoy;
+        font-weight: bold;
+    }
+}
+
+.single-post {
+	.entry-content {
+		p > b,
+		p > strong {
+			@extend .has-drop-cap;
+			float: left;
+			line-height: 0.68;
+			margin: 0.05em 0.1em 0 0;
+			text-transform: uppercase;
+			font-style: normal;
+		}
+	}
+}

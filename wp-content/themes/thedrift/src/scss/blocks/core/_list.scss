@@ -1,0 +1,16 @@
+//----------------------------------------
+// List - Core Gutenberg Block
+//----------------------------------------
+
+ul {
+
+	&:not( .menu, .sub-menu ) {}
+}
+
+ol {}
+
+li li,
+li li li,
+li li li li,
+li li li li li,
+li li li li li li {}

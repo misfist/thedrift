@@ -1,0 +1,42 @@
+//----------------------------------------
+// Table - Core Gutenberg Block
+//----------------------------------------
+
+.wp-block-table {
+
+	border-spacing: 0;
+
+	@screen desktop {}
+
+	thead {
+
+		@screen desktop {}
+	}
+
+	th,
+	td {
+		@screen desktop {}
+	}
+
+	td {
+
+		@screen desktop {}
+
+		&::before {
+
+			content: attr( data-label );
+
+			@screen desktop {}
+		}
+	}
+
+	th {
+
+		@screen tablet-portrait {}
+	}
+
+	tr {
+
+		@screen desktop {}
+	}
+}

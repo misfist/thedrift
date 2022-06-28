@@ -1,0 +1,54 @@
+[class*='wpfs-'] {
+    // --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif !important;
+    --primary-color: #{$body-color} !important;
+    --secondary-color: #{$input-bg} !important;
+    --error-color: #{$red} !important;
+    --success-color: #{$green} !important;
+    --default-border-radius: 0 !important;
+    --form-bg-color: #{$input-bg} !important;
+    --form-base-color: #{body-color} !important;
+    // --form-secondary-color: #b6b8c5 !important;
+    --form-control-bg-color: #{$input-bg} !important;
+    --form-control-border-color: #{$input-bg} !important;
+    // --form-control-placeholder-color: #7f8393 !important;
+    --form-control-hover-border-color: #{$input-bg} !important;
+    // --form-check-input-disabled-bg-color: rgba(182, 184, 197, 0.3) !important;
+    // --form-message-font-color: #fff !important;
+    // --ui-widget-content-bg-color: #fff !important;
+    // --ui-state-active-bg-color: #ecf3fb !important;
+    // --ui-state-active-font-color: #fff !important;
+    --ui-state-selected-bg-color: #{$gray-600} !important;
+    --ui-state-selected-font-color: #{$black} !important;
+    // --ui-info-tooltip-font-color: #fff !important;
+    // --ui-summary-tooltip-bg-color: #fff !important;
+    // --ui-summary-tooltip-border-color: #b6b8c5 !important;
+    --link-font-color: #{$link-color} !important;
+    --link-hover-font-color: #{$link-hover-color} !important;
+    --link-active-font-color: #{$link-hover-color} !important;
+    --link-disabled-font-color: #{$btn-link-disabled-color} !important;
+}
+  
+//   .wpfs-form {
+//     // --form-thank-you-message-font-color: #2f2f37 !important;
+//   }
+  
+  .wpfs-btn {
+    --primary-bg-color: #{$white} !important;
+    --primary-font-color: #{$body-color} !important;
+    --primary-hover-focus-bg-color: #{$input-bg} !important;
+    --primary-active-bg-color: var( --primary-hover-focus-bg-color ) !important;
+    // --primary-disabled-bg-color: #b6b8c5 !important;
+    // --primary-disabled-font-color: rgba(255, 255, 255, 0.6) !important;
+    --danger-bg-color: #{$red} !important;
+    --danger-font-color: #{$white} !important;
+    --danger-hover-focus-bg-color: #{$red} !important;
+    --danger-active-bg-color: #{$red} !important;
+    // --danger-disabled-bg-color: #b6b8c5 !important;
+    // --danger-disabled-font-color: rgba(255, 255, 255, 0.6) !important;
+    --outline-primary-bg-color: #{$white} !important;
+    --outline-primary-hover-focus-border-color: #{$primary} !important;
+    --outline-primary-border-color: #{$black} !important;
+    // --outline-primary-disabled-border-color: #b6b8c5 !important;
+    // --outline-primary-disabled-font-color: rgba(255, 255, 255, 0.6) !important;
+    --outline-primary-selected-font-color: #{$white} !important;
+  }

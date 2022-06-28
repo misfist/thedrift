@@ -1,0 +1,28 @@
+.btn {
+    text-transform: uppercase;
+    font-weight: normal;
+
+    &:hover,
+    &:focus {
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+}
+
+.btn-primary,
+.button {
+    @include button-variant(
+        $body-bg,
+        $body-color,
+        $color: $body-color,
+        $hover-background: $input-bg,
+        $hover-border: $body-color,
+        $hover-color: $body-color,
+        $active-background: $input-bg,
+        $active-border: $body-color,
+        $active-color: $body-color,
+        $disabled-background: $input-bg,
+        $disabled-border: $text-muted,
+        $disabled-color: color-contrast($input-bg)
+      );
+}

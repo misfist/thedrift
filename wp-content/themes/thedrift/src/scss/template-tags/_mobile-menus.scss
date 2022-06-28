@@ -1,0 +1,64 @@
+//--------------------------------------------------------------
+// Mobile Menus
+//--------------------------------------------------------------
+.mobile-menu {
+
+	li {}
+
+	.sub-menu {
+
+		&.is-visible {
+		}
+	}
+
+	.menu-item-has-children {
+
+		&.is-visible {
+			max-height: 8000px;
+
+			.parent-indicator {
+			}
+		}
+
+		.menu-item-has-children {
+
+			&:last-of-type {
+
+				.menu-item-has-children.is-visible {
+				}
+			}
+
+			.parent-indicator {
+			}
+
+			&.is-visible {
+
+				&:last-of-type {
+				}
+
+				.parent-indicator {
+				}
+			}
+
+			.menu-item-has-children {
+
+				.parent-indicator {
+				}
+
+				&.is-visible {
+
+					.parent-indicator {
+					}
+				}
+			}
+		}
+	}
+
+	.parent-indicator {
+
+		float: unset;
+		height: theme( 'height.16' );
+		width: theme( 'width.16' );
+		top: -4px;
+	}
+}
