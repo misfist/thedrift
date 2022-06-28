@@ -1,0 +1,4709 @@
+$color__black: #000;
+$color__white: #fff;
+
+$color__cod_gray_approx: #070707;
+$color__mine_shaft_approx: #303030;
+$color__dove_gray_approx: #636363;
+$color__gray_approx: #909090;
+$color__silver_chalice_approx: #aaa;
+$color__nobel_approx: #b4b4b4;
+$color__french_gray_approx: #b6b8c5;
+$color__silver_approx: #cbcbcb;
+$color__gallery: #efefef;
+$color__gallery: #f0f0f0;
+$color__black_10: rgba(0, 0, 0, 0.1);
+$color__athens_gray_approx: #f5f5f6;
+$color__wild-sand: #f6f6f6;
+$color__wild-sand: #f4f4f4;
+$color__alabaster_approx: #fbfbfb;
+
+/* Blues */
+$color__smalt_blue_approx: #4d788c;
+$color__glacier_approx: #69a7c2;
+$color__fountain_blue_approx: #68b3cc;
+$color__jelly_bean_approx: #2a8a9d;
+$color__science_blue_approx: #0067b8;
+$color__pacific_blue_approx: #0e90cc;
+$color__bright_turquoise_approx: #07dbdb;
+
+/* Yellows */
+$color__salomie_approx: #ffd98e;
+$color__givry_approx: #f5dfbe;
+
+$color__electric_violet_approx: #8c00ff;
+
+/* Alerts */
+$color__green: #00a86b;
+$color__guardsman_red_approx: #b70404;
+
+
+$font__avenir-next-thin: Avenir-Next-Thin;
+$font__18: Montserrat;
+$font__26: 'Open Sans';
+$font__27: 'Helvetica Neue';
+$font__sans-serif: sans-serif;
+
+$font__0: Avenir-Light;
+$font__6: AvenirLTStd-Light;
+$font__7: AvenirLTStd-Roman;
+$font__8: Avenir-Roman;
+$font__9: AvenirLTStd-Book;
+$font__10: Avenir-Book;
+$font__11: Avenir-Thin;
+$font__4: Avenir-UltraLight;
+
+$font__1: Adobe-Caslon;
+
+$font__2: proxy-nova;
+$font__3: franklin-gothic;
+$font__libre-franklin: 'Libre Franklin';
+
+$font__savoy: Savoy;
+$font__savoy-bold: Savoy-Bold;
+$font__garamond: 'EB Garamond';
+$font__garamond-bold: 'EB Garamond Bold';
+$font__times: Times;
+$font__georgia: Georgia;
+$font__serif: serif;
+
+$font__19: -apple-system;
+$font__20: BlinkMacSystemFont;
+$font__21: Segoe UI;
+$font__22: Roboto;
+$font__23: Oxygen;
+$font__24: Ubuntu;
+$font__25: Cantarell;
+
+$font__5: big-caslon;
+
+$font__35: inherit !important;
+
+.event-heading {
+	font-size: 29px;
+	font-family: $font__2, $font__19, $font__20, $font__21, $font__22, $font__23, $font__24, $font__25, $font__26, $font__27, $font__sans-serif;
+	line-height: 1;
+}
+.first-benefit_wrapper {
+	label {
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		clip: rect(1px, 1px, 1px, 1px);
+		clip-path: polygon(0px 0, 0 0, 0 0);
+		-webkit-clip-path: polygon(0px 0, 0 0, 0 0);
+		overflow: hidden !important;
+	}
+	.gform_body {
+		width: 65%;
+		max-width: 400px;
+	}
+	.gform_footer {
+		width: 18%;
+		padding: 0 !important;
+		margin: 0 !important;
+		display: flex;
+	}
+}
+.first-benefit {
+	display: flex;
+	padding-bottom: 4rem;
+	.gform_button {
+		margin-bottom: 0 !important;
+		margin-top: auto !important;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.23s ease-in-out 0s;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 9px;
+		border: 1px solid $color__black;
+	}
+	.gform_confirmation_message {
+		background-color: $color__green;
+		padding: 1rem;
+	}
+}
+form {
+	&.search-form {
+		display: flex;
+		justify-content: center;
+		margin-top: 1.7rem;
+		margin-bottom: 1.7rem;
+	}
+	&.wpfs-form {
+		padding-top: 6px !important;
+		z-index: 0;
+		fieldset.wpfs-form-check-group {
+			background-color: var(--color__field-background);
+			width: 100%;
+			height: auto;
+			position: relative;
+			margin-bottom: 30px;
+			background-repeat: no-repeat !important;
+			background-size: cover;
+		}
+	}
+	.wpfs-btn-link {
+		color: var(--color__highlight);
+		&:visited {
+			color: var(--color__highlight);
+		}
+	}
+}
+* {
+	outline: none;
+	&:focus {
+		outline: none;
+	}
+}
+.page-template-issues {
+	.footer_outerhtml {
+		overflow-x: hidden;
+	}
+	.footer_outer {
+		margin-top: -200px;
+	}
+	.com_heading01 {
+		position: relative;
+		z-index: 999;
+		h4 + .authors a {
+			font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: normal;
+			display: inline-block;
+			padding-top: 0;
+			&:after {
+				content: ", ";
+				margin-right: 7px;
+			}
+			&:last-child:after {
+				content: none;
+			}
+		}
+	}
+}
+@font-face {
+	font-family: $font__0;
+	src: url(../font/Avenir-Light.ttf);
+}
+@font-face {
+	font-family: $font__1;
+	src: url(../font/adobe/ACaslonPro-Regular.otf);
+}
+@font-face {
+	font-family: $font__2;
+	src: url(../font/proxy/proxy.ttf);
+}
+@font-face {
+	font-family: $font__3;
+	src: url(../font/franklin-gothic.ttf);
+}
+@font-face {
+	font-family: $font__4;
+	src: url(../font/Avenir-UltraLight.ttf);
+}
+@font-face {
+	font-family: $font__5;
+	src: url(../font/big-caslon.ttf);
+}
+@font-face {
+	font-family: $font__6;
+	src: url(../font/AvenirLTStd-Light.otf);
+}
+@font-face {
+	font-family: $font__7;
+	src: url(../font/AvenirLTStd-Roman.otf);
+}
+@font-face {
+	font-family: $font__8;
+	src: url(../font/Avenir-Roman.ttf);
+}
+@font-face {
+	font-family: $font__9;
+	src: url(../font/AvenirLTStd-Book.otf);
+}
+@font-face {
+	font-family: $font__10;
+	src: url(../font/Avenir-Book.ttf);
+}
+@font-face {
+	font-family: $font__11;
+	src: url(../font/avenir_thin.ttf);
+}
+@font-face {
+	font-family: $font__avenir-next-thin;
+	src: url(../font/avenir-next-thin.ttf);
+}
+@font-face {
+	font-family: $font__garamond;
+	src: url(../font/EBGaramond/EBGaramond-Regular.woff2) format('woff2'), url(../font/EBGaramond/EBGaramond-Regular.woff) format('woff'), url(../font/EBGaramond/EBGaramond-Regular.svg#EBGaramond-Regular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__garamond;
+	src: url(../font/EBGaramond/EBGaramond-Italic.woff2) format('woff2'), url(../font/EBGaramond/EBGaramond-Italic.woff) format('woff'), url(../font/EBGaramond/EBGaramond-Italic.svg#EBGaramond-Italic) format('svg');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__garamond-bold;
+	src: url(../font/EBGaramond/EBGaramond-Bold.woff2) format('woff2'), url(../font/EBGaramond/EBGaramond-Bold.woff) format('woff'), url(../font/EBGaramond/EBGaramond-Bold.svg#EBGaramond-Bold) format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__garamond-bold;
+	src: url(../font/EBGaramond/EBGaramond-BoldItalic.woff2) format('woff2'), url(../font/EBGaramond/EBGaramond-BoldItalic.woff) format('woff'), url(../font/EBGaramond/EBGaramond-BoldItalic.svg#EBGaramond-BoldItalic) format('svg');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__libre-franklin;
+	src: url(../font/LibreFranklin/LibreFranklin-Thin.woff2) format('woff2'), url(../font/LibreFranklin/LibreFranklin-Thin.woff) format('woff'), url(../font/LibreFranklin/LibreFranklin-Thin.svg#LibreFranklin-Thin) format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__libre-franklin;
+	src: url(../font/LibreFranklin/LibreFranklin-Thin.woff2) format('woff2'), url(../font/LibreFranklin/LibreFranklin-ThinItalic.woff) format('woff'), url(../font/EBGaramond//LibreFranklin/LibreFranklin-ThinItalic.svg#LibreFranklin-ThinItalic) format('svg');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__savoy;
+	src: url(../font/Savoy/Savoy-Regular.woff) format('woff'), url(../font/Savoy/Savoy-Regular.woff.svg#Savoy) format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__savoy-bold;
+	src: url(../font/Savoy/SavoyBold.woff2) format('woff2'), url(../font/Savoy/SavoyBold.woff) format('woff'), url(../font/Savoy/SavoyBold.woff.svg#Savoy) format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__18;
+	src: url(../font/Montserrat/Montserrat-Thin.woff2) format('woff2'), url(../font/Montserrat/Montserrat-Thin.woff) format('woff'), url(../font/Montserrat/Montserrat-Thin.svg#Montserrat-Thin) format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: $font__18;
+	src: local('Montserrat Thin Italic'), local('Montserrat-ThinItalic'), url(../font/Montserrat-ThinItalic.woff2) format('woff2'), url(../font/Montserrat-ThinItalic.woff) format('woff'), url(../font/Montserrat-ThinItalic.svg#Montserrat-ThinItalic) format('svg');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+:root {
+	--white: $color__white;
+	--black: $color__black;
+	--back-color: $color__science_blue_approx;
+	--primary-color: $color__salomie_approx;
+	--gray: $color__mine_shaft_approx;
+	--color__field-border: $color__gray_approx;
+	--color__field-background: $color__wild-sand;
+	--color__highlight: $color__pacific_blue_approx;
+	--color__gray-field: $color__wild-sand;
+	--link-hover-font-color: var(--color__highlight);
+}
+body {
+	font-family: $font__avenir-next-thin;
+	letter-spacing: 0.03em;
+	line-height: 1.6em;
+	color: $color__mine_shaft_approx;
+	&.home .postid-2274 .arti_heading h4 a {
+		font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+	}
+}
+h1 {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+	&.issue_heading {
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-size: 27px;
+		color: $color__black;
+		font-weight: 600;
+		b {
+			font-family: $font__1, $font__serif;
+			text-transform: none;
+			font-size: 50px;
+			padding-right: 10px;
+		}
+		span {
+			color: $color__silver_approx;
+			font-size: 36px;
+			display: none;
+		}
+	}
+}
+h2 {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+	font-size: 45px;
+	font-weight: 100;
+	line-height: 1.2;
+	position: relative;
+}
+h3 {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+	font-size: 40px;
+	letter-spacing: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	position: relative;
+	padding: 10px 0 25px;
+	text-align: left;
+}
+h4 {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+}
+h5 {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+}
+h6 {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+}
+p {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+	font-size: 19px;
+	letter-spacing: 0;
+	line-height: 1.6em;
+	margin-bottom: 25px;
+	color: var(--gray);
+}
+a {
+	font-family: $font__avenir-next-thin;
+	color: $color__mine_shaft_approx;
+	text-decoration: none!important;
+	border: none !important;
+}
+.single-post {
+	.mission_inner {
+		a {
+			text-decoration: underline !important;
+			font-family: initial;
+			position: relative;
+			&:hover {
+				color: $color__glacier_approx;
+				color: $color__mine_shaft_approx !important;
+			}
+		}
+		blockquote.link_quote p {
+			margin-bottom: 4px;
+		}
+	}
+	.contact01 {
+		margin: 20px 0 0 20px;
+		max-width: 490px;
+		flex-wrap: wrap;
+		height: 100%;
+		align-items: center;
+		margin-top: 0;
+		.com_heading {
+			margin-top: -40px;
+		}
+	}
+	.ab_part {
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin-top: 0;
+	}
+	.footer_outer {
+		margin-top: -300px;
+	}
+	.mission {
+		b,
+        strong {
+			font-family: $font__savoy-bold, $font__garamond-bold, $font__times, $font__serif;
+		}
+	}
+	figure {
+		margin-left: 92px;
+	}
+	.com_heading h3 {
+		padding-bottom: 0;
+	}
+	blockquote.link_quote p a:hover {
+		color: $color__mine_shaft_approx !important;
+	}
+	.article_editor p {
+		font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+		text-transform: uppercase;
+		padding-top: 50px;
+		b {
+			font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+			text-transform: uppercase;
+		}
+	}
+}
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	&.social_icons {
+		display: flex;
+		align-items: center;
+		li {
+			padding: 0 15px;
+			i {
+				&.fa {
+					font-size: 32px;
+				}
+				&.fab {
+					font-size: 32px;
+				}
+			}
+		}
+	}
+	&.f_menu.nav {
+		width: 750px;
+	}
+}
+.menu_outer {
+	z-index: 9;
+	position: relative;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	.nav > li {
+		margin-bottom: 20px;
+		&.only-for-space a {
+			color: $color__white;
+			font-size: 0;
+		}
+	}
+	ul.social_icons {
+		position: relative;
+		top: 24px;
+		li {
+			padding-left: 8px;
+			padding-right: 8px;
+			a {
+				&:hover {
+					color: initial;
+				}
+				i {
+					font-size: 16px;
+					&.fa-search {
+						font-size: 22px;
+					}
+				}
+			}
+			&:not(:last-child) {
+				display: none;
+			}
+		}
+	}
+}
+.nav {
+	justify-content: space-between;
+	> li {
+		position: relative;
+		display: block;
+		> a {
+			display: block;
+			font-size: 16px;
+			padding: 25px 15px;
+			color: $color__mine_shaft_approx;
+			position: relative;
+			text-transform: uppercase;
+		}
+	}
+}
+.menu_box_three {
+	width: 35%;
+}
+.menu_box_one {
+	width: 35%;
+}
+.menu_box_two {
+	width: 30%;
+	text-align: center;
+	img {
+		max-height: 65px;
+		position: relative;
+		top: 10px;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 1s ease all;
+		-webkit-transition: 1s ease all;
+	}
+	&.fixed img {
+		max-height: 60px;
+		position: relative;
+		top: 0;
+	}
+}
+.wpfs-btn-primary {
+	background: $color__gallery !important;
+	color: $color__black !important;
+	border: 1px solid $color__black;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 !important;
+	padding: 0 60px !important;
+	font-weight: 600 !important;
+	letter-spacing: 1px !important;
+}
+.wpfs-form-actions {
+	float: right !important;
+	button.wpfs-btn {
+		float: right !important;
+		padding: 15px 30px !important;
+		cursor: pointer !important;
+		font-size: 22px !important;
+		line-height: 13px !important;
+		display: inline-block !important;
+		background: transparent !important;
+		letter-spacing: 0 !important;
+		color: $color__gray_approx !important;
+		border: 1px solid var(--black) !important;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.3s ease-out !important;
+		height: unset !important;
+		font-weight: 400 !important;
+		font-family: $font__avenir-next-thin;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 9px !important;
+		&:hover {
+			background: $color__silver_approx !important;
+			color: $color__black !important;
+		}
+		&.disableButton {
+			pointer-events: none;
+			background: $color__silver_approx !important;
+		}
+	}
+}
+.diff_font {
+	position: relative;
+	z-index: 999;
+	p {
+		display: inline;
+		font-size: inherit;
+		letter-spacing: inherit;
+		line-height: inherit;
+		margin-bottom: 0;
+		color: inherit;
+	}
+	h4 {
+		font-weight: 400;
+	}
+	h2 a {
+		text-decoration: underline !important;
+		color: $color__glacier_approx !important;
+		margin-top: 20px !important;
+		display: block !important;
+		font-family: $font__2;
+	}
+}
+.issue_moreButt {
+	display: block;
+	h2 {
+		display: inline-block;
+		border-bottom: 2px solid;
+		line-height: 48px;
+		margin-top: 40px;
+	}
+}
+.arti_feaImage {
+	width: 100%;
+	img {
+		height: 275px;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+.latestArticle_Heading {
+	max-width: 94%;
+	margin: auto;
+	margin-top: 10px;
+	margin-top: 50px;
+	h1 {
+		font-family: $font__avenir-next-thin;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 14px;
+		font-family: $font__2;
+	}
+}
+.arti_heading {
+	margin-top: 30px;
+	h4 a {
+		font-family: $font__avenir-next-thin;
+		&:hover {
+			color: $color__mine_shaft_approx;
+		}
+		strong {
+			font-family: $font__1;
+		}
+	}
+	a:hover {
+		color: $color__mine_shaft_approx;
+	}
+}
+.arti_sub_heading {
+	margin-top: 10px;
+	strong {
+		font-weight: normal;
+	}
+	a {
+		font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+		font-weight: normal;
+		font-size: 18px;
+		text-transform: uppercase;
+		&:hover {
+			color: $color__mine_shaft_approx;
+		}
+	}
+}
+.mt_wrap {
+	margin-top: 30px;
+}
+.custom_wrap {
+	width: 94%;
+	margin: auto;
+}
+.arti_span {
+	font-size: 19px;
+	top: -4px;
+	position: relative;
+	font-weight: bold;
+}
+.signup4mail_Left::before {
+	content: "|";
+	position: absolute;
+	font-size: 52px;
+	top: 20px;
+	color: $color__electric_violet_approx;
+	font-weight: bold;
+}
+.support_heading::before {
+	content: "|";
+	position: absolute;
+	font-size: 52px;
+	top: 20px;
+	color: $color__electric_violet_approx;
+	font-weight: bold;
+}
+.support_us_pipe {
+	color: $color__electric_violet_approx;
+	position: relative;
+	top: -3.5px;
+	font-size: 23px;
+}
+.signup4mail_Right {
+	#mc_embed_signup {
+		margin-top: 20px;
+		.mc-field-group {
+			input[type="submit"]:hover {
+				background-color: $color__silver_approx !important;
+				color: $color__black !important;
+			}
+			input#mce-EMAIL:-webkit-autofill {
+				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: background-color 5000s ease-in-out 0s;
+				&:hover {
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: background-color 5000s ease-in-out 0s;
+				}
+				&:focus {
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: background-color 5000s ease-in-out 0s;
+				}
+				&:active {
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: background-color 5000s ease-in-out 0s;
+				}
+			}
+		}
+		#mce-error-response {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+	}
+	.news_l input {
+		width: 100% !important;
+	}
+}
+.footerNew_middle_inner {
+	width: 100%;
+	margin: 0 auto;
+	#mc_embed_signup {
+		z-index: 5;
+	}
+}
+.signup4mail {
+	background: $color__athens_gray_approx;
+	padding: 30px 10px;
+}
+.home_mentions_wrap {
+	max-width: 1190px;
+	margin: auto;
+}
+.home_mentions {
+	max-width: 1100px;
+	margin: auto;
+	ul {
+		li {
+			float: left;
+			font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+			font-size: 20px;
+			margin-bottom: 10px;
+			position: relative;
+			a {
+				font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+				color: $color__mine_shaft_approx;
+			}
+			&.mention_italic {
+				font-style: italic;
+			}
+			&.more_link a {
+				color: $color__electric_violet_approx;
+				font-family: $font__avenir-next-thin;
+				margin-left: 7px;
+			}
+		}
+		li::after {
+			content: "|";
+			font-style: normal;
+			color: $color__electric_violet_approx;
+			font-size: 20px;
+			font-family: $font__avenir-next-thin;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+	}
+	li:last-child::after {
+		display: none;
+	}
+}
+.home_issues {
+	max-width: 1190px;
+	margin: auto;
+	position: relative;
+}
+.issues_list_ul {
+	&.row {
+		width: 100%;
+		counter-reset: section;
+		counter-set: section 1;
+	}
+	li::before {
+		counter-increment: section 1;
+		content: counter(section)'.';
+		position: absolute;
+		left: -25px;
+		font-size: 33px;
+		bottom: 0;
+		font-weight: 700;
+	}
+	li {
+		list-style: none;
+		width: 200px;
+		height: 184px;
+	}
+}
+.footer_style_new {
+	overflow: hidden;
+}
+.footerNew_middle {
+	h4 {
+		float: left;
+		display: inline-block;
+		font-size: 22px;
+		font-family: $font__avenir-next-thin;
+		font-weight: 500;
+		margin-bottom: 0;
+		width: 280px;
+		padding-top: 23px;
+		padding-right: 0;
+	}
+	#mc_embed_signup {
+		clear: none;
+		float: right;
+		width: calc(100% - 280px);
+		position: relative;
+		top: 9px;
+		.mc-field-group {
+			input#mce-EMAIL {
+				width: 100% !important;
+				&:-webkit-autofill {
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: background-color 5000s ease-in-out 0s;
+					&:hover {
+						//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: background-color 5000s ease-in-out 0s;
+					}
+					&:focus {
+						//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: background-color 5000s ease-in-out 0s;
+					}
+					&:active {
+						//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: background-color 5000s ease-in-out 0s;
+					}
+				}
+			}
+			input[type="submit"]:hover {
+				background-color: $color__silver_approx !important;
+				color: $color__black !important;
+			}
+		}
+		#mce-error-response {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+	}
+	.news_l input {
+		width: 380px !important;
+	}
+}
+.footerFullMenu {
+	background: $color__black;
+	overflow: hidden;
+}
+#footerFullMenu {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 70px;
+	padding-right: 70px;
+	li {
+		font-size: 14px;
+		font-family: $font__avenir-next-thin;
+		a {
+			color: $color__white;
+			text-transform: uppercase;
+		}
+	}
+}
+.copyrightSpan {
+	font-size: 12px;
+	color: $color__white;
+	float: right;
+	font-weight: 500;
+	font-family: $font__avenir-next-thin;
+	padding-right: 40px;
+}
+.nextIssues {
+	position: absolute;
+	top: 24%;
+	right: 3%;
+}
+.searchPage_Form_container {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 0;
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+		width: 100%;
+	}
+}
+.searchPage_Form {
+	width: 100%;
+	position: relative;
+	max-width: 450px;
+	margin: 0 auto;
+	float: none;
+}
+.searchPage_Form_Box {
+	width: 100%;
+	height: 55px;
+	border: 1px solid $color__gray_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	float: left;
+	padding-left: 50px;
+	padding-right: 150px;
+	&:focus {
+		outline: none;
+		border-color: $color__black;
+	}
+}
+.search_icon_custom {
+	position: absolute;
+	left: 20px;
+	font-size: 18px;
+	top: 20px;
+}
+.searchPage_Form_Button {
+	border: none;
+	font-size: 21px;
+	font-family: $font__avenir-next-thin;
+	padding: 10px 28px;
+	width: 125px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	height: 53px;
+	&:focus {
+		outline: none;
+	}
+}
+@media(min-width: 768px) {
+	.navbar-header {
+		display: none;
+	}
+	.only_mobile_show {
+		display: none;
+	}
+	.footerNew_middle {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.page-template-subscribe {
+		.kudossubscribe {
+			form.wpfs-form fieldset.wpfs-form-check-group {
+				padding: 5px 0;
+			}
+			.wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+				display: inline-block;
+				padding-left: 50px;
+				font-size: 18px;
+			}
+			.wpfs-form-check .wpfs-form-check-label strong {
+				font-size: 18px !important;
+			}
+		}
+		.constrained.new::after {
+			left: 2.5rem !important;
+		}
+	}
+	.poem-pad {
+		padding-left: 60px;
+	}
+	form.search-form {
+		margin-bottom: 3rem;
+	}
+	.postid-2151 .boxzilla-content {
+		.serif-hed {
+			font-family: $font__1;
+			font-size: 32px;
+			line-height: 32px;
+		}
+		.sans-serif-hed {
+			font-size: 28px;
+			font-family: $font__avenir-next-thin;
+			font-weight: 500;
+			line-height: 32px;
+		}
+	}
+}
+section {
+	&.mission_outer {
+		position: relative;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	&.footer_outer .container-fluid {
+		padding-right: 0 !important;
+	}
+}
+.drift_container {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1140px;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	padding: 30px;
+	h6 {
+		font-size: 25px;
+		font-weight: 300;
+		color: $color__black;
+		text-align: center;
+		margin-bottom: 0;
+		span {
+			display: block;
+			margin-bottom: 3px;
+		}
+		a {
+			color: $color__smalt_blue_approx;
+			text-decoration: underline !important;
+			&:hover {
+				color: $color__smalt_blue_approx;
+			}
+		}
+		b {
+			text-transform: uppercase;
+			color: $color__smalt_blue_approx;
+			font-weight: 900;
+		}
+	}
+}
+.page-template-coming_soon {
+	background-color: $color__givry_approx;
+	background-image: url(../images/bg_gradient_splash.png);
+	background-repeat: repeat-x;
+	#mc_embed_signup {
+		.mc-field-group {
+			input[type="submit"] {
+				background-color: transparent !important;
+				border-color: $color__black !important;
+				color: $color__smalt_blue_approx !important;
+				position: relative;
+				z-index: 999;
+				&:hover {
+					background-color: $color__silver_approx !important;
+					color: $color__black !important;
+				}
+			}
+			input {
+				background-color: transparent !important;
+				text-align: center !important;
+				&#mce-EMAIL {
+					color: $color__smalt_blue_approx !important;
+					padding-bottom: 4px !important;
+					&:-ms-input-placeholder {
+						color: $color__smalt_blue_approx !important;
+					}
+					&:-moz-placeholder {
+						color: $color__smalt_blue_approx !important;
+					}
+					&:-webkit-autofill {
+						//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: background-color 5000s ease-in-out 0s;
+						&:hover {
+							//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+							transition: background-color 5000s ease-in-out 0s;
+						}
+						&:focus {
+							//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+							transition: background-color 5000s ease-in-out 0s;
+						}
+						&:active {
+							//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+							transition: background-color 5000s ease-in-out 0s;
+						}
+					}
+				}
+				&#mce-EMAIL::-webkit-input-placeholder {
+					color: $color__smalt_blue_approx !important;
+				}
+				&#mce-EMAIL::-moz-placeholder {
+					color: $color__smalt_blue_approx !important;
+				}
+			}
+		}
+		#mce-error-response {
+			color: $color__guardsman_red_approx;
+			text-align: center;
+			padding-top: 0;
+			margin-top: 0;
+			font-size: 0;
+			&:after {
+				font-size: 13px;
+				content: 'This email address is already in use.';
+				float: left;
+			}
+		}
+		#mce-success-response {
+			padding-top: 0;
+			text-align: center;
+			font-size: 0;
+			margin-top: 0;
+			width: calc(490px - 265px);
+			max-width: 100%;
+			margin: 0 !important;
+			padding: 0 !important;
+			left: 0 !important;
+			&:after {
+				content: 'Thanks!';
+				font-size: 13px;
+			}
+		}
+	}
+	.Container {
+		display: none !important;
+	}
+	.the-drift-logo {
+		justify-content: center;
+		display: flex;
+		margin-bottom: 75px;
+	}
+}
+.drift_title {
+	text-align: center;
+	font-size: 55px;
+	margin-bottom: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+.social_link {
+	justify-content: center;
+	width: 100%;
+	li {
+		font-size: 25px;
+		color: $color__black;
+		a {
+			font-size: 25px;
+			color: $color__black;
+			color: $color__smalt_blue_approx;
+			padding-left: 10px;
+			padding-right: 10px;
+			i {
+				font-size: 32px;
+			}
+		}
+		&:first-child {
+			padding-right: 18px;
+			line-height: 32px;
+		}
+	}
+}
+.newsletter {
+	text-align: center;
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	p {
+		color: $color__black;
+		font-size: 25px;
+		margin: 0 0 13px;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	.news_l {
+		input[type="email"] {
+			font-size: 18px !important;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0 !important;
+			margin-right: 0 !important;
+			padding: 10px 20px !important;
+		}
+		input[type="submit"] {
+			font-size: 14px !important;
+			font-family: $font__2;
+		}
+	}
+	#mc_embed_signup {
+		width: 100%;
+	}
+}
+.news_l {
+	align-items: center;
+	label {
+		display: none !important;
+	}
+	input {
+		width: 400px !important;
+		font-size: 20px !important;
+		border: 0 solid $color__black !important;
+		border-bottom: 1px solid $color__black !important;
+	}
+	.but62 {
+		border: 1px solid var(--gray) !important;
+		text-transform: capitalize;
+		padding: 6px 45px !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 13px !important;
+		cursor: pointer !important;
+		font-size: 20px !important;
+		color: var(--gray) !important;
+		height: auto !important;
+		width: auto !important;
+		background: transparent !important;
+		line-height: 1em !important;
+	}
+}
+.footer_inner {
+	text-align: right;
+	position: relative;
+	z-index: 9;
+	.news_l input {
+		width: 550px !important;
+	}
+	.sig_up_inner p {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 15px;
+		max-width: 550px;
+	}
+}
+.but61 {
+	height: 48px;
+	display: inline-block;
+	padding: 0 15px;
+	line-height: 42px;
+	text-transform: capitalize;
+	font-size: 18px;
+	background: $color__dove_gray_approx;
+	color: $color__white !important;
+	cursor: pointer;
+	border: 2px solid $color__dove_gray_approx;
+	&:hover {
+		background: $color__black;
+		border: 2px solid $color__black;
+	}
+}
+.ab_part_l {
+	.wpfs-form-check-group::after {
+	}
+	.wpfs-form-check-group {
+		.wpfs-form-check-group-title {
+			display: none;
+		}
+		.wpfs-form-check {
+			position: relative;
+			z-index: 9;
+			width: 200px;
+			margin: 15px auto 15px;
+			display: block;
+		}
+	}
+}
+.ab_part_linner {
+	width: calc(100% +30px);
+	margin-left: -15px;
+	.wpfs-w-45 {
+		max-width: 100% !important;
+	}
+	.wpfs-form-check > input {
+		font-size: 18px !important;
+		padding: 0 10px !important;
+		display: block !important;
+		width: 100% !important;
+		height: 40px !important;
+		margin: 0 auto 25px !important;
+		background: $color__wild-sand !important;
+		border: 1px solid $color__wild-sand !important;
+		font-family: $font__2;
+	}
+}
+.ab_part_img {
+	right: 10px;
+	position: relative;
+	img {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+	p.caption {
+		font-size: 13px;
+		margin-bottom: 0;
+		padding-left: 30px;
+		margin-top: 10px;
+		text-align: left;
+		padding-right: 10px;
+		line-height: normal;
+	}
+}
+.ab_part_img_inner {
+	flex-wrap: wrap;
+	position: relative;
+	padding-bottom: 5px;
+	div {
+		width: 48%;
+		text-align: left;
+		padding: 7px 20px;
+	}
+	&.ba_part02 {
+		margin-left: 85px;
+		div {
+			width: 100%;
+			input {
+				width: 50px;
+				height: 20px;
+				background: $color__white;
+			}
+			label span {
+				width: 100px;
+				display: inline-block;
+			}
+		}
+	}
+	> div {
+		margin: 0;
+		input[type="radio"] {
+			position: absolute;
+			opacity: 0;
+			+ label::before {
+				content: '';
+				background: $color__wild-sand;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 100%;
+				display: inline-block;
+				width: 1em;
+				height: 1em;
+				position: relative;
+				top: 0.2em;
+				margin-right: .7em;
+				vertical-align: top;
+				cursor: pointer;
+				text-align: center;
+				-webkit-transition: all 250ms ease;
+				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: all 250ms ease;
+				border: 1px solid;
+			}
+			&:checked + label:before {
+				background-color: $color__black;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: inset 0 0 0 4px $color__wild-sand;
+			}
+			&:focus + label:before {
+				outline: none;
+				border-color: $color__black;
+			}
+			&:disabled + label:before {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: inset 0 0 0 4px $color__wild-sand;
+				border-color: $color__nobel_approx;
+				background: $color__nobel_approx;
+			}
+			+ label:empty:before {
+				margin-right: 0;
+			}
+		}
+	}
+}
+.ab_part_img_abu {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	div label {
+		font-size: 18px;
+		color: $color__mine_shaft_approx;
+		font-weight: 400;
+		font-family: $font__2;
+		font-size: 19px !important;
+		font-family: $font__2;
+		color: $color__white;
+	}
+}
+.page-template-subscribe {
+	.contact01 {
+		margin: 20px 0 0 20px;
+		max-width: 490px;
+		flex-wrap: wrap;
+		height: 100%;
+		align-items: center;
+		p {
+			line-height: 1.4em;
+			font-size: 18px;
+		}
+	}
+	.ab_part_l {
+		.wpfs-form-check-group::after {
+			position: unset !important;
+		}
+		.wpfs-form-check-group .wpfs-form-check {
+			position: relative;
+			display: block;
+			float: none;
+			width: 100% !important;
+			max-width: 300px;
+			padding: 0 15px;
+		}
+	}
+	.menu_box_two {
+		width: 100%;
+		justify-content: center;
+		display: none;
+	}
+	.ab_part_linner {
+		width: 485px;
+	}
+	.footer_outer {
+		margin-top: -200px;
+		display: none;
+	}
+	.desktop_new_menu {
+	}
+	#tf-hide-mob {
+		display: block !important;
+	}
+	.constrained.new::after {
+		content: "(new!)";
+		top: 2.9rem !important;
+		left: 3rem !important;
+		position: absolute;
+		font-weight: 600;
+	}
+	input.wpfs-form-control {
+		border-color: $color__wild-sand !important;
+	}
+	form.wpfs-form fieldset.wpfs-form-check-group {
+		background-image: url(https://www.thedriftmag.com/wp-content/uploads/2021/09/cherimoya-subscribe.jpg);
+	}
+}
+.form01 {
+	text-align: center;
+	margin: 70px 0 0;
+	h4 {
+		font-size: 30px;
+		font-family: $font__2;
+	}
+	form {
+		.wpfs-form-label[for="wpfs-custom-amount--ZjFiZTB-button"] {
+			display: none;
+		}
+		.wpfs-w-20 {
+			max-width: 100% !important;
+			input {
+				margin: auto;
+			}
+		}
+	}
+	input {
+		font-size: 18px !important;
+		padding: 0 10px !important;
+		display: block !important;
+		width: 100% !important;
+		height: 40px !important;
+		margin: 0 auto 25px !important;
+		background: $color__wild-sand !important;
+		border: 1px solid $color__wild-sand !important;
+		font-family: $font__2;
+	}
+}
+.wpfs-form-label[for="wpfs-custom-amount--ZjFiZTB-button"] {
+	display: none;
+}
+input {
+	&.unfocus_email::placeholder {
+		font-size: 0;
+	}
+	&:-ms-input-placeholder {
+		color: var(--gray);
+		font-family: $font__2;
+	}
+}
+input::placeholder {
+	color: var(--gray);
+	font-family: $font__2;
+}
+input::-ms-input-placeholder {
+	color: var(--gray);
+	font-family: $font__2;
+}
+.radio02 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 20px 0 30px 27px;
+	input {
+		width: 25px;
+		height: 25px;
+		padding: 0;
+		margin: 0;
+	}
+	label {
+		font-size: 20px;
+		letter-spacing: .00;
+		padding-left: 15px;
+		margin: 0;
+	}
+}
+.ab_part_r {
+	width: 50%;
+	margin: auto;
+	&.ab_partFULL {
+		width: 100%;
+		margin-top: 100px;
+		margin-bottom: 0;
+	}
+}
+.com_heading {
+	h3 {
+		font-size: 36px;
+		font-family: $font__avenir-next-thin;
+		b {
+			font-size: 40px;
+			font-weight: bold;
+			font-family: $font__1;
+		}
+		strong {
+			font-size: 40px;
+			font-weight: bold;
+			font-family: $font__1;
+		}
+	}
+	span {
+		color: $color__gray_approx;
+		display: inline;
+		position: relative;
+		vertical-align: top;
+		font-size: 30px;
+		top: 5px;
+		font-family: $font__1;
+		&.single_article_pipe {
+			font-size: 13px;
+			top: 0;
+			display: inline-block;
+		}
+	}
+}
+.postid-2274 {
+	.com_heading h3 {
+		font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+	}
+	.ab_part_img p.caption {
+		font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+	}
+}
+.single-mention {
+	.com_heading {
+		span {
+			font-size: 35px;
+		}
+		h3 b {
+			font-size: 50px;
+		}
+	}
+	.contact01 {
+		margin: 20px 0 0 20px;
+		max-width: 490px;
+		flex-wrap: wrap;
+		height: 100%;
+		align-items: center;
+		p {
+			line-height: 1.4em;
+			font-size: 16px;
+			font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+			font-weight: normal;
+		}
+	}
+}
+.page-template-donate {
+	.contact01 {
+		margin: 20px 0 0 20px;
+		max-width: 490px;
+		flex-wrap: wrap;
+		height: 100%;
+		align-items: center;
+		p {
+			line-height: 1.4em;
+			font-size: 18px;
+		}
+	}
+	.menu_box_two {
+		width: 100%;
+		justify-content: center;
+		display: none;
+	}
+	.ab_part_linner {
+		width: 485px;
+	}
+	.footer_outer {
+		margin-top: -200px;
+		display: none;
+	}
+	.desktop_new_menu {
+	}
+	#tf-hide-mob {
+		display: block !important;
+	}
+	.wpfs-form-check-group {
+		.wpfs-form-check {
+			.wpfs-form-check-label {
+				padding-left: 1rem;
+			}
+			input {
+				margin-bottom: 0 !important;
+			}
+		}
+		.fieldset-wrapper {
+			width: 100%;
+			max-width: 75%;
+			margin: 1rem auto;
+			margin-top: 10%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			.wpfs-form-check {
+				margin: .5rem 0;
+				width: 100%;
+				&:nth-child(odd) {
+					width: 100%;
+				}
+				&:last-of-type {
+					width: 100%;
+				}
+				&:nth-child(7) {
+					width: 100%;
+				}
+			}
+			div[data-wpfs-amount-row="custom-amount"] {
+				width: 100%;
+				max-width: 100% !important;
+				width: 65%;
+				.wpfs-input-group {
+					display: block;
+					input {
+						width: 100%;
+					}
+				}
+				input {
+					border: 1px solid var(--color__field-border);
+					height: 29px;
+					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+					border-radius: 0 !important;
+					padding: 0 .25rem;
+				}
+			}
+			.wpfs-input-group-prepend {
+				display: none !important;
+			}
+		}
+		label[for^="wpfs-custom-amount"] {
+			text-transform: capitalize;
+		}
+	}
+	form.wpfs-form fieldset.wpfs-form-check-group {
+		background-image: url(../images/donate-box-bg.png);
+		label {
+			color: var(--white);
+			strong {
+				color: var(--white);
+			}
+		}
+		.constrained {
+			display: none !important;
+		}
+	}
+	input.wpfs-form-control {
+		border-color: var(--color__gray-field) !important;
+	}
+}
+.page-template-about-page {
+	.contact01 {
+		margin: 20px 0 0 20px;
+		max-width: 490px;
+		flex-wrap: wrap;
+		height: 100%;
+		align-items: center;
+	}
+	.ab_part {
+		align-items: center;
+		justify-content: center;
+		.contact01 {
+			margin-top: 0;
+		}
+	}
+	.footer_outer {
+		margin-top: -100px;
+	}
+}
+.page-template-mentions {
+	.contact01 {
+		margin: 20px 0 0 20px;
+		max-width: 490px;
+		flex-wrap: wrap;
+		height: 100%;
+		align-items: center;
+	}
+	.ab_part_mobile {
+		display: none;
+		p {
+			font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+			font-size: 18px;
+		}
+	}
+	.about_l {
+		text-align: right;
+		h6 {
+			display: block;
+			text-align: right !important;
+		}
+		h4 {
+			display: block;
+			text-align: right !important;
+		}
+		span.subtitle-mention {
+			display: none;
+		}
+	}
+	.men_content p {
+		font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+		font-size: 18px;
+	}
+}
+.contact01 {
+	p {
+		line-height: 1.3em;
+		font-size: 20px;
+	}
+	&.headong0022 {
+		margin-left: 20px !important;
+		.postDate {
+			position: absolute;
+			top: -50px;
+			padding-bottom: 0;
+			margin-left: -20px !important;
+		}
+		h1 {
+			font-size: 50px !important;
+		}
+		span {
+			color: $color__dove_gray_approx !important;
+		}
+	}
+}
+.footer_outer {
+	position: relative;
+	overflow: hidden;
+	&:after {
+		background-image: url(/wp-content/uploads/2020/04/the_drift_arrow.png);
+		content: '';
+		width: 475px;
+		height: 51px;
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: rotate(215deg);
+		background-size: 80%;
+		background-repeat: no-repeat;
+		display: none;
+	}
+	ul.social_icons {
+		margin-left: 80px;
+		li {
+			padding-right: 16px;
+			padding-left: 0;
+			&:last-child {
+				padding-right: 0;
+			}
+			i {
+				&.fa {
+					font-size: 16px;
+				}
+				&.fab {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+.page-id-51 {
+	.footer_outer {
+		padding: 50px 0 10px;
+	}
+	.footer_outer::after {
+		height: 500px;
+	}
+}
+.sig_up {
+	margin: 0;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	form input {
+		border: none;
+		width: 450px;
+		font-size: 18px;
+		background: transparent;
+		font-family: $font__avenir-next-thin;
+		border-bottom: 1px solid var(--gray);
+	}
+}
+.sig_up_inner {
+	text-align: left;
+	p {
+		text-transform: capitalize;
+	}
+}
+.e_add {
+	justify-content: flex-end;
+}
+.f_three {
+	justify-content: flex-end;
+}
+.but62 {
+	border: 1px solid var(--gray);
+	text-transform: capitalize;
+	padding: 6px 45px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 13px;
+	cursor: pointer;
+	font-size: 20px;
+	color: var(--gray);
+	&:hover {
+		color: var(--white) !important;
+		background: var(--black) !important;
+		border: 1px solid var(--black) !important;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.3s ease-out;
+	}
+}
+#mc_embed_signup {
+	background: transparent !important;
+	form {
+		padding: 5px 0 5px 0 !important;
+	}
+	.mc-field-group {
+		width: 100% !important;
+		justify-content: center;
+		input {
+			&#mce-EMAIL {
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 0 !important;
+				text-indent: 0 !important;
+				text-align: center !important;
+				&:focus {
+					outline: none;
+				}
+				&:-ms-input-placeholder {
+					color: $color__gray_approx !important;
+				}
+				&:-moz-placeholder {
+					color: $color__gray_approx !important;
+				}
+			}
+			&#mce-EMAIL::-webkit-input-placeholder {
+				color: $color__gray_approx !important;
+			}
+			&#mce-EMAIL::-moz-placeholder {
+				color: $color__gray_approx !important;
+			}
+		}
+		input[type="submit"] {
+			margin-left: 30px !important;
+			background-color: $color__white !important;
+			font-size: 17px !important;
+			color: $color__gray_approx !important;
+			max-height: 34px;
+			line-height: 17px;
+		}
+	}
+}
+#mc-embedded-subscribe {
+	width: auto !important;
+	height: auto !important;
+	padding: 0;
+	margin: 0 !important;
+	background: transparent !important;
+	color: $color__dove_gray_approx !important;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	border: 1px solid !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 9px !important;
+	font-family: $font__2;
+	~ .mce_inline_error {
+		position: absolute;
+		top: 80%;
+		background-color: transparent !important;
+		color: $color__guardsman_red_approx !important;
+		font-weight: bold !important;
+		font-size: 13px !important;
+		text-align: center;
+		width: calc(490px - 195px);
+		max-width: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+		left: 0 !important;
+	}
+}
+.but63 {
+	float: right !important;
+	padding: 15px 30px !important;
+	cursor: pointer !important;
+	font-size: 22px !important;
+	line-height: 13px !important;
+	display: inline-block !important;
+	background: transparent !important;
+	letter-spacing: 0 !important;
+	color: $color__gray_approx !important;
+	border: 1px solid var(--black) !important;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s ease-out !important;
+	height: unset !important;
+	font-weight: 400 !important;
+	font-family: $font__avenir-next-thin;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 9px !important;
+	&:hover {
+		color: var(--white) !important;
+		background: var(--black) !important;
+		border: 1px solid var(--black) !important;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.3s ease-out;
+	}
+}
+.page {
+	.entry-content {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.wpfs-form-actions {
+		width: 100%;
+		padding-bottom: 4rem;
+	}
+}
+#wpfs-enter-email-address-form {
+	height: 100vh;
+	max-height: 420px;
+}
+#wpfs-enter-security-code-form {
+	height: 100vh;
+	max-height: 420px;
+}
+input[id*='search-form'] {
+	border: none;
+	border-bottom: 1px solid $color__black;
+	margin-right: 1rem;
+}
+.openMobMenuIcon {
+	cursor: pointer;
+}
+.td-overlay-box {
+	height: 0 !important;
+	&.main-nav-open {
+		height: 100% !important;
+	}
+	&.mob_menu_open {
+		border-top: 1px solid $color__gallery;
+	}
+}
+#myMobileNav {
+	overflow-y: hidden;
+}
+@media(min-width: 515px) {
+	input[id*='search-form'] {
+		width: 50%;
+		max-width: 500px;
+	}
+	.page-template-subscribe .kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
+		padding: 60px 0;
+	}
+	.first-benefit .gform_button {
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+	}
+}
+@media(max-width: 1023px) {
+	.page-template-subscribe {
+		.td-site-mobile-header {
+		}
+		.kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
+			margin-left: -15px;
+			width: calc(100% +30px);
+		}
+	}
+	.desktop_new_menu {
+		display: none;
+	}
+	.drift_title {
+		font-size: 36px;
+	}
+	.left-branch-img {
+		background-image: url(/wp-content/uploads/2020/05/branch-images_2.png);
+		background-size: 100%;
+		height: 285px;
+		width: calc(100% +30px);
+		margin-left: -15px;
+		background-repeat: no-repeat;
+		background-position: center top;
+		padding-top: 0;
+		padding-bottom: 0;
+		.branch_img_01 {
+			display: none;
+		}
+		.branch_img_02 {
+			display: none;
+		}
+	}
+	.newsletter {
+		max-width: 550px;
+		p {
+			line-height: normal;
+		}
+	}
+	.search_container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#tf-hide-mob {
+		display: none;
+	}
+	.td-site-mobile-header {
+		display: block !important;
+		background-color: $color__white;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 100%;
+		margin-bottom: 30px;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.5s ease-in-out;
+		border-bottom: 1px solid $color__gallery;
+		&.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			left: 0;
+			z-index: 99999999;
+			padding-bottom: 10px;
+			.td-overlay-box {
+				top: 80px;
+			}
+		}
+		.container {
+			position: relative;
+			max-width: 100%;
+			&:after {
+				display: table;
+				content: '';
+				clear: both;
+			}
+		}
+		div[id*='ajaxsearchlite'].wpdreams_asl_container {
+			z-index: 99999999 !important;
+			width: 350px !important;
+		}
+	}
+	.td-mobile-logo {
+		width: 130px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		z-index: 9999999999;
+		padding: 0;
+		text-align: center;
+		img {
+			height: 50px;
+			width: auto;
+		}
+	}
+	.td-mobile-menus {
+		position: absolute;
+		left: 0;
+		padding: 0;
+		top: 15px;
+		width: 100%;
+		span {
+			color: $color__mine_shaft_approx;
+			font-size: 36px;
+			display: inline-block;
+			text-align: left;
+			margin-left: 15px;
+		}
+	}
+	.td-overlay-box {
+		height: 0;
+		width: 100%;
+		position: fixed;
+		z-index: 999999;
+		top: 90px;
+		left: 0;
+		background-color: $color__white;
+		overflow-x: hidden;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.5s;
+		li {
+			list-style: none;
+			display: block;
+			line-height: normal;
+			padding: 10px 10px 10px 30px;
+			&.current-menu-item a {
+			}
+		}
+		.closebtn {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			font-size: 46px;
+			color: $color__mine_shaft_approx;
+			text-decoration: none;
+		}
+		ul li a {
+			text-decoration: none;
+			font-size: 20px;
+			color: $color__mine_shaft_approx;
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: 0.3s;
+			display: inline-block;
+			letter-spacing: normal;
+			font-weight: bolder;
+			font-family: $font__avenir-next-thin;
+		}
+	}
+	.td-overlay-content {
+		position: relative;
+		top: 45px;
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.com_heading span {
+		top: 1px;
+	}
+	.issues_list_ul li {
+		margin-right: 50px;
+		margin-bottom: 30px;
+	}
+	.single-post .contact01 {
+		.com_heading {
+			margin-top: 0;
+		}
+		.article_editor a {
+			position: relative;
+			top: -20px;
+		}
+	}
+	.page-template-donate .td-site-mobile-header {
+	}
+	.page-template-coming_soon .td-site-mobile-header {
+		display: none !important;
+	}
+	ul.f_menu.nav {
+		width: 100%;
+	}
+	.footer_inner .nav > li > a {
+		font-size: 15px;
+	}
+	.drift_container h6 {
+		max-width: 100%;
+	}
+	section.coming-soon-wrapper {
+		position: relative;
+	}
+	.coming-soon-wrapper .drift_container {
+		padding-top: 0;
+		margin-top: 35px;
+	}
+	.right-women-img .women_img_01 {
+		position: static;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-top: 35px;
+		height: 400px;
+	}
+	div[id*='ajaxsearchlite'].wpdreams_asl_container {
+		width: 90% !important;
+		right: 15px !important;
+		bottom: -57px !important;
+		top: unset !important;
+	}
+	.seach-mobile-view a {
+		position: absolute;
+		right: 15px;
+		font-size: 20px;
+	}
+}
+@media(min-width: 768px)and(max-width: 1025px) {
+	.issues_list_ul.row {
+		margin-top: 0;
+	}
+}
+@media(min-width: 768px)and(max-width: 999px) {
+	.page-id-51 .footer_outer::after {
+		height: 410px;
+	}
+	ul.f_menu.nav {
+		width: 400px;
+	}
+}
+@media(max-width: 767px) {
+	.signup4mail_Left::before {
+		font-size: 19px;
+		top: 12px;
+		display: none;
+	}
+	.signup4mail {
+		padding-top: 10px;
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+	.nextIssues {
+		position: relative;
+		top: unset;
+		right: unset;
+	}
+	ul {
+		&.social_icons {
+			float: none;
+			text-align: center;
+			width: 140px;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			margin-top: 0;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+			li {
+				margin: auto;
+				margin-bottom: 10px;
+			}
+		}
+		&.f_menu.nav {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+	}
+	.nextIssues::after {
+		content: "More Issues";
+		font-size: 32px;
+		font-family: $font__avenir-next-thin;
+		position: relative;
+		top: 6px;
+		left: -20px;
+	}
+	.issues_list_ul {
+		&.row {
+			margin: auto;
+		}
+		li {
+			width: auto;
+			height: auto;
+			margin-bottom: 40px;
+		}
+	}
+	.latestArticle_Heading {
+		margin-top: 30px;
+		&.td-issues-head {
+			display: none;
+		}
+	}
+	.arti_heading {
+		margin-top: 10px;
+	}
+	.sub_don {
+		&.showInDesktop {
+			display: none;
+		}
+		&.showInMobile {
+			display: none;
+		}
+	}
+	.drift_container {
+		padding-top: 0;
+	}
+	#mc_embed_signup {
+		form {
+			padding: 10px 0 10px 0 !important;
+			z-index: 99999;
+		}
+		.mc-field-group {
+			&.news_l {
+				width: 100%;
+				flex-wrap: wrap;
+				input {
+					width: 100% !important;
+					margin: 0 0 20px !important;
+					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+					border-radius: 0;
+				}
+			}
+			input[type="submit"] {
+				margin-left: 0 !important;
+				width: auto !important;
+			}
+		}
+	}
+	.menu_box_three {
+		display: none;
+	}
+	.menu_box_one {
+		display: none;
+	}
+	.menu_box_two {
+		width: 100%;
+		max-width: unset;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		top: 00px;
+		position: relative;
+		align-items: center;
+		padding: 10px 15px;
+		justify-content: center;
+		width: 100%;
+		max-width: 100%;
+		a {
+			display: block;
+			margin: 0;
+			height: auto;
+			padding: 0;
+			img {
+				top: 0;
+				max-height: 65px;
+			}
+		}
+	}
+	.only_mobile_show {
+		display: none;
+		top: 115px;
+		position: absolute;
+		z-index: 9999999;
+		background: $color__alabaster_approx;
+		width: 100%;
+		.nav > li {
+			position: relative;
+			display: block;
+			width: 100%;
+			> a {
+				padding: 15px 20px;
+			}
+		}
+	}
+	.ab_part {
+		flex-wrap: wrap;
+		&.headong0022_cover .ab_part_r {
+			width: 100% !important;
+			top: 10px !important;
+		}
+	}
+	.ab_part_r {
+		width: 100%;
+	}
+	.ab_part_l {
+		width: 100%;
+	}
+	.contact01 {
+		margin: 30px 0 0;
+		max-width: 100%;
+		max-width: 100% !important;
+		margin: 0 !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		&.headong0022 {
+			margin-left: 0 !important;
+			.postDate {
+				top: -10px;
+			}
+			h1 {
+				margin-bottom: 20px !important;
+				margin-top: 10px;
+			}
+		}
+		p {
+			text-align: left;
+		}
+	}
+	.drift_title {
+		font-size: 42px;
+	}
+	.f_three {
+		flex-wrap: wrap;
+	}
+	.footer_outer::after {
+		width: 1000px;
+		height: 600px;
+	}
+	.page-template-subscribe {
+		.ab_part_linner {
+			width: 100%;
+		}
+		.ab_part {
+			flex-direction: column-reverse;
+			padding-bottom: 25px;
+			.ab_part_r {
+				margin-bottom: 20px;
+				padding-top: 0;
+			}
+		}
+		.kudossubscribe form.wpfs-form {
+			padding: 0 !important;
+			fieldset.wpfs-form-check-group {
+				background-size: auto !important;
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+		.com_heading h3 {
+			margin-bottom: 15px !important;
+		}
+	}
+	.page-template-mentions {
+		.ab_part {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.com_heading span {
+			font-size: 27px;
+			top: 1;
+			display: inline;
+		}
+		.about_l h4 {
+			text-align: right !important;
+		}
+	}
+	.single-post {
+		blockquote {
+			position: static !important;
+			padding-left: 0 !important;
+			width: 100% !important;
+			margin-top: 30px !important;
+		}
+		.mission_inner {
+			max-width: 640px;
+			margin-top: 50px !important;
+			margin-top: 15px !important;
+			blockquote.link_quote {
+				display: none !important;
+			}
+		}
+		.contact01 {
+			padding: 0;
+			.article_editor a {
+				position: relative;
+				top: 0;
+			}
+		}
+	}
+	.issue_div_left {
+		padding-left: 15px;
+		padding-right: 15px;
+		img {
+			max-width: 100% !important;
+		}
+	}
+	.issue_div_right {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.footerFullMenu {
+		flex: none;
+		max-width: 100%;
+	}
+	.page-template-about-page {
+		.ab_part_linner {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.ab_part .contact01 {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+	}
+	.single-mention {
+		.ab_part_linner {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.contact01 {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+		.about_l {
+			h4 {
+				text-align: right !important;
+			}
+			h6 {
+				text-align: right !important;
+			}
+		}
+		.about_r {
+			text-align: justify !important;
+		}
+		h4 span {
+			display: inline-block !important;
+		}
+	}
+	.copyrightDiv {
+		flex: none;
+		max-width: 100%;
+	}
+	.copyrightSpan {
+		float: none;
+		text-align: center;
+		display: block;
+		padding: 0;
+	}
+	.postDate {
+		padding-bottom: 25px;
+		&.mobile_version {
+			display: block;
+			padding: 0;
+		}
+		&.desktop_version {
+			display: none;
+		}
+	}
+	.article_editor {
+		margin-top: 35px !important;
+		text-align: left !important;
+		position: static !important;
+		margin-top: 15px !important;
+	}
+	.search_container {
+		margin-top: 35px;
+		h1.page-title {
+			line-height: 1;
+			padding-bottom: 20px;
+		}
+		&.article_container .search-term-list .list-feature-img img {
+			height: auto;
+		}
+	}
+	.search-term-list {
+		.list-feature-info {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.list-feature-img {
+			padding-right: 15px;
+			img {
+				height: auto;
+				margin-bottom: 20px;
+			}
+		}
+		.term-list {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+	.navbar-header {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	.wpfs-form {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.about_l {
+		width: 100% !important;
+		padding: 0 20px !important;
+		text-align: center !important;
+		h4 {
+			text-align: center !important;
+			span {
+				display: block !important;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+		h6 {
+			text-align: center !important;
+			margin-bottom: 20px;
+		}
+	}
+	.about_r {
+		width: 100% !important;
+		padding: 0 !important;
+		text-align: center !important;
+		max-width: 100% !important;
+		h3 {
+			text-align: center !important;
+		}
+	}
+	.mission {
+		max-width: 100% !important;
+		p {
+			text-align: left !important;
+		}
+	}
+	.container {
+		max-width: 100% !important;
+	}
+	.container-sm {
+		max-width: 100% !important;
+	}
+	.wpfs-w-60 {
+		max-width: 100% !important;
+	}
+	.footer_inner::after {
+		height: 260vw !important;
+	}
+	.issue_outer {
+		margin-top: 25px !important;
+	}
+	.issue_r {
+		width: 100% !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		margin-bottom: 25px !important;
+	}
+	.issue_l {
+		width: 100% !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		margin-bottom: 25px !important;
+		h1 {
+			font-size: 36px !important;
+		}
+		h4 {
+			font-size: 20px !important;
+			margin-bottom: 10px !important;
+		}
+	}
+	.ab_part_linner {
+		width: 100%;
+	}
+	.ab_part_img {
+		right: 0;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	.diff_font {
+		max-width: 100% !important;
+		padding: 0 10px 20px 15px !important;
+		h4 {
+			font-size: 22px !important;
+			line-height: normal !important;
+		}
+		a h2 {
+			font-size: 36px;
+			margin-top: 10px;
+		}
+	}
+	.sub_donl {
+		padding: 25px !important;
+	}
+	.com_heading {
+		h3 {
+			text-align: left !important;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			font-size: 27px;
+			padding: 20px 0;
+			b {
+				font-size: 31px;
+			}
+		}
+		span {
+			font-size: 25px;
+		}
+	}
+	.page-template-donate {
+		.ab_part_linner {
+			width: 100%;
+		}
+		.ab_part {
+			flex-direction: column-reverse;
+			padding-bottom: 25px;
+			.ab_part_r {
+				margin-bottom: 20px;
+				padding-top: 0;
+			}
+		}
+		.com_heading h3 {
+			margin-bottom: 15px !important;
+		}
+	}
+	.sig_up_inner {
+		width: 100%;
+	}
+	.footerNew_middle {
+		h4 {
+			text-align: center;
+			width: 100%;
+			display: block;
+			padding-right: 0;
+		}
+		#mc_embed_signup {
+			width: 100%;
+		}
+	}
+	.footerNew_middle_inner {
+		width: 95%;
+	}
+	.home_issues {
+		display: none;
+	}
+	.support_heading::before {
+		display: none;
+	}
+	.seeMoreLink {
+		margin-top: 0;
+		margin-bottom: 15px;
+		a {
+			font-size: 26px;
+		}
+	}
+	.mob-hide-line {
+		display: none;
+	}
+	.moreissue_right {
+		width: 100%;
+		padding: 30px 0;
+	}
+	.more_from_issue {
+		.com_heading01 {
+			margin-bottom: 30px;
+			display: block;
+			span {
+				margin-left: -8px;
+			}
+			h4 b > a {
+				font-size: 26px;
+			}
+		}
+		h4 a {
+			font-size: 20px;
+		}
+	}
+	.signup4mail_Right #mc_embed_signup {
+		margin-top: 0;
+	}
+	.home_mentions ul li {
+		display: inline-block;
+		float: left;
+		font-size: 16px;
+		&.more_link {
+			text-align: left;
+			margin-top: 20px;
+			display: block;
+			width: 100%;
+		}
+	}
+	.more_link a {
+		color: $color__electric_violet_approx;
+		font-family: $font__avenir-next-thin;
+		margin-left: 7px;
+		font-size: 30px;
+		margin: auto;
+	}
+	.latest_articles .single_article {
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: 0;
+		padding-bottom: 30px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	.signup4mail_Left h3 {
+		padding-left: 0;
+		font-size: 24px;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	button.navbar-toggle.collapsed {
+		background: transparent;
+		border: 1px solid;
+		padding: 5px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	span.icon-bar {
+		background: $color__cod_gray_approx;
+		width: 25px;
+		height: 2px;
+		margin: 4px;
+		border: 0;
+		display: block;
+	}
+	.page-id-51 .footer_outer::after {
+		width: 700px;
+		height: 400px;
+	}
+	.page-template-homepage .ab_part_linner {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.issue_container h4 a {
+		white-space: inherit;
+	}
+	.single-issue .com_heading01 h4 {
+		white-space: inherit;
+	}
+	.footer_inner .sig_up_inner p {
+		max-width: 100%;
+	}
+	.footer_outer ul.social_icons li:last-child {
+		padding-right: 15px;
+	}
+	.page-template-coming_soon #mc_embed_signup {
+		#mce-success-response {
+			width: 100%;
+		}
+		.mc-field-group input[type="submit"] {
+			width: auto !important;
+		}
+	}
+	#mc-embedded-subscribe ~ .mce_inline_error {
+		width: 100%;
+	}
+	.arti_feaImage img {
+		height: auto;
+	}
+	.footerNewLogo img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.support_heading h3 {
+		padding-left: 0;
+	}
+	.issue_moreButt h2 {
+		font-size: 30px !important;
+		margin-top: 20px !important;
+		line-height: 35px !important;
+	}
+	.moreissue_left img {
+		height: auto;
+	}
+	figure figcaption {
+		position: inherit !important;
+		width: auto;
+		border: 0;
+		text-align: left;
+		left: 0;
+	}
+	.postid-242 .ab_part.headong0022_cover .ab_part_r {
+		top: 0 !important;
+		margin-bottom: 20px;
+	}
+}
+@media(min-width: 381px) and(max-width: 767px) {
+	.com_heading span {
+		top: 5px;
+	}
+}
+@media(max-width: 480px) {
+	.mentions_container {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.left-branch-img {
+		height: 135px;
+	}
+	.searchPage_Form_Button {
+		font-size: 16px;
+		width: 100px;
+		padding: 10px;
+	}
+	.searchPage_Form_Box {
+		padding-right: 110px;
+	}
+	.moreissue_left {
+		width: 100%;
+		padding-right: 0;
+	}
+	.page-template-subscribe .kudossubscribe form.wpfs-form fieldset.wpfs-form-check-group {
+		background-size: 135% !important;
+	}
+	.single-post figcaption {
+		font-size: 11px;
+		padding-left: 0;
+	}
+	.more_from_issue h1 {
+		font-size: 25px;
+	}
+	#footerFullMenu li {
+		font-size: 12px;
+	}
+	.ab_part_img p.caption {
+		padding-left: 0;
+	}
+}
+@media(max-width: 380px) {
+	.drift_title {
+		font-size: 34px;
+		margin-top: 15px;
+	}
+	.com_heading span {
+		top: 4px;
+	}
+}
+.wpfs-form {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mission_inner {
+	p > strong {
+		font-size: 68px;
+		padding-top: 15px;
+		padding-right: 5px;
+		float: left;
+		font-weight: normal;
+	}
+	> :last-child::after {
+		content: "||";
+		color: $color__glacier_approx;
+		font-weight: bold;
+		position: relative;
+		left: 5px;
+		font-family: $font__1;
+	}
+}
+.about_edtitor {
+	font-size: 15px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	text-transform: uppercase;
+	b {
+		font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+	}
+}
+.share_text_container {
+	font-size: 15px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	h5 {
+		font-size: 17px;
+		text-transform: uppercase;
+		padding-bottom: 10px;
+		font-weight: bold;
+	}
+	p {
+		color: $color__mine_shaft_approx;
+		font-size: 15px !important;
+		text-transform: uppercase;
+		font-style: italic;
+		font-family: $font__avenir-next-thin;
+		strong {
+			font-family: $font__35;
+		}
+	}
+}
+.more_from_issue {
+	padding-top: 75px;
+	h1 {
+		text-transform: uppercase;
+		font-size: 29px;
+		font-weight: bold;
+		margin-bottom: 35px;
+	}
+	.com_heading01 {
+		margin-bottom: 50px;
+		max-width: 100%;
+		width: 1000px;
+		float: left;
+		padding-left: 0;
+		padding-right: 0;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		position: relative;
+		z-index: 999;
+		p {
+			margin-bottom: 0;
+			a {
+				display: block;
+				margin-top: 0;
+				font-weight: normal;
+				font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+		}
+		h4 {
+			font-size: 25px;
+			b {
+				a {
+					font-family: $font__1;
+				}
+				> a {
+					font-size: 22px;
+				}
+			}
+		}
+		span {
+			display: inline-block;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+	}
+	&:after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+	.text-treview {
+		margin-top: 10px;
+		font-family: $font__georgia;
+		line-height: 1.6em;
+		font-size: 16px;
+	}
+}
+.moreissue_left {
+	float: left;
+	width: 311px;
+	img {
+		width: 100%;
+		height: 195px;
+		object-fit: cover;
+	}
+}
+.moreissue_right {
+	float: left;
+	width: calc(100% - 311px);
+	padding: 0 25px;
+	&.moreIssueFull {
+		width: 100%;
+		padding: 0;
+	}
+	&.postid-2274 .mr-subtitle {
+		font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+	}
+}
+.search-results {
+	.wrap {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	.footer_outer {
+		margin-top: -100px;
+	}
+}
+.single-issue {
+	.footer_outer {
+		margin-top: -200px;
+	}
+	.com_heading01 {
+		position: relative;
+		z-index: 999;
+		margin-bottom: 20px;
+		h4 + .authors a {
+			font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: normal;
+			display: inline-block;
+			padding-top: 4px;
+		}
+	}
+	&.postid-198 .footer_outer {
+		margin-top: 0;
+	}
+}
+.issue_rg {
+	position: relative;
+	z-index: 999;
+	h6 {
+		font-size: 20px !important;
+	}
+	ul li {
+		border-top: 1px solid $color__black_10 !important;
+		display: block;
+		a {
+			text-transform: uppercase;
+			display: inline-block !important;
+			border: none !important;
+			font-family: $font__2;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			font-size: 20px !important;
+			b {
+				text-transform: initial;
+			}
+			&:hover {
+				color: $color__jelly_bean_approx !important;
+			}
+			&:first-child {
+				font-family: $font__1;
+			}
+		}
+		&:hover a {
+			color: initial !important;
+			border: none !important;
+		}
+	}
+}
+.wpfs-w-60 {
+	position: relative;
+	z-index: 999;
+}
+.sub_donl {
+	position: relative;
+	z-index: 999;
+}
+.about_r {
+	position: relative;
+	z-index: 999;
+	h3 {
+		font-family: $font__avenir-next-thin;
+		font-size: 28px;
+		b {
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+	p a.main_link {
+		color: $color__smalt_blue_approx;
+		text-decoration: underline !important;
+		&:hover {
+			color: $color__bright_turquoise_approx !important;
+		}
+	}
+}
+.search_container {
+	max-width: 980px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	padding-left: 15px;
+	padding-right: 15px;
+	min-height: 450px;
+	&.article_container {
+		.search-term-list {
+			.list-feature-info h3 {
+				margin-top: 15px;
+			}
+			.list-feature-img img {
+				height: 365px;
+			}
+		}
+		h4.article_date {
+			color: $color__glacier_approx;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+	}
+	h1.page-title {
+		font-size: 36px;
+		font-family: $font__1;
+		font-weight: 600;
+		padding-bottom: 30px;
+		margin-bottom: 0;
+		position: relative;
+		line-height: 0.85;
+	}
+}
+.search-term-list {
+	.list-feature-info {
+		padding-left: 25px;
+		padding-right: 25px;
+		h2 {
+			font-size: 25px;
+			padding-bottom: 0;
+			margin-bottom: 5px;
+			position: relative;
+			z-index: 999;
+			a:first-child {
+				font-family: $font__1;
+				font-weight: 600;
+			}
+		}
+		h3 {
+			font-size: 16px;
+			font-weight: normal;
+			margin-top: 10px;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			text-transform: capitalize;
+			position: relative;
+			z-index: 999;
+			a {
+				font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+				text-transform: uppercase;
+				font-weight: normal;
+				font-size: 18px;
+			}
+		}
+		p {
+			font-family: $font__georgia;
+			font-size: 16px;
+			margin-top: 20px;
+			margin-bottom: 0;
+			a {
+				font-family: $font__georgia;
+				text-decoration: underline !important;
+			}
+		}
+		span {
+			color: $color__gray_approx;
+			font-size: 21px;
+			position: relative;
+			top: 1px;
+			vertical-align: top;
+			display: inline;
+		}
+		.link-more {
+			display: none;
+		}
+		a:hover {
+			color: inherit;
+		}
+	}
+	.list-feature-img {
+		padding-right: 0;
+		img {
+			width: 100%;
+			display: block;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+	.term-list {
+		border-top: 1px solid $color__gray_approx;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin-bottom: 0;
+	}
+}
+.drift_searchForm {
+	display: none;
+}
+.drift_search_link {
+	margin-left: 20px;
+	a {
+		cursor: pointer;
+		position: relative;
+		top: 3px;
+	}
+}
+.bredcrum01 {
+	margin-top: -15px;
+}
+.left-branch-img {
+	.branch_img_01 {
+		position: absolute;
+		top: 50px;
+		left: -15px;
+		width: 450px;
+		height: auto;
+		max-width: 100%;
+	}
+	.branch_img_02 {
+		position: absolute;
+		bottom: 15px;
+		left: -50px;
+		width: 420px;
+		height: auto;
+		max-width: 100%;
+	}
+}
+label[for="wpfs-same-billing-and-shipping-address--ZTI4NGY"] {
+	line-height: 24px;
+	vertical-align: middle;
+	display: block;
+	padding-left: 30px;
+}
+.wpfs-btn-outline-primary {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none !important;
+	&:focus {
+		border-color: $color__french_gray_approx !important;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none !important;
+	}
+	&:not(.wpfs-btn-outline-primary--disabled):not(:disabled):hover {
+		border-color: $color__french_gray_approx !important;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none !important;
+	}
+}
+.article_editor {
+	font-size: 18px;
+	a {
+		font-family: $font__3, $font__libre-franklin, $font__sans-serif;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+}
+div {
+	&.asl_w {
+		border: 1px solid $color__mine_shaft_approx !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0 !important;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none !important;
+		.probox {
+			.proinput input {
+				font-size: 14px !important;
+				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				text-shadow: none !important;
+				color: $color__mine_shaft_approx !important;
+				font-family: $font__avenir-next-thin;
+			}
+			.promagnifier .innericon svg {
+				width: 18px !important;
+			}
+		}
+	}
+	&.asl_r.vertical {
+		display: none !important;
+	}
+	&.asl_m .probox {
+		.proloading {
+			display: none !important;
+		}
+		.proclose svg {
+			background-color: transparent !important;
+			fill: $color__mine_shaft_approx !important;
+		}
+	}
+}
+.seeMoreLink {
+	clear: both;
+	width: 100%;
+	text-align: right;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	a {
+		font-size: 30px;
+		font-weight: 600;
+		text-align: right;
+		display: inline-block;
+	}
+}
+.wp-pagenavi {
+	text-align: center;
+	margin: 5px 5px 0 0;
+	span {
+		border: none !important;
+	}
+}
+.postDate {
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-bottom: 60px;
+	font-weight: 600;
+	font-family: $font__2;
+	color: $color__silver_approx;
+}
+.issues_container {
+	margin: 0;
+	position: relative;
+	top: -15px;
+}
+.issue_div_left {
+	padding-top: 30px;
+	padding-right: 30px;
+	text-align: right;
+	img {
+	}
+}
+.issue_div_right {
+	margin-top: 25px;
+	max-width: 55%;
+}
+.desktop_new_menu {
+	position: relative;
+	ul {
+		display: flex;
+		text-align: center;
+		justify-content: space-evenly;
+		align-items: center;
+		border-bottom: 1px solid $color__gallery;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 40px;
+		padding-left: 100px;
+		padding-right: 100px;
+		li a {
+			text-transform: uppercase;
+			color: $color__mine_shaft_approx;
+			display: block;
+			font-family: $font__avenir-next-thin;
+			font-size: 16px;
+		}
+	}
+	.desktop-logo {
+		justify-content: center;
+		display: flex;
+		align-items: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		img {
+			height: 65px;
+			width: auto;
+		}
+	}
+}
+.issue_date {
+	font-family: $font__2;
+	font-size: 14px;
+	font-weight: 600;
+	color: $color__silver_approx;
+	text-transform: uppercase;
+}
+.page-template-latest_articles {
+	.search_container.article_container h4.article_date {
+		display: none;
+	}
+	.postid-2274 a.subtitle {
+		font-family: $font__savoy, $font__garamond, $font__times, $font__serif;
+	}
+}
+@media(max-width: 1280px) {
+	.single-post blockquote {
+		right: -175px !important;
+		width: 150px !important;
+		max-width: 100%;
+	}
+}
+@media(max-width: 1199px) {
+	.footer_inner {
+		padding-bottom: 20px !important;
+	}
+	.left-branch-img {
+		.branch_img_01 {
+			width: 350px;
+			top: 100px;
+		}
+		.branch_img_02 {
+			width: 350px;
+			bottom: 50px;
+		}
+	}
+	.desktop_new_menu ul {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.page-template-subscribe .footer_outer {
+		margin-top: -50px;
+	}
+	.page-template-donate .footer_outer {
+		margin-top: -50px;
+	}
+	.single-issue .footer_outer {
+		margin-top: -50px;
+	}
+	.single-post .footer_outer {
+		margin-top: -50px;
+	}
+	.page-template-homepage .footer_outer {
+		margin-top: -50px;
+	}
+	.page-template-issues .footer_outer {
+		margin-top: -50px;
+	}
+	.page-template-about-page .footer_outer {
+		margin-top: -50px;
+	}
+	.search-results .footer_outer {
+		margin-top: -50px;
+	}
+	.right-women-img .women_img_01 {
+		height: 575px;
+		right: -2%;
+	}
+}
+@media(max-width: 1024px) {
+	.support_heading {
+		max-width: 100%;
+		flex: none;
+		padding-left: 0;
+		padding-right: 0;
+		h3 {
+			font-family: $font__avenir-next-thin;
+			font-size: 40px;
+			padding-left: 0;
+			text-align: left;
+		}
+	}
+	.diff_font {
+		padding-top: 0 !important;
+		padding-right: 25px !important;
+		padding-left: 25px !important;
+		h4 {
+			font-size: 20px !important;
+		}
+	}
+	#footerFullMenu {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.support_subheadings {
+		max-width: 100%;
+		flex: none;
+		padding-left: 0;
+		padding-right: 0;
+		h3 {
+			text-align: left;
+		}
+	}
+	.single-post {
+		figure {
+			margin: 0 !important;
+			width: 100% !important;
+		}
+		.pigs_img img {
+			width: 100% !important;
+		}
+	}
+	.footer_inner {
+		padding-bottom: 10px !important;
+	}
+	.wpfs-w-60 {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	.coming-soon-wrapper {
+		.container {
+			max-width: 100%;
+		}
+		.drift_container {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			position: static;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: none;
+			margin-top: 50px;
+		}
+	}
+	.page-template-coming_soon {
+		overflow-x: hidden;
+		background-size: 100% 100%;
+	}
+	.drift_title {
+		font-size: 40px;
+	}
+	.newsletter {
+		max-width: 450px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		p {
+			font-size: 20px;
+		}
+	}
+	.left-branch-img {
+		.branch_img_02 {
+			width: 350px;
+		}
+		.branch_img_01 {
+			width: 350px;
+		}
+	}
+	.footerNewLogo {
+		display: none;
+	}
+	.footerNew_middle {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.footerNewSocials {
+		flex: 0 0 100%;
+		max-width: 100%;
+		ul {
+			float: none;
+			justify-content: center;
+		}
+	}
+	.support_content {
+		max-width: 100%;
+		flex: none;
+		padding-left: 0;
+		padding-right: 0;
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.support_heading::before {
+		display: none;
+	}
+	.contact01.headong0022 {
+		margin-left: 20px !important;
+		h1 {
+			margin-bottom: 20px !important;
+		}
+	}
+	.footer_outer:after {
+		display: none;
+	}
+	.menu_outer ul.social_icons li a i.fa-search {
+		font-size: 14px;
+	}
+	.drift_container h6 {
+		font-size: 20px;
+		max-width: 390px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.social_link li {
+		font-size: 22px;
+		a {
+			font-size: 22px;
+			i {
+				font-size: 22px;
+			}
+		}
+		&:first-child {
+			line-height: 22px;
+		}
+	}
+	.right-women-img .women_img_01 {
+		height: 500px;
+		top: 20%;
+		right: -2%;
+	}
+	.latest_articles .single_article {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.issue_moreButt h2 {
+		font-size: 30px !important;
+		margin-top: 30px !important;
+		line-height: 32px !important;
+	}
+}
+@media(max-width: 1152px) {
+	.drift_search_link {
+		margin-left: 0;
+		a {
+			top: 0;
+		}
+	}
+	.signup4mail_Left {
+		flex: none;
+		max-width: 100%;
+		h3 {
+			text-align: center;
+			padding: 0;
+		}
+	}
+	.signup4mail_Right {
+		flex: none;
+		max-width: 100%;
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.signup4mail_Left::before {
+		display: none;
+	}
+	.menu_outer ul.social_icons li a i.fa-search {
+		font-size: 15px;
+	}
+	.signup4mail_BG .col-md-1 {
+		display: none;
+	}
+	.nav > li > a {
+		font-size: 15px;
+	}
+}
+@media(max-width: 992px) {
+	.diff_font {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
+	}
+}
+@media(max-width: 823px) {
+	.copyrightSpan {
+		padding-right: 15px;
+		font-size: 11px;
+	}
+	.left-branch-img {
+		height: 235px;
+	}
+	.ab_part_img_inner {
+		padding-left: 10px;
+		> div {
+			padding-left: 10px !important;
+			padding-right: 10px !important;
+		}
+	}
+	.contact01.headong0022 .postDate {
+		top: -20px;
+	}
+	#footerFullMenu li {
+		font-size: 12px;
+	}
+}
+@media(max-width: 768px) {
+	.page-template-donate {
+		.the-drift-logo-mb {
+			text-align: center;
+			position: relative;
+			z-index: 9999;
+			top: 15px;
+			display: none;
+		}
+		#tf-hide-mob {
+			display: none !important;
+		}
+	}
+	.page-template-subscribe {
+		.the-drift-logo-mb {
+			text-align: center;
+			position: relative;
+			z-index: 9999;
+			top: 15px;
+			display: none;
+		}
+		#tf-hide-mob {
+			display: none !important;
+		}
+	}
+	.single-post .mission_inner {
+		max-width: 400px;
+	}
+	.arti_feaImage img {
+		height: auto;
+	}
+	#mc_embed_signup .mc-field-group input[type="submit"] {
+		margin-left: 20px !important;
+	}
+	.page-template-coming_soon .td-site-mobile-header {
+		display: none !important;
+	}
+	.the-drift-logo-mb img {
+		height: 45px;
+		width: auto;
+		margin-bottom: 10px;
+	}
+}
+@media(max-width: 667px) {
+	.left-branch-img {
+		height: 180px;
+	}
+	.support_us_pipe {
+		font-size: 16px;
+	}
+	#footerFullMenu {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.featuredArticleMore {
+		margin-bottom: 2px;
+	}
+	.single-post .mission_inner {
+		max-width: 100%;
+	}
+	.coming-soon-wrapper .drift_container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.latest_articles .single_article {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.support_subheadings h3 {
+		font-size: 22px;
+	}
+}
+@media(max-width: 568px) {
+	.left-branch-img {
+		height: 150px;
+	}
+	#footerFullMenu {
+		display: grid;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.search_container h1.page-title {
+		font-size: 30px;
+	}
+	.home_mentions ul li {
+		margin-bottom: 5px;
+	}
+	.footer_inner .nav > li > a {
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 14px;
+		padding-top: 0;
+		padding-bottom: 5px;
+	}
+	.footer_outer ul.social_icons li:last-child {
+		padding-right: 5px;
+	}
+	.ab_part_img_abu div label {
+		font-size: 16px !important;
+	}
+}
+@media(max-width: 414px) {
+	.left-branch-img {
+		height: 115px;
+	}
+	.footer_inner .nav > li > a {
+		font-size: 10px;
+	}
+}
+@media(max-width: 375px) {
+	#footerFullMenu {
+		padding-left: 10px;
+		padding-right: 10px;
+		li {
+			font-size: 10px;
+		}
+	}
+	.td-site-mobile-header div[id*='ajaxsearchlite'].wpdreams_asl_container {
+		width: 75% !important;
+	}
+	h1.issue_heading {
+		max-width: 200px;
+	}
+}
+@media(min-width: 1200px) {
+	.issues_container {
+		margin-left: 160px;
+	}
+	.page-template-homepage .ab_part {
+		max-width: 1450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media(min-width: 1400px) {
+	.page-template-homepage {
+		.ab_part_linner {
+			width: 100%;
+			display: block;
+		}
+		.diff_font {
+			max-width: 100% !important;
+			padding: 0 35px 35px 35px !important;
+			h4 {
+				font-size: 28px;
+			}
+		}
+		.contact01 {
+			max-width: 100% !important;
+		}
+		.ab_part_img img {
+			width: 100%;
+		}
+	}
+	.ab_part_linner {
+		width: calc(100% +30px);
+		margin-left: -15px;
+	}
+	.ab_part_img {
+		right: 0;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	.donate_img {
+		top: 10px;
+	}
+	.footerNew_middle_inner {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.page-template-subscribe .ab_part_linner {
+		width: 485px;
+	}
+	.page-template-donate .ab_part_linner {
+		width: 485px;
+	}
+}
+@media(min-width: 1600px) {
+	.drift_container {
+		top: 43%;
+	}
+	.left-branch-img {
+		.branch_img_01 {
+			width: 500px;
+			display: none;
+		}
+		.branch_img_02 {
+			width: 500px;
+			display: none;
+		}
+	}
+}
+@media(min-width: 1920px) {
+	.ab_part {
+		max-width: 1450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.custom_wrap {
+		width: 1450px;
+	}
+	.latestArticle_Heading {
+		width: 1450px;
+	}
+	.signup4mail_BG {
+		max-width: 1450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.copyrightSpan {
+		padding-right: 15px;
+	}
+	.issues_container {
+		max-width: 1450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.row.latest_articles {
+		width: 1450px;
+	}
+	.footerFullMenu .row {
+		max-width: 1450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.page-template-issues .com_heading01 h4 {
+		white-space: nowrap;
+	}
+}
+.home_issue_page_text {
+	margin-top: 0;
+}
+@media(min-width: 767px) {
+	.donate-subscribe_txt {
+		margin-top: 0;
+		padding-left: 10px;
+	}
+	figcaption {
+		font-size: 11px !important;
+		width: 125px !important;
+		left: -140px !important;
+	}
+	.bigfigure {
+		margin-left: 175px;
+	}
+	.postDate {
+		&.mobile_version {
+			display: none;
+		}
+		&.desktop_version {
+			display: block;
+		}
+	}
+	.single-post .mission_inner blockquote.link_quote {
+		margin-top: -5% !important;
+	}
+	.page-template-mentions .com_heading h3 {
+		b {
+			font-size: 50px;
+		}
+		span {
+			font-size: 35px;
+		}
+	}
+}
+@media(max-width: 400px) {
+	.ab_part_r {
+		padding-top: 30px;
+	}
+	home_issue_page_text {
+		margin-top: 15px;
+	}
+}
+@media(min-width: 767px) and(max-width: 1024px) {
+}
+@media(min-width: 768px) and(max-width: 828px) {
+	h1.issue_heading {
+		font-size: 24px;
+		b {
+			font-size: 45px;
+		}
+	}
+}
+@media(min-width: 1025px) {
+	.support_heading {
+		flex: 0 0 28%;
+		max-width: 28%;
+		margin: auto;
+	}
+	.support_content {
+		flex: 0 0 35.667%;
+		max-width: 35.667%;
+		margin: auto 0;
+	}
+	.support_subheadings {
+		flex: 0 0 32.33%;
+		max-width: 32.33%;
+		margin: auto;
+		h3 {
+			font-size: 25px;
+		}
+	}
+	.donate-subscribe_txt {
+		margin-top: 0;
+		padding-left: 50px;
+	}
+	.issue_div_left {
+		flex: 0 0 35%;
+		padding-right: 0;
+	}
+	.issue_div_right {
+		flex: 0 0 65%;
+	}
+	.page-template-subscribe .kudossubscribe {
+		form.wpfs-form fieldset.wpfs-form-check-group {
+			padding: 30px 0;
+			padding-top: 15px;
+		}
+		.wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+			font-size: 20px !important;
+		}
+		.wpfs-form-check .wpfs-form-check-label strong {
+			font-size: 20px !important;
+		}
+	}
+	.support_eading h3 {
+		font-size: 41px;
+	}
+}
+@media(max-width: 955px) {
+	.page-template-mentions {
+		.men_content {
+			display: none;
+		}
+		.ab_part_mobile {
+			padding: 5px 10px;
+			display: block;
+		}
+		.about_outer {
+			padding-top: 20px;
+		}
+	}
+	.com_heading {
+		span {
+			margin-left: -6px;
+		}
+		h3 {
+			font-size: 30px;
+			b {
+				margin-top: -24px;
+				margin-right: 6px;
+				font-size: 37px;
+			}
+		}
+	}
+	.com_heading01 {
+		span {
+			margin-left: -6px;
+		}
+		h4 b {
+			margin-top: -24px;
+			margin-right: 6px;
+		}
+	}
+	.contact01.headong0022 h1 {
+		font-size: 38px !important;
+	}
+	.more_from_issue .com_heading01 span {
+		margin-left: -8px;
+	}
+}
+.boxzilla-overlay {
+	display: none !important;
+}
+.boxzilla-container {
+	display: none !important;
+}
+.postid-2151 {
+	.boxzilla-overlay {
+		background-color: transparent;
+		display: block !important;
+		height: 50vh;
+		bottom: 0 !important;
+		position: fixed;
+		top: auto;
+	}
+	.boxzilla-container {
+		display: block !important;
+		height: 50vh;
+		bottom: 0 !important;
+		position: fixed;
+		top: auto;
+	}
+	.boxzilla-print-notice {
+		border: none !important;
+		margin-top: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 50vh !important;
+	}
+	.boxzilla-content {
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		max-width: 560px;
+		margin-left: auto;
+		margin-right: auto;
+		.serif-hed {
+			font-family: $font__1;
+			font-size: 26px;
+			line-height: 26px;
+		}
+		.sans-serif-hed {
+			font-size: 22px;
+			font-family: $font__avenir-next-thin;
+			font-weight: 500;
+			line-height: 26px;
+		}
+	}
+}
+.poem-pad {
+	padding-left: 30px;
+}
+@media(min-width: 1024px) {
+	.poem-pad {
+		padding-left: 160px;
+	}
+}
+.wpfs-form-check-input {
+	+ label[for^="wpfs-same-billing-and-shipping-address"]::before {
+		border: 1px solid var(--color__field-border) !important;
+	}
+	+ .wpfs-form-check-label::before {
+		height: 20px !important;
+	}
+}
+.page-donate {
+	.wpfs-form-check-group {
+		.fieldset-wrapper {
+			width: 100%;
+			max-width: 75%;
+			margin: 1rem auto;
+			margin-top: 10%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			.wpfs-form-check {
+				margin: .5rem 0;
+				width: 100%;
+				&:nth-child(odd) {
+					width: 100%;
+				}
+				&:last-of-type {
+					width: 100%;
+				}
+				&:nth-child(7) {
+					width: 100%;
+				}
+			}
+			div[data-wpfs-amount-row="custom-amount"] {
+				width: 100%;
+				max-width: 100% !important;
+				width: 65%;
+				.wpfs-input-group {
+					display: block;
+					input {
+						width: 100%;
+					}
+				}
+				input {
+					border: 1px solid var(--color__field-border);
+					height: 29px;
+					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+					border-radius: 0 !important;
+					padding: 0 .25rem;
+				}
+			}
+			.wpfs-input-group-prepend {
+				display: none !important;
+			}
+		}
+		.wpfs-form-check input {
+			margin-bottom: 0 !important;
+		}
+	}
+	form.wpfs-form fieldset.wpfs-form-check-group {
+		background-image: url(../images/donate-box-bg.png);
+	}
+	input.wpfs-form-control {
+		border-color: var(--color__gray-field) !important;
+	}
+}
+.wpfs-form-check-input[type="radio"] {
+	+ .wpfs-form-check-label::after {
+		background: $color__black !important;
+		top: 5px !important;
+		left: 4px !important;
+		width: 12px !important;
+		height: 12px !important;
+		border: 0;
+	}
+	&:focus + .wpfs-form-check-label:before {
+		outline: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	&:checked:focus + .wpfs-form-check-label:before {
+		outline: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+}
+.wpfs-form-check {
+	.wpfs-form-check-label {
+		padding-left: 30px;
+		strong {
+			margin-left: 20px;
+			font-size: 20px !important;
+		}
+		&:focus {
+			outline: none;
+			&:after {
+				outline: none;
+			}
+		}
+	}
+	> input:focus {
+		outline: none;
+	}
+}
+div[data-wpfs-amount-row="custom-amount"] {
+	display: initial !important;
+}
+@media screen and(min-width: 495px) {
+	.page-template-donate .wpfs-form-check-group .fieldset-wrapper {
+		margin: 25% auto 1rem auto;
+		.wpfs-form-check {
+			margin: .5rem 0;
+			width: 35%;
+			&:nth-child(odd) {
+				width: 65%;
+			}
+			&:last-of-type {
+				width: 65%;
+			}
+			&:nth-child(7) {
+				width: 65%;
+			}
+		}
+		div[data-wpfs-amount-row="custom-amount"] {
+			width: 65%;
+			margin-left: 35%;
+		}
+	}
+	.page-donate .wpfs-form-check-group .fieldset-wrapper {
+		margin: 25% auto 1rem auto;
+		.wpfs-form-check {
+			margin: .5rem 0;
+			width: 35%;
+			&:nth-child(odd) {
+				width: 65%;
+			}
+			&:last-of-type {
+				width: 65%;
+			}
+			&:nth-child(7) {
+				width: 65%;
+			}
+		}
+		div[data-wpfs-amount-row="custom-amount"] {
+			width: 65%;
+			margin-left: 35%;
+		}
+	}
+}
+@media screen and(min-width: 580px) and(max-width: 767px) {
+	.page-template-donate .wpfs-form-check-group .fieldset-wrapper {
+		.wpfs-form-check {
+			&:last-of-type {
+				width: 25%;
+			}
+			&:nth-child(7) {
+				width: 25%;
+			}
+		}
+		div[data-wpfs-amount-row="custom-amount"] {
+			width: 40%;
+			margin: .5rem 0;
+		}
+	}
+	.page-donate .wpfs-form-check-group .fieldset-wrapper {
+		.wpfs-form-check {
+			&:last-of-type {
+				width: 25%;
+			}
+			&:nth-child(7) {
+				width: 25%;
+			}
+		}
+		div[data-wpfs-amount-row="custom-amount"] {
+			width: 40%;
+			margin: .5rem 0;
+		}
+	}
+}
+.gform_wrapper.gravity-theme .first-benefit .ginput_container_email {
+	margin-right: 1rem;
+	border: none;
+	input {
+		text-align: center !important;
+		font-size: 20px !important;
+		border: 0 !important;
+		border-bottom: 1px solid $color__black !important;
+		padding: 0;
+		line-height: 2.3rem !important;
+	}
+}
+#tf-hide-mob.fixed {
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	background: $color__white;
+	top: 0;
+	.menu_outer .nav > li {
+		margin-bottom: 0;
+	}
+}
+#mc_embed_signup_scroll > div {
+	width: 400px;
+}
+input[type="email"].wpfs-form-control {
+	background: $color__wild-sand !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 !important;
+}
+input[type="text"].wpfs-form-control {
+	background: $color__wild-sand !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 !important;
+}
+.wpfs-form-select select {
+	background: $color__wild-sand !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0 !important;
+}
+.sub_don.showInMobile {
+	display: none;
+	.sub_donl {
+		width: 100%;
+	}
+}
+#ajaxsearchlite1 .probox .proinput {
+	input::-webkit-input-placeholder {
+		font-family: $font__avenir-next-thin;
+		color: $color__gray_approx;
+	}
+	input::-moz-placeholder {
+		font-family: $font__avenir-next-thin;
+		color: $color__gray_approx;
+	}
+	input {
+		font-size: 14px !important;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none !important;
+		color: $color__mine_shaft_approx !important;
+		font-family: $font__avenir-next-thin;
+		&:-ms-input-placeholder {
+			font-family: $font__avenir-next-thin;
+			color: $color__gray_approx;
+		}
+		&:-moz-placeholder {
+			font-family: $font__avenir-next-thin;
+			color: $color__gray_approx;
+		}
+	}
+}
+.latest_articles .single_article {
+	padding: 0 28px;
+}
+.row.latest_articles {
+	max-width: 94%;
+	margin: auto;
+	margin-top: 10px;
+}
+.support_heading h3 {
+	font-family: $font__avenir-next-thin;
+	font-size: 40px;
+	padding-left: 38px;
+}
+.signup4mail_Left h3 {
+	font-family: $font__avenir-next-thin;
+	padding-left: 38px;
+	padding-bottom: 8px;
+	padding-top: 13px;
+	font-size: 36px;
+}
+.support_subheadings h3 {
+	text-transform: uppercase;
+	font-size: 29px;
+	font-family: $font__avenir-next-thin;
+	margin-top: 23px;
+	font-weight: 600;
+	text-align: right;
+}
+.support_content p {
+	font-size: 18px;
+	font-family: $font__avenir-next-thin;
+	margin: auto;
+}
+.signup4mail_BG #mc_embed_signup .mc-field-group input#mce-EMAIL {
+	background: $color__athens_gray_approx;
+}
+.issuesMoreIcon img {
+	width: 94px;
+}
+.issues_image img {
+	height: 185px;
+	width: 185px;
+	object-fit: cover;
+}
+.footerNewLogo img {
+	width: 145px;
+	margin-left: 30px;
+}
+.footerNewSocials ul {
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+}
+.com_logo img {
+	margin: auto;
+	display: block;
+	max-height: 80px;
+}
+.wpfs-form-control:not(.wpfs-form-control--error) {
+	&.wpfs-form-control--focus {
+		border-color: var(--secondary-color);
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 1px var(--black) !important;
+	}
+	&:focus {
+		border-color: var(--secondary-color);
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 0 1px var(--black) !important;
+		border-color: transparent !important;
+	}
+}
+.ab_part label.wpfs-form-check-label {
+	font-size: 18px;
+	color: $color__mine_shaft_approx;
+	font-weight: 400;
+	font-family: $font__2;
+	strong {
+		font-size: 18px;
+		color: $color__mine_shaft_approx;
+		font-weight: 400;
+		font-family: $font__2;
+	}
+}
+.wpfs-btn-primary--loader:after {
+}
+.donate-subscribe_txt .com_heading h3 {
+	text-transform: none;
+}
+.mentions .com_heading span {
+	font-size: 35px;
+}
+#wpfs-form-get-parameters--ZTI4NGY ~ .wpfs-form-check-group {
+	position: relative;
+	background-color: $color__white;
+	padding: 45px;
+	background-repeat: no-repeat;
+	background-size: auto 220px;
+	height: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.page-template-page-templatessubscribe-php #wpfs-form-get-parameters--ZTI4NGY ~ .wpfs-form-check-group {
+	display: none;
+}
+.subsRadio li span label::after {
+	background: $color__black !important;
+	left: 24px !important;
+	top: 8px !important;
+	width: 12px !important;
+	height: 12px !important;
+}
+.account-managment .wpfs-form-actions {
+	display: flex;
+	flex-direction: column;
+	.wpfs-btn-primary {
+		margin-left: 0;
+		margin-right: auto !important;
+	}
+	.wpfs-nav-back-to-email-address {
+		margin-top: 1rem;
+		display: block;
+		margin-left: 0;
+		margin-right: auto !important;
+	}
+}
+span.author_desc a {
+	color: $color__fountain_blue_approx;
+}
+button.search-submit {
+	background-color: $color__white;
+	border: 1px solid $color__silver_chalice_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 9px;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.23s ease-in-out 0s;
+	color: $color__silver_chalice_approx;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: normal;
+	height: 32px;
+	font-family: $font__sans-serif;
+	line-height: 32px;
+	padding: 0 22px;
+	text-align: center;
+	text-decoration: none;
+	&:hover {
+		background-color: $color__silver_approx !important;
+		color: $color__black !important;
+		border: 1px solid $color__black;
+	}
+}
+.issue_container .com_heading01 {
+	h4 b a {
+		font-family: $font__1;
+		font-weight: 600;
+		&:hover {
+			color: $color__mine_shaft_approx;
+		}
+	}
+	p a {
+		font-weight: 600;
+		font-size: 15px;
+		&:hover {
+			color: $color__mine_shaft_approx !important;
+		}
+	}
+	a:hover {
+		color: $color__mine_shaft_approx;
+	}
+}
+.error404 .wrap {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 15px;
+	max-width: 100%;
+}
+.page-template-homepage .footer_outer {
+	margin-top: -0px;
+}
+.page-template-about .about_r {
+	position: relative;
+	z-index: 999;
+}
+.issue_outer .issue_l {
+	padding-left: 15px !important;
+	position: relative;
+	z-index: 999;
+}
+.about_l h6 {
+	text-transform: uppercase;
+}
+.wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary {
+	background: $color__gray_approx !important;
+	border-color: $color__gray_approx !important;
+}
+.tax-authors .search_container h1.page-title span.author_desc {
+	font-size: 20px;
+	font-family: $font__avenir-next-thin;
+	display: inline;
+	position: relative;
+	margin-left: 10px;
+	font-weight: 300;
+	&:after {
+		content: '|';
+		position: absolute;
+		left: -10px;
+		top: 1px;
+		font-size: 17px;
+		color: $color__gray_approx;
+	}
+}
+.f_logo > p {
+	visibility: hidden;
+}
+.right-women-img .women_img_01 {
+	position: absolute;
+	top: 8%;
+	right: -5%;
+	width: auto;
+	height: 600px;
+	max-width: 90%;
+}
+div[id*='ajaxsearchlite'].wpdreams_asl_container {
+	position: absolute !important;
+	width: 250px !important;
+	right: 15px !important;
+	max-width: 100% !important;
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+	z-index: 999 !important;
+	top: 40px !important;
+}
+[id*="mention_"] a:hover b {
+	color: $color__mine_shaft_approx;
+}
+.mission_outer .mission + .more_from_issue {
+	padding-top: 30px;
+}
+.postid-435 .mission + .more_from_issue {
+	padding-top: 0;
+}
+.mission p span {
+	font-size: 19px !important;
+}
+.com_heading01 span {
+	padding: 0 5px;
+}
+.addtoany_content blockquote.link_quote {
+	display: none;
+}
+.single.postid-2151 {
+	overflow-y: hidden;
+	.mission_outer p {
+		display: none;
+		&:nth-of-type(1) {
+			display: block;
+		}
+		&:nth-of-type(2) {
+			display: block;
+		}
+	}
+}
+.wpfs-same-billing-and-shipping-address + .wpfs-form-check-label::before {
+}
+label[for^="wpfs-same-billing-and-shipping-address"]:before {
+	border: 1px solid var(--color__field-border) !important;
+}
+.wpfs-form-check-input[type="checkbox"]:checked + label[for^="wpfs-same-billing-and-shipping-address"]::before {
+	background-color: var(--color__field-border) !important;
+}
+.page-subscribe form.wpfs-form fieldset.wpfs-form-check-group {
+	background-image: url(https://www.thedriftmag.com/wp-content/uploads/2021/09/cherimoya-subscribe.jpg);
+}
+.wpfs-form-check-group .wpfs-form-check .wpfs-form-check-label {
+	display: inline-block;
+	padding-left: 50px;
+	font-size: 20px;
+	span.constrained {
+		width: 125px;
+		display: inline-block;
+	}
+}
