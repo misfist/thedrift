@@ -9,6 +9,7 @@ namespace SiteFunctionality\PostTypes;
 
 use SiteFunctionality\Abstracts\Base;
 use SiteFunctionality\PostTypes\Issue;
+use SiteFunctionality\PostTypes\Mention;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -33,7 +34,6 @@ class PostTypes extends Base {
 	 * @return void
 	 */
 	public function init() {
-		// include_once SITE_CORE_DIR . '/src/PostTypes/Issue.php';
 		new Issue( $this->version, $this->plugin_name );
 		new Mention( $this->version, $this->plugin_name );
 	}

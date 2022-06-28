@@ -20,16 +20,16 @@ class Issue extends PostType {
 	 * PostType data
 	 */
 	public const POST_TYPE = array(
-		'id'          => 'issue',
-		'menu'        => 'Issues',
-		'title'       => 'Issues',
-		'singular'    => 'Issue',
-		'icon'        => 'dashicons-book-alt',
+		'id'          => 'mention',
+		'menu'        => 'Mentions',
+		'title'       => 'Mentions',
+		'singular'    => 'Mention',
+		'icon'        => 'dashicons-admin-comments',
 		'taxonomies'  => array(),
-		'has_archive' => 'issues',
+		'has_archive' => 'mentions',
 		'with_front'  => false,
-		'archive'     => 'issue',
-		'rest_base'   => 'issues',
+		'archive'     => 'mention',
+		'rest_base'   => 'mentions',
 		'supports'    => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'page-attributes' ),
 	);
 
