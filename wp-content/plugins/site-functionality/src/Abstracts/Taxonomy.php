@@ -78,21 +78,21 @@ abstract class Taxonomy extends Base {
 		);
 
 		$rewrite = array(
-			'slug'       => $this::TAXONOMY['archive'],
+			'slug'       => array_key_exists( 'archive', $this::TAXONOMY ) ? $this::TAXONOMY['archive'] : $this::TAXONOMY['id'],
 			'with_front' => $this::TAXONOMY['with_front'],
 		);
 
 		$args = array(
 			'labels'            => $labels,
-			'hierarchical'      => false,
-			'public'            => true,
-			'show_ui'           => true,
-			'show_admin_column' => true,
-			'show_in_nav_menus' => true,
-			'show_tagcloud'     => true,
+			'hierarchical'      => array_key_exists( 'hierarchical', $this::TAXONOMY ) ? $this::TAXONOMY['hierarchical'] : true,
+			'public'            => array_key_exists( 'public', $this::TAXONOMY ) ? $this::TAXONOMY['public'] : true,
+			'show_ui'           => array_key_exists( 'show_ui', $this::TAXONOMY ) ? $this::TAXONOMY['show_ui'] : true,
+			'show_admin_column' => array_key_exists( 'show_admin_column', $this::TAXONOMY ) ? $this::TAXONOMY['show_admin_column'] : true,
+			'show_in_nav_menus' => array_key_exists( 'show_in_nav_menus', $this::TAXONOMY ) ? $this::TAXONOMY['show_in_nav_menus'] : true,
+			'show_tagcloud'     => array_key_exists( 'show_tagcloud', $this::TAXONOMY ) ? $this::TAXONOMY['show_tagcloud'] : true,
 			'rewrite'           => $rewrite,
-			'show_in_rest'      => true,
-			'rest_base'         => $this::TAXONOMY['rest'],
+			'show_in_rest'      => array_key_exists( 'show_in_rest', $this::TAXONOMY ) ? $this::TAXONOMY['show_in_rest'] : true,
+			'rest_base'         => array_key_exists( 'hierarchical', $this::TAXONOMY ) ? $this::TAXONOMY['hierarchical'] : $this::TAXONOMY['id'],
 		);
 		\register_taxonomy(
 			$this::TAXONOMY['id'],
