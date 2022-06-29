@@ -3,9 +3,11 @@
  * Register and Render Block
  *
  * @since   1.0.0
- * @package Site_Functionality
+ * @package  SiteFunctionality
  */
-namespace Site_Functionality\Blocks\ACF\Featured_Issue;
+namespace SiteFunctionality\Blocks\ACF\Featured_Issue;
+
+use SiteFunctionality\Util\TemplateLoader;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,26 +18,74 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Render Block
  *
- * @param array $block_attributes
+ * @param array  $block_attributes
  * @param string $content
  * @return string
  */
 function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
-    ?>
-    <!-- Render callback -->
-    Test
-    <?php 
+	global $post;
+
+	if ( $post = \get_field( 'post' ) ) {
+		$loader_params   = \SiteFunctionality\Blocks\get_template_params();
+		$template_loader = new TemplateLoader( $loader_params );
+		\setup_postdata( $post );
+		$class = str_replace( '/', '-', $block['name'] );
+		?>
+		<section class="wp-block-<?php echo $class; ?>">
+
+			<?php
+			$template_loader
+			->setTemplateData(
+				array()
+			)
+				->getTemplatePart( $post->post_type );
+			?>
+
+		</section><!-- .wp-block-<?php echo $class; ?> -->
+		
+		<?php
+		wp_reset_postdata();
+	}
 }
 
 /**
- * Registers the `site-functionality/event-time` block on the server.
+ * Registers the `acf/featured-issue` block on the server.
  */
 function register() {
-	\register_block_type(
-		__DIR__,
-		[
-			'render_callback' 	=> __NAMESPACE__ . '\render',
-		]
+
+	\acf_register_block_type(
+		array(
+			'name'            => 'featured-issue',
+			'title'           => __( 'Featured Issue', 'site-functionality' ),
+			'description'     => '',
+			'category'        => 'common',
+			'keywords'        => array(
+				0 => 'issue',
+				1 => 'featured',
+			),
+			'post_types'      => array(
+				0 => 'post',
+				1 => 'page',
+			),
+			'mode'            => 'preview',
+			'align'           => '',
+			'align_content'   => '',
+			'render_template' => '',
+			'render_callback' => __NAMESPACE__ . '\render',
+			'enqueue_style'   => '',
+			'enqueue_script'  => '',
+			'enqueue_assets'  => '',
+			'icon'            => 'book-alt',
+			'supports'        => array(
+				'align'         => false,
+				'mode'          => false,
+				'multiple'      => false,
+				'jsx'           => true,
+				'align_content' => true,
+				'anchor'        => true,
+				'color'         => true,
+			),
+		)
 	);
 }
-// add_action( 'init', __NAMESPACE__ . '\register' );
+add_action( 'acf/init', __NAMESPACE__ . '\register' );
