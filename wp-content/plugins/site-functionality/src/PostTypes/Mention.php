@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class Issue extends PostType {
+class Mention extends PostType {
 
 	/**
 	 * PostType data
