@@ -7,8 +7,8 @@
  */
 namespace SiteFunctionality\Blocks;
 
-require_once \plugin_dir_path( __FILE__ ) . 'src/hero/index.php';
-
+// require_once \plugin_dir_path( __FILE__ ) . 'src/hero/index.php';
+require_once \plugin_dir_path( __FILE__ ) . 'acf/featured-issue/index.php';
 
 const TEMPLATE_PARAMS = array(
 	'filter_prefix'             => 'site_functionality',

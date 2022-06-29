@@ -50,6 +50,8 @@ function site_functionality_init() {
 	include_once SITE_CORE_DIR . '/src/Abstracts/PostType.php';
 	include_once SITE_CORE_DIR . '/src/Abstracts/Taxonomy.php';
 
+	include_once SITE_CORE_DIR . '/blocks/blocks.php';
+
 	$admin = new Admin( VERSION, PLUGIN );
 	$restAPI = new RestApi( VERSION, PLUGIN );
 	$taxonomies   = new Taxonomies( VERSION, PLUGIN );
