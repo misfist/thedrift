@@ -4,9 +4,9 @@
  *
  * @package   Site_Functionality
  */
-namespace Site_Functionality\Taxonomies;
+namespace SiteFunctionality\Taxonomies;
 
-use Site_Functionality\Abstracts\Taxonomy;
+use SiteFunctionality\Abstracts\Taxonomy;
 
 	/**
 	 * Class Taxonomies
@@ -49,9 +49,6 @@ use Site_Functionality\Abstracts\Taxonomy;
 		 *
 		 * @return void
 		 */
-		public function rewrite_rules() {
-			\add_rewrite_rule( self::TAXONOMY['archive'] . '/([^/]+)/page/([0-9]{1,})/?', 'index.php?taxonomy=' . self::TAXONOMY['id'] . '&term=$matches[1]&post_type=' . PurchaseAgreement::POST_TYPE['id'] . '&paged=$matches[2]', 'top' );
-			\add_rewrite_rule( self::TAXONOMY['archive'] . '/([^/]+)/?', 'index.php?taxonomy=' . self::TAXONOMY['id'] . '&term=$matches[1]&post_type=' . PurchaseAgreement::POST_TYPE['id'], 'top' );
-		}
+		public function rewrite_rules() {}
 
 	}
