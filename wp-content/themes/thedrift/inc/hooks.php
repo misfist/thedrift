@@ -50,20 +50,6 @@ function drift_body_classes( $classes ) {
 		$classes[] = 'front-page';
 	}
 
-	if ( is_single() ) {
-		global $post;
-		$args = array(
-			'taxonomy' => 'type',
-			'object_ids' => $post->ID,
-			'fields' => 'slugs'
-		);
-		$terms = get_terms( $args );
-
-		if( !empty( $terms ) ) {
-			$classes[] = 'type-' . $terms[0];
-		}
-	}
-
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
