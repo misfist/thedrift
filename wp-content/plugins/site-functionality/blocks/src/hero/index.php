@@ -3,9 +3,9 @@
  * Register and Render Block
  *
  * @since   1.0.0
- * @package Site_Functionality
+ * @package  SiteFunctionality
  */
-namespace Site_Functionality\Blocks\Hero;
+namespace  SiteFunctionality\Blocks\Hero;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {

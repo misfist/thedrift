@@ -2,7 +2,7 @@
 /**
  * Taxonomy
  *
- * @package   Site_Functionality
+ * @package    SiteFunctionality
  */
 namespace SiteFunctionality\Taxonomies;
 
@@ -11,7 +11,7 @@ use SiteFunctionality\Abstracts\Taxonomy;
 	/**
 	 * Class Taxonomies
 	 *
-	 * @package Site_Functionality\Taxonomies
+	 * @package  SiteFunctionality\Taxonomies
 	 * @since 0.1.0
 	 */
 	class Author extends Taxonomy {
