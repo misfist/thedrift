@@ -41,16 +41,20 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 
 	$query = new \WP_Query( $args );
 
-	var_dump(  \get_fields() );
-
 	if ( $query->have_posts() ) :
 		$loader_params   = \SiteFunctionality\Blocks\get_template_params();
 		$template_loader = new TemplateLoader( $loader_params );
 
-		$class  = str_replace( '/', '-', $block['name'] );
-		$class .= ' featured-articles';
+		$id    = ! empty( $block['anchor'] ) ? $block['anchor'] : 'featured-article-' . $block['id'];
+		$class = str_replace( '/', '-', $block['name'] ) . ' featured-article';
+		if ( ! empty( $block['className'] ) ) {
+			$class .= ' ' . $block['className'];
+		}
+		if ( ! empty( $block['align'] ) ) {
+			$class .= ' align' . $block['align'];
+		}
 		?>
-		<section class="wp-block-<?php echo $class; ?>">
+		<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 			<?php
 			if ( $heading = \get_field( 'section_title' ) ) :
 				?>

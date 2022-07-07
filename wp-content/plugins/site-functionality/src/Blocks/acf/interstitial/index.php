@@ -62,10 +62,16 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 			)
 		),
 	);
-	$class    = str_replace( '/', '-', $block['name'] );
-	$class   .= ' interstitial';
+	$id       = ! empty( $block['anchor'] ) ? $block['anchor'] : 'interstitial-' . $block['id'];
+	$class    = str_replace( '/', '-', $block['name'] ) . ' interstitial';
+	if ( ! empty( $block['className'] ) ) {
+		$class .= ' ' . $block['className'];
+	}
+	if ( ! empty( $block['align'] ) ) {
+		$class .= ' align' . $block['align'];
+	}
 	?>
-	<section class="wp-block-<?php echo $class; ?>">
+	<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 
 		<InnerBlocks template="<?php echo \esc_attr( \wp_json_encode( $template ) ); ?>" />
 

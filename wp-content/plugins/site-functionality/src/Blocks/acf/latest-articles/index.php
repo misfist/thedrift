@@ -33,11 +33,17 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 	if ( $query->have_posts() ) :
 		$loader_params   = \SiteFunctionality\Blocks\get_template_params();
 		$template_loader = new TemplateLoader( $loader_params );
-	
-		$class  = str_replace( '/', '-', $block['name'] );
-		$class .= ' latest-articles';
+		$id              = ! empty( $block['anchor'] ) ? $block['anchor'] : 'latest-articles-' . $block['id'];
+
+		$class = str_replace( '/', '-', $block['name'] ) . ' latest-articles';
+		if ( ! empty( $block['className'] ) ) {
+			$class .= ' ' . $block['className'];
+		}
+		if ( ! empty( $block['align'] ) ) {
+			$class .= ' align' . $block['align'];
+		}
 		?>
-		<section class="wp-block-<?php echo $class; ?>">
+		<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 			<?php
 			if ( $heading = \get_field( 'section_title' ) ) :
 				?>
@@ -52,7 +58,8 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 			
 			<div class="post-list">
 			<?php
-			while ( $query->have_posts() ) : $query->the_post();
+			while ( $query->have_posts() ) :
+				$query->the_post();
 				?>
 
 				<?php
@@ -71,8 +78,8 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 				?>
 				<footer class="section-footer">
 					<?php
-					$url = array_key_exists( 'url', $link ) && $link['url'] ?  $link['url'] : \get_permalink( (int) \get_option( 'page_for_posts' ) );
-					$title = array_key_exists( 'title', $link ) && $link['title'] ?  $link['title'] : __( 'See more' );
+					$url   = array_key_exists( 'url', $link ) && $link['url'] ? $link['url'] : \get_permalink( (int) \get_option( 'page_for_posts' ) );
+					$title = array_key_exists( 'title', $link ) && $link['title'] ? $link['title'] : __( 'See more' );
 					?>
 					<a href="<?php echo \esc_url( $url ); ?>" title="<?php \esc_attr_e( $title, 'site-functionality' ); ?>"><?php \esc_html_e( $title, 'site-functionality' ); ?></a>
 				</footer><!-- .section-footer -->

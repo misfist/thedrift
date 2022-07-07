@@ -30,10 +30,17 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 		$loader_params   = \SiteFunctionality\Blocks\get_template_params();
 		$template_loader = new TemplateLoader( $loader_params );
 		\setup_postdata( $post );
-		$class  = str_replace( '/', '-', $block['name'] );
-		$class .= ' featured-issue';
+
+		$id              = ! empty( $block['anchor'] ) ? $block['anchor'] : 'featured-issue-' . $block['id'];
+		$class = str_replace( '/', '-', $block['name'] ) . ' featured-issue';
+		if ( ! empty( $block['className'] ) ) {
+			$class .= ' ' . $block['className'];
+		}
+		if ( ! empty( $block['align'] ) ) {
+			$class .= ' align' . $block['align'];
+		}
 		?>
-		<section class="wp-block-<?php echo $class; ?>">
+		<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 
 			<?php
 			$template_loader

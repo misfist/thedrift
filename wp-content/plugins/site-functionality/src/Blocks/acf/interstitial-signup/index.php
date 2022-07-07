@@ -36,10 +36,16 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 			array(),
 		),
 	);
-	$class    = str_replace( '/', '-', $block['name'] );
-	$class   .= ' interstitial-signup';
+	$id       = ! empty( $block['anchor'] ) ? $block['anchor'] : 'interstitial-signup-' . $block['id'];
+	$class    = str_replace( '/', '-', $block['name'] ) . ' interstitial-signup';
+	if ( ! empty( $block['className'] ) ) {
+		$class .= ' ' . $block['className'];
+	}
+	if ( ! empty( $block['align'] ) ) {
+		$class .= ' align' . $block['align'];
+	}
 	?>
-	<section class="wp-block-<?php echo $class; ?>">
+	<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 
 		<InnerBlocks template="<?php echo \esc_attr( \wp_json_encode( $template ) ); ?>" />
 
