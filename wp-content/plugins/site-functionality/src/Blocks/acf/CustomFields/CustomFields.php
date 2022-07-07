@@ -49,6 +49,7 @@ class CustomFields extends Base {
 		\add_action( 'acf/init', array( $this, 'featured_issue' ) );
 		\add_action( 'acf/init', array( $this, 'featured_articles' ) );
 		\add_action( 'acf/init', array( $this, 'latest_articles' ) );
+		\add_action( 'acf/init', array( $this, 'latest_issues' ) );
 		\add_action( 'acf/init', array( $this, 'interstitial' ) );
 		\add_action( 'acf/init', array( $this, 'interstitial_signup' ) );
 	}
@@ -467,6 +468,77 @@ class CustomFields extends Base {
 							'param'    => 'block',
 							'operator' => '==',
 							'value'    => 'acf/latest-articles',
+						),
+					),
+				),
+				'menu_order'            => 0,
+				'position'              => 'normal',
+				'style'                 => 'default',
+				'label_placement'       => 'left',
+				'instruction_placement' => 'label',
+				'hide_on_screen'        => '',
+				'active'                => true,
+				'description'           => '',
+				'show_in_rest'          => true,
+			)
+		);
+	}
+
+		/**
+	 * Register fields
+	 *
+	 * @link https://www.advancedcustomfields.com/resources/register-fields-via-php/
+	 *
+	 * @return void
+	 */
+	public function latest_issues() {
+		\acf_add_local_field_group(
+			array(
+				'key'                   => 'group_latest_issues',
+				'title'                 => \__( 'Latest Issues', 'site-functionality' ),
+				'fields'                => array(
+					array(
+						'key'               => 'field_section_title',
+						'label'             => \__( 'Section Title', 'site-functionality' ),
+						'name'              => 'section_title',
+						'type'              => 'text',
+						'instructions'      => '',
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => array(
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						),
+						'default_value'     => \__( 'Issues', 'site-functionality' ),
+						'placeholder'       => \__( 'Add section header...', 'site-functionality' ),
+						'prepend'           => '',
+						'append'            => '',
+						'maxlength'         => '',
+					),
+					array(
+						'key'               => 'field_section_link',
+						'label'             => \__( 'Link', 'site-functionality' ),
+						'name'              => 'section_link',
+						'type'              => 'acfe_advanced_link',
+						'instructions'      => '',
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => array(
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						),
+						'post_type'         => '',
+						'taxonomy'          => '',
+					),
+				),
+				'location'              => array(
+					array(
+						array(
+							'param'    => 'block',
+							'operator' => '==',
+							'value'    => 'acf/latest-issues',
 						),
 					),
 				),
