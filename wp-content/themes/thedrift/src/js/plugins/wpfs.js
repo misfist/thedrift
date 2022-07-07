@@ -11,8 +11,6 @@
     const formType = form.data( 'wpfs-form-type' );
     const fieldNodes = $( '.wpfs-form-check-group .wpfs-form-check' );
 
-    console.log( $( '.wpfs-billing-address-switch' ), $( '.wpfs-shipping-address-switch' ) );
-
     if( fieldNodes ) {
 
         const replacementBillingText = 'Billing address';
