@@ -73,7 +73,9 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 	?>
 	<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 
-		<InnerBlocks template="<?php echo \esc_attr( \wp_json_encode( $template ) ); ?>" />
+		<div class="alignfull-wrapper">
+			<InnerBlocks template="<?php echo \esc_attr( \wp_json_encode( $template ) ); ?>" />
+		</div>
 
 	</section><!-- .wp-block-<?php echo $class; ?> -->
 
