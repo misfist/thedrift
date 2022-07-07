@@ -53,6 +53,8 @@ class CustomFields extends Base {
 		\add_action( 'acf/init', array( $this, 'interstitial' ) );
 		\add_action( 'acf/init', array( $this, 'interstitial_signup' ) );
 		\add_action( 'acf/init', array( $this, 'column_list' ) );
+		\add_filter( 'acf/fields/post_object/result/name=post', array( $this, 'post_object_render' ), 10, 4 );
+		\add_filter( 'acf/fields/post_object/query/name=post', array( $this, 'post_object_query' ), 10, 3 );
 	}
 
 	/**
@@ -699,5 +701,72 @@ class CustomFields extends Base {
 			)
 		);
 
+	}
+
+	/**
+	 * Modify Post Object Field Display
+	 * Display additional post info in select list
+	 *
+	 * @link https://www.advancedcustomfields.com/resources/acf-fields-post_object-result/
+	 *
+	 * @param string  $text
+	 * @param integer $post
+	 * @param string  $field
+	 * @param integer $post_id
+	 * @return string $text
+	 */
+	public function post_object_render( $text, $post, $field, $post_id ) : string {
+		$args = array(
+			'fields' => 'names',
+			'number' => 1,
+		);
+		if ( \has_term( '', 'issue', $post->ID ) ) {
+			$issue = \wp_get_post_terms( $post->ID, 'issue', $args );
+			$text .= sprintf( ' - %s', $issue[0] );
+		} elseif ( \has_term( '', 'category', $post->ID ) ) {
+			$category = \wp_get_post_terms( $post->ID, 'category', $args );
+			$text    .= sprintf( ' - %s', $category[0] );
+		}
+		return $text;
+	}
+
+	/**
+	 * Modify Post Object Field Query
+	 * 
+	 * @link https://www.advancedcustomfields.com/resources/acf-fields-post_object-query/
+	 *
+	 * @param array $args
+	 * @param string $field
+	 * @param integer $post_id
+	 * @return array $args
+	 */
+	public function post_object_query( $args, $field, $post_id ) : array {
+		$term_args = array(
+			'fields' => 'ids',
+		);
+		
+		if ( \has_term( '', 'issue', $post_id ) ) {
+			$taxonomy = 'issue';
+			$terms = \wp_get_post_terms( $post_id, $taxonomy, $term_args );
+			$args['tax_query'] = array(
+				array(
+					'taxonomy' => $taxonomy,
+					'terms' => $terms
+				)
+			);
+		} elseif ( \has_term( '', 'category', $post_id ) ) {
+			$taxonomy = 'category';
+			$terms = \wp_get_post_terms( $post_id, $taxonomy, $term_args );
+			$args['tax_query'] = array(
+				array(
+					'taxonomy' => $taxonomy,
+					'terms' => $terms
+				)
+			);
+		} else {
+			$args['orderby'] = 'date title';
+		}
+		
+		return $args;
 	}
 }
