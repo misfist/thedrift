@@ -52,6 +52,7 @@ class CustomFields extends Base {
 		\add_action( 'acf/init', array( $this, 'latest_issues' ) );
 		\add_action( 'acf/init', array( $this, 'interstitial' ) );
 		\add_action( 'acf/init', array( $this, 'interstitial_signup' ) );
+		\add_action( 'acf/init', array( $this, 'column_list' ) );
 	}
 
 	/**
@@ -485,12 +486,12 @@ class CustomFields extends Base {
 	}
 
 		/**
-	 * Register fields
-	 *
-	 * @link https://www.advancedcustomfields.com/resources/register-fields-via-php/
-	 *
-	 * @return void
-	 */
+		 * Register fields
+		 *
+		 * @link https://www.advancedcustomfields.com/resources/register-fields-via-php/
+		 *
+		 * @return void
+		 */
 	public function latest_issues() {
 		\acf_add_local_field_group(
 			array(
@@ -589,6 +590,7 @@ class CustomFields extends Base {
 			)
 		);
 	}
+
 	/**
 	 * Register fields
 	 *
@@ -622,5 +624,80 @@ class CustomFields extends Base {
 				'show_in_rest'          => true,
 			)
 		);
+	}
+
+	/**
+	 * Register fields
+	 *
+	 * @link https://www.advancedcustomfields.com/resources/register-fields-via-php/
+	 *
+	 * @return void
+	 */
+	public function column_list() {
+		acf_add_local_field_group(
+			array(
+				'key'                   => 'group_column_list',
+				'title'                 => __( '2-Column List', 'site-functionality' ),
+				'fields'                => array(
+					array(
+						'key'               => 'field_section_column_list_title',
+						'label'             => __( 'Heading', 'site-functionality' ),
+						'name'              => 'section_title',
+						'type'              => 'text',
+						'instructions'      => '',
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => array(
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						),
+						'default_value'     => '',
+						'placeholder'       => __( 'Add heading...', 'site-functionality' ),
+						'prepend'           => '',
+						'append'            => '',
+						'maxlength'         => '',
+					),
+					array(
+						'key'               => 'field_section_column_list_subtitle',
+						'label'             => __( 'Subheading', 'site-functionality' ),
+						'name'              => 'section_subtitle',
+						'type'              => 'text',
+						'instructions'      => '',
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => array(
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						),
+						'default_value'     => '',
+						'placeholder'       => __( 'Add subheading...', 'site-functionality' ),
+						'prepend'           => '',
+						'append'            => '',
+						'maxlength'         => '',
+					),
+				),
+				'location'              => array(
+					array(
+						array(
+							'param'    => 'block',
+							'operator' => '==',
+							'value'    => 'acf/column-list',
+						),
+					),
+				),
+				'menu_order'            => 0,
+				'position'              => 'normal',
+				'style'                 => 'default',
+				'label_placement'       => 'left',
+				'instruction_placement' => 'label',
+				'hide_on_screen'        => '',
+				'active'                => true,
+				'description'           => '',
+				'show_in_rest'          => true,
+			)
+		);
+
 	}
 }
