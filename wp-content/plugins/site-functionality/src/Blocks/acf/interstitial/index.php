@@ -63,6 +63,8 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 			)
 		),
 	);
+	$allowed_blocks = array( 'core/heading', 'core/paragraph', 'core/buttons' );
+
 	$id       = ! empty( $block['anchor'] ) ? $block['anchor'] : 'interstitial-' . $block['id'];
 	$class    = str_replace( '/', '-', $block['name'] ) . ' interstitial';
 	if ( ! empty( $block['className'] ) ) {
@@ -75,7 +77,10 @@ function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 	<section id="<?php echo \esc_attr( $id ); ?>" class="wp-block-<?php echo $class; ?>">
 
 		<div class="alignfull-wrapper">
-			<InnerBlocks template="<?php echo \esc_attr( \wp_json_encode( $template ) ); ?>" />
+			<InnerBlocks 
+				template="<?php echo \esc_attr( \wp_json_encode( $template ) ); ?>" 
+				allowedBlocks="<?php echo \esc_attr( wp_json_encode( $allowed_blocks ) ); ?>"
+			/>
 		</div>
 
 	</section><!-- .wp-block-<?php echo $class; ?> -->
