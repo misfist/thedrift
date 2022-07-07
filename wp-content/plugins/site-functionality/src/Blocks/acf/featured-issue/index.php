@@ -15,14 +15,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-
-/**
- * Render Block
- *
- * @param array  $block_attributes
- * @param string $content
- * @return string
- */
+ /**
+  * Render Block
+  *
+  * @param array $block
+  * @param string $content
+  * @param boolean $is_preview
+  * @param integer $post_id
+  * @return void
+  */
 function render( $block, $content = '', $is_preview = false, $post_id = 0 ) {
 	global $post;
 
