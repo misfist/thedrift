@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"SiteFunctionality\\": "src/"
+			"SiteFunctionality\\": ["src/"]
 		},
 		"files": [
 			"src/helpers.php"
