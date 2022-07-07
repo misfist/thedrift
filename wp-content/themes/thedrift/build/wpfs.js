@@ -1,4 +1,4 @@
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!********************************!*\
   !*** ./src/js/plugins/wpfs.js ***!
@@ -15,8 +15,6 @@ var __webpack_exports__ = {};
 
     const formType = form.data( 'wpfs-form-type' );
     const fieldNodes = $( '.wpfs-form-check-group .wpfs-form-check' );
-
-    console.log( $( '.wpfs-billing-address-switch' ), $( '.wpfs-shipping-address-switch' ) );
 
     if( fieldNodes ) {
 

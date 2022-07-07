@@ -1,31 +1,38 @@
 //----------------------------------------
 // Theme Styles.
 //----------------------------------------
-@import '../../node_modules/bootstrap/scss/functions';
+@import '~bootstrap/scss/functions';
+
+@import './config/variables';
+
+/* Required Bootstrap */
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
 
 @import 'config/index.scss';
 
-/* Required Bootstrap */
-@import '../../node_modules/bootstrap/scss/variables';
-@import '../../node_modules/bootstrap/scss/mixins';
-@import '../../node_modules/bootstrap/scss/root';
-
 /* Optional Bootstrap */
-@import '../../node_modules/bootstrap/scss/utilities';
-@import '../../node_modules/bootstrap/scss/reboot';
-@import '../../node_modules/bootstrap/scss/type';
-@import '../../node_modules/bootstrap/scss/images';
-@import '../../node_modules/bootstrap/scss/containers';
-@import '../../node_modules/bootstrap/scss/grid';
-@import '../../node_modules/bootstrap/scss/helpers';
-@import '../../node_modules/bootstrap/scss/buttons';
-@import '../../node_modules/bootstrap/scss/close';
-@import '../../node_modules/bootstrap/scss/dropdown';
-@import '../../node_modules/bootstrap/scss/forms';
-@import '../../node_modules/bootstrap/scss/modal';
-@import '../../node_modules/bootstrap/scss/offcanvas';
-@import '../../node_modules/bootstrap/scss/popover';
-@import '../../node_modules/bootstrap/scss/transitions';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/carousel';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/helpers';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/close';
+@import '~bootstrap/scss/dropdown';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/modal';
+@import '~bootstrap/scss/offcanvas';
+@import '~bootstrap/scss/popover';
+@import '~bootstrap/scss/transitions';
+
+@import "~/bootstrap/scss/utilities/api";
 
 @import 'global/global';
 @import 'components';
