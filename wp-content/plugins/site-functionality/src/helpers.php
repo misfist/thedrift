@@ -38,7 +38,7 @@ function get_authors( $post_id = null, $taxonomy = 'authors' ) : array {
 /**
  * Render Post Authors
  *
- * @param int $post_id
+ * @param int    $post_id
  * @param string $taxonomy
  * @return void
  */
@@ -49,6 +49,55 @@ function authors( $post_id = null, $taxonomy = 'authors' ) {
 			<div class="entry-authors" rel="vcard"><?php echo $term_links; ?></div>
 		<?php
 	}
+}
+
+/**
+ * Render Author Initials
+ *
+ * @param integer $id
+ * @return void
+ */
+function author_initials( int $id ) {
+	echo get_author_intials( (int) $id );
+}
+
+/**
+ * Get Author Initials
+ * 
+ * @author https://chrisblackwell.me/generate-perfect-initials-using-php/
+ *
+ * @param integer $id
+ * @return string
+ */
+function get_author_intials( int $id ) : string {
+	if ( $author = \get_term( $id, 'authors' ) ) {
+		$words = explode( ' ', $author->name );
+		if ( count( $words ) >= 2 ) {
+			return mb_strtoupper(
+				mb_substr( $words[0], 0, 1, 'UTF-8' ) . '.' .
+				mb_substr( end( $words ), 0, 1, 'UTF-8' ),
+				'UTF-8'
+			) . '.';
+		}
+		return intials_from_word( $author->name );
+	}
+	return '';
+}
+
+/**
+ * Generate initials for string
+ * 
+ * @author https://chrisblackwell.me/generate-perfect-initials-using-php/
+ *
+ * @param string $name
+ * @return string
+ */
+function intials_from_word( string $name ) : string {
+	preg_match_all( '#([A-Z]+)#', $name, $capitals );
+	if ( count( $capitals[1] ) >= 2 ) {
+		return mb_substr( implode( '', $capitals[1] ), 0, 2, 'UTF-8' );
+	}
+	return mb_strtoupper( mb_substr( $name, 0, 2, 'UTF-8' ), 'UTF-8' );
 }
 
 /**
