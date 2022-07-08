@@ -25,7 +25,7 @@ class Mention extends PostType {
 		'title'       => 'Mentions',
 		'singular'    => 'Mention',
 		'icon'        => 'dashicons-admin-comments',
-		'taxonomies'  => array(),
+		'taxonomies'  => array( 'issue' ),
 		'has_archive' => 'mentions',
 		'with_front'  => false,
 		'archive'     => 'mention',
