@@ -431,7 +431,7 @@ function twentyseventeen_fonts_url() {
     $font_families[] = 'Raleway:wght@100;300';
     $font_families[] = 'Open+Sans:wght@300;400;700';
     $font_families[] = 'Libre+Baskerville:wght@400;700';
-    $font_families[] = 'Roboto:wght@100;400';
+    $font_families[] = 'Roboto:wght@100';
 
     $query_args = array(
         'family'  => implode( '&family=', $font_families ),
