@@ -428,10 +428,10 @@ function twentyseventeen_fonts_url() {
     $font_families[] = 'Libre+Franklin:wght@100;300;700';
     $font_families[] = 'Lusitana:wght@400;700';
     $font_families[] = 'Montserrat:wght@100;300';
-    $font_families[] = 'Roboto:wght@100;400';
     $font_families[] = 'Raleway:wght@100;300';
     $font_families[] = 'Open+Sans:wght@300;400;700';
     $font_families[] = 'Libre+Baskerville:wght@400;700';
+    $font_families[] = 'Roboto:wght@100';
 
     $query_args = array(
         'family'  => implode( '&family=', $font_families ),
@@ -451,6 +451,8 @@ function twentyseventeen_scripts() {
     // Add custom fonts, used in the main stylesheet.
     wp_enqueue_style( 'drift-fonts', twentyseventeen_fonts_url(), array(), time() );
 
+    wp_enqueue_style( 'drift-fonts-roboto', esc_url( 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap' ), array(), time() );
+
     // Theme stylesheet.
     wp_enqueue_style('twentyseventeen-style', get_stylesheet_uri(), array(), '20190507');
 
@@ -462,7 +464,7 @@ function twentyseventeen_scripts() {
     wp_enqueue_style( 'bootstrap-style', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), time() );
     wp_enqueue_style( 'owl-style', get_theme_file_uri( '/assets/css/owl.carousel.min.css' ), array(), time() );
     // wp_enqueue_style( 'drift-style', get_theme_file_uri( '/assets/css/custom_77.css' ), array(), time() );
-    wp_enqueue_style( 'drift', get_theme_file_uri( '/assets/css/custom-updated.css' ), array( 'bootstrap-style' ), time() );
+    wp_enqueue_style( 'drift', get_theme_file_uri( '/assets/css/custom-updated.css' ), array( 'bootstrap-style', 'drift-fonts-roboto' ), time() );
 
 
     // Load the dark colorscheme.
