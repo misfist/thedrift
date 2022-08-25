@@ -34,6 +34,8 @@ wp-content/plugins/*
 wp-content/themes/*
 !/wp-content/themes/drift/
 !/wp-content/themes/thedrift/
+/wp-content/themes/drift/vendor
+/wp-content/themes/thedrift/vendor
 
 # ignore OS generated files
 ehthumbs.db
