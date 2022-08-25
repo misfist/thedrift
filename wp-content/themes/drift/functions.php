@@ -451,6 +451,10 @@ function twentyseventeen_scripts() {
     // Add custom fonts, used in the main stylesheet.
     wp_enqueue_style( 'drift-fonts', twentyseventeen_fonts_url(), array(), time() );
 
+    wp_enqueue_style( 'drift-fonts-roboto', esc_url( 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap' ), array(), time() );
+
+    wp_enqueue_style( 'google-roboto', esc_url() );
+
     // Theme stylesheet.
     wp_enqueue_style('twentyseventeen-style', get_stylesheet_uri(), array(), '20190507');
 
